@@ -1,121 +1,122 @@
 import statistics
+import constant
 
 
-def clean_word(oldWord):
-    length = len(oldWord)
-    endSent = False
-    symbPos = 0
-    for i in oldWord:
-        if symbPos <= length-1:
-            if i == "," or i == ";" or i == "\"" or i == "\'" \
-                    or i == ":" or i == "(" or i == ")" or i == "?" \
-                    or i == "!":
-                if i == ";" or i == "?" or i == "!":
-                    endSent = True
+def clean_word(old_word):
+    length = len(old_word)
+    end_sent = False
+    symb_pos = 0
+
+    for i in old_word:
+        if symb_pos <= length - 1:
+            if i in constant.check_list:
+                if i in constant.end_list:
+                    end_sent = True
                 length -= 1
-                oldWord = oldWord[:symbPos] + oldWord[symbPos+1:]
-            elif (i == "." and oldWord[symbPos-1].islower()) or\
-                    (i == "." and oldWord[symbPos-1].isnumeric()):
-                if(symbPos <= length-2 and oldWord[symbPos+1] == "." and oldWord[symbPos+2] == "." ):
+                old_word = old_word[:symb_pos] + old_word[symb_pos + 1:]
+            elif (i == "." and old_word[symb_pos - 1].islower()) or \
+                    (i == "." and old_word[symb_pos - 1].isnumeric()):
+                if symb_pos <= length - 2 and old_word[symb_pos + 1] == "." and old_word[symb_pos + 2] == ".":
                     length -= 3
-                    oldWord = oldWord[:symbPos] + oldWord[symbPos + 3:]
+                    old_word = old_word[:symb_pos] + old_word[symb_pos + 3:]
                 else:
                     length -= 1
-                    oldWord = oldWord[:symbPos] + oldWord[symbPos+1:]
-                endSent = True
-            elif(i == "—"):
-                oldWord = ""
-                symbPos = length+1
+                    old_word = old_word[:symb_pos] + old_word[symb_pos + 1:]
+                end_sent = True
+            elif i == "—":
+                old_word = ""
+                symb_pos = length + 1
             else:
-                symbPos += 1
-    return [oldWord, endSent]
+                symb_pos += 1
+    return old_word, end_sent
 
 
-def clean_text(oldlist):
-    j = 0
+def clean_text(old_list):
     s = 0
-    newlist = []
-    numlist = []
-    for i in oldlist:
-        startlist = clean_word(i)
-        newlist.append(startlist[0])
-        if startlist[1]:
-           numlist.append(s+1)
-           s = 0
+    num_list = []
+    start_list = []
+    for i in old_list:
+        proto_word, end_sent = clean_word(i)
+        if end_sent:
+            num_list.append(s + 1)
+            s = 0
         else:
             s += 1
-        if newlist[j] == "":
-            newlist.pop(j)
+        if proto_word != "":
+            start_list.append(proto_word)
+    return start_list, num_list
+
+
+def word_count(raw_dict):
+    own_dict = {}
+    for i in raw_dict:
+        if i in own_dict.keys():
+            own_dict[i] += 1
         else:
-            j += 1
-    return [newlist, numlist]
+            own_dict[i] = 1
+    return own_dict
 
 
-def wordCount(rawDict):
-    ownDict = {}
-    for i in rawDict:
-        if i in ownDict.keys():
-            ownDict[i] += 1
-        else:
-            ownDict[i] = 1
-    return ownDict
-
-def symbCount(nSymb, specDict):
-    nDict = {}
-    for i in specDict.keys():
-        if len(i) >= nSymb:
+def symb_count(n_symb, spec_dict):
+    n_dict = {}
+    for i in spec_dict.keys():
+        if len(i) >= n_symb:
             k = i
             n = 0
-            m = nSymb
-            for z in range(len(i) - nSymb+1):
+            m = n_symb
+            for z in range(len(i) - n_symb + 1):
                 proto = k[n:m]
-                if proto in nDict.keys():
-                    nDict[proto] += specDict[i]
+                if proto in n_dict.keys():
+                    n_dict[proto] += spec_dict[i]
                 else:
-                    nDict[proto] = specDict[i]
+                    n_dict[proto] = spec_dict[i]
                 n += 1
                 m += 1
-    return nDict
+    return n_dict
 
 
-def startAnalysis(nSymb, mSymb):
-    if nSymb == 0:
-        nSymb = 4
-    if mSymb == 0:
-        mSymb = 10
+def print_result(word_list, sent_list, symb_list, m_symb):
+    print(f"Arithmetic mean of words in sentences: {int(sum(sent_list) / len(sent_list))}\n")
+    print(f"Median value of words in sentences: {statistics.median(sent_list)}\n\n")
+    print("\nWORD RATING:\n")
+    for key, value in word_list.items():
+        print(key, '-->', value)
+    print("\nSYMBOL RATING:\n")
+    sorted_tuples = sorted(symb_list.items(), key=lambda item: item[1], reverse=True)
+    sorted_dict = {k: v for k, v in sorted_tuples}
+    i = 0
+    for key in sorted_dict:
+        if i < m_symb:
+            print(f"\t{key}--|--{sorted_dict[key]}")
+            i += 1
+
+
+def start_analysis(n_symb, m_symb):
+    if not n_symb:
+        n_symb = constant.n_symb
+    if not m_symb:
+        m_symb = constant.m_symb
+
     file = open("testText", "r")
     str1 = file.read()
-    str1 = str1.replace("\n", " ").replace("'ll", " will").replace("'m", " am").replace("'s", " is").replace("'re", " are").\
-        replace("won't", "would not").replace("n't", " not")
-    rawList = str1.split(" ")
-    newList = clean_text(rawList)
-    newList.append(wordCount(newList[0]))
-    newList.append(symbCount(nSymb, newList[2]))
-    print(f"Arithmetic mean of words in sentences: {int(sum(newList[1]) / len(newList[1]))}\n")
-    print(f"Median value of words in sentences: {statistics.median(newList[1])} [{newList[1][(int((len(newList[1]) + 1)/2))]}]\n\n")
-    print("WORD RATING:\n")
-    for key, value in newList[2].items():
-        print(key, '-->', value)
-    print("SYMBOL RATING:\n")
-    list_d = list(newList[3].items())
-    list_d.sort(reverse = True, key=lambda i: i[1])
-    i = 0
-    for key, value in list_d:
-        if(i < mSymb):
-            print(f"\t{key}--|--{value}")
-            i += 1
-        else:
-            break
-    return 0
+
+    for key in constant.replace_dict:
+        str1 = str1.replace(key, constant.replace_dict[key])
+
+    raw_list = str1.split(" ")
+    new_list, sent_list = clean_text(raw_list)
+    word_count_dict = word_count(new_list)
+    symb_count_dict = symb_count(n_symb, word_count_dict)
+    print_result(word_count_dict, sent_list, symb_count_dict, m_symb)
 
 
-def startData():
+def start_data():
     print("Input N in n-grams for counting: ")
-    nSymb = int(input())
+    n_symb = int(input())
     print("Input M in top-m for counting: ")
-    mSymb = int(input())
-    startAnalysis(nSymb, mSymb)
-    return 0
+    m_symb = int(input())
+    start_analysis(n_symb, m_symb)
 
 
-startData()
+if __name__ == "__main__":
+    start_data()
