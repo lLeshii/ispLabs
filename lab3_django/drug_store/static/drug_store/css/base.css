@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    padding-left: 1%;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+a:hover {
+    text-decoration: underline;
+}
