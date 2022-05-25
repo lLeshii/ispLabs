@@ -1,41 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 {% extends "drug_store/base.html" %}
 {% load static %}
 {% block title %}
-    {% if category %}{{ category.name }}{% else %}Products{% endif %}
+    {% if category %}{{ category.name }}{% else %}Crypto products{% endif %}
 {% endblock %}
 {% block content %}
-    <div id="sidebar">
-        <h3>Categories</h3>
-        <ul>
-            <li {% if not category %}class="selected"{% endif %}>
-                <a href="{% url "drug_store:product_list" %}">All</a>
-            </li>
-            {% for c in categories %}
-                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
-                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div id="main" class="product-list">
-        <h1>{% if category %}{{ category.name }}{% else %}Products{% endif %}</h1>
-        {% for product in products %}
-            <div class="item">
-                <a href="{{ product.get_absolute_url }}">
-                    <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static "images/no_image.jpg" %}{% endif %}">
-                </a>
-                <a href="{{ product.get_absolute_url }}">{{ product.name }}</a><br>
-                ${{ product.price }}
+    <div class="container-fluid text-white">
+        <div class="row">
+            <div class="col-sm-3 ">
+                <section class="categories sticky-top t" >
+                    <h3 class="text-white">Categories</h3>
+                    <ul class="categories_bar">
+                        {% for c in categories %}
+                            <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                                <a class="nav-link text-white" href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                            </li>
+                        {% endfor %}
+                        <li {% if not category %}class="selected"{% endif %}>
+                            <a class="nav-link text-white" href="{% url "drug_store:product_list" %}">Own catalog</a>
+                        </li>
+                    </ul>
+                </section>
             </div>
-        {% endfor %}
+            <div class="col-sm-9">
+                <div class='main_content text-white'>
+                    <h1>{% if category %}{{ category.name }}{% else %}Goods(Baads){% endif %}</h1>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-6 ">
+                            <div class="item px-3">
+                                <div class="col-sm-2 ">
+                                    <a class="text-white" href="{{ product.get_absolute_url}}">
+                                        <img class="img-thumbnail" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "drug_store/images/no_image.jpg" %}{% endif %}">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 ">
+                                    <a class="text-white h3" href="{{ product.get_absolute_url }}">{{ product.name }}</a><br>
+                                    <i class="text-white" >Price: ${{  product.price }}</i><br>
+                                    <a class="btn btn-primary mt-5" href="{{ product.get_absolute_url }}">Add in cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
-</body>
-</html>
