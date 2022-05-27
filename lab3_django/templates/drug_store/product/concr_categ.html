@@ -1,0 +1,45 @@
+{% extends "drug_store/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.name }}{% else %}Baads{% endif %}
+{% endblock %}
+{% block content %}
+    <div class="container-fluid text-white">
+        <div class="row">
+                <h3 class="text-white p-1">Products:</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4 class="text-white p-3">texttexttexttext:</h4>
+            </div>
+            <div class="col-sm-9">
+                <div class="main_content text white">
+                    <div class="row">
+                        {% for product in products %}
+                            <div class="col-sm-4 ">
+                                <div class="item p-3">
+                                    <div class="row">
+                                        <a class="text-white" href="{% url 'product_detail' product.pk%}">
+                                            <img class="img-thumbnail" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "drug_store/images/no_image.jpg" %}{% endif %}">
+                                        </a>
+                                    </div>
+                                    <div class="row ">
+                                        <a class="text-white h3 mt-2" href="{% url 'product_detail' product.pk%}">{{ product.name }}</a><br>
+                                        <div class="col-sm-6">
+                                            <i class="text-white" >Price: ${{  product.price }}</i><br>
+                                        </div>
+                                        <div class="col-sm-6 ">
+                                             <a class="btn btn-primary mt-4 pt-1 pb-2" href="{% url 'product_detail' product.pk%}">Add in cart</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -5,6 +5,7 @@ from django.urls import reverse
 class Category(models.Model):
     name = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, db_index=True, unique=True)
+    description = models.TextField(blank=True)
 
     class Meta:
         ordering = ('name',)
@@ -15,7 +16,7 @@ class Category(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('drug_store:product_list_by_category', args=[self.slug])
+        return reverse_lazy('shop:product_list_by_category', args=[self.slug])
 
 
 class Product(models.Model):

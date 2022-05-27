@@ -11,12 +11,12 @@
                     <h3 class="text-white">Categories</h3>
                     <ul class="categories_bar">
                         {% for c in categories %}
-                            <li {% if category.slug == c.slug %}class="selected"{% endif %}>
-                                <a class="nav-link text-white" href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                            <li>
+                                <a class="nav-link text-white" href="{% url 'concrete_category' c.pk %}">{{ c.name }}</a>
                             </li>
                         {% endfor %}
-                        <li {% if not category %}class="selected"{% endif %}>
-                            <a class="nav-link text-white" href="{% url "drug_store:product_list" %}">Own catalog</a>
+                        <li>
+                            <a class="nav-link text-white" href="{% url "product_list" %}">Own catalog</a>
                         </li>
                     </ul>
                 </section>
@@ -26,17 +26,21 @@
                     <h1>{% if category %}{{ category.name }}{% else %}Goods(Baads){% endif %}</h1>
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-sm-6 ">
-                            <div class="item px-3">
-                                <div class="col-sm-2 ">
+                        <div class="col-sm-4 ">
+                            <div class="item pb-5">
+                                <div class="row">
                                     <a class="text-white" href="{{ product.get_absolute_url}}">
                                         <img class="img-thumbnail" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "drug_store/images/no_image.jpg" %}{% endif %}">
                                     </a>
                                 </div>
-                                <div class="col-sm-4 ">
-                                    <a class="text-white h3" href="{{ product.get_absolute_url }}">{{ product.name }}</a><br>
-                                    <i class="text-white" >Price: ${{  product.price }}</i><br>
-                                    <a class="btn btn-primary mt-5" href="{{ product.get_absolute_url }}">Add in cart</a>
+                                <div class="row ">
+                                    <a class="text-white h3 mt-2" href="{{ product.get_absolute_url }}">{{ product.name }}</a><br>
+                                    <div class="col-sm-6">
+                                        <i class="text-white" >Price: ${{  product.price }}</i><br>
+                                    </div>
+                                    <div class="col-sm-6">
+                                         <a class="btn p-3" href="{{ product.get_absolute_url }}">Add in cart</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

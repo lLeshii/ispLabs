@@ -1,0 +1,37 @@
+{% extends "drug_store/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.name }}{% else %}Crypto products{% endif %}
+{% endblock %}
+{% block content %}
+    <div class="container-fluid text-white">
+        <section class="categories sticky-top t" >
+                <h3 class="text-white">Categories</h3>
+        </section>
+        <div class="row">
+            {% for cater in categories %}
+                <div class="col-sm-6 ">
+                    <div class="item p-5">
+{#                        <div class="row">#}
+{#                            <a class="text-white" href="{% url 'concrete_category' category.pk %}">#}
+{#                                <img class="img-thumbnail" src="{% if category.image %}{{ product.image.url }}{% else %}{% static "drug_store/images/no_image.jpg" %}{% endif %}">#}
+{#                            </a>#}
+{#                        </div>#}
+                           <div class="row">
+                                <div class="col-sm-4">
+                                    <a class="text-white h1 m-2" href="{% url 'concrete_category' cater.pk %}">{{ cater.name }}</a><br>
+                                </div>
+                                <div class="col-sm-8">
+                                    <i class="text-white h5" >{{  cater.description }}</i>
+                                </div>
+                            </div>
+{#                            <div class="col-sm-6">#}
+{#                                 <a class="btn p-3" href="{{ product.get_absolute_url }}">Add in cart</a>#}
+{#                            </div>#}
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

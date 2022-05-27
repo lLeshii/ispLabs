@@ -1,3 +1,4 @@
+
 body {
     font-family: sans-serif;
 }
@@ -45,6 +46,11 @@ a:hover {
     background-color: #5d8aa8;
     border-radius: 4px;
     color: #818182;
+    padding-bottom: 30px;
     padding-top: 30px;
     margin-bottom: 20px;
+}
+.img{
+    width: 50px;
+    height: 50px;
 }
