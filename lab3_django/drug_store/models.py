@@ -1,5 +1,5 @@
 from django.db import models
-from django.urls import reverse
+from django.urls import reverse_lazy
 
 
 class Category(models.Model):
@@ -39,4 +39,4 @@ class Product(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse('drug_store:product_detail', args=[self.id, self.slug])
+        return reverse_lazy('drug_store:product_detail', args=[self.id, self.slug])
