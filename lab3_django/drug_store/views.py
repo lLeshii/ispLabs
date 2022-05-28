@@ -4,8 +4,9 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 
 from cart.models import Order
+from .forms import NewProductForm
 from .models import Category, Product
-from django.views.generic import ListView, DetailView, FormView
+from django.views.generic import ListView, DetailView, FormView, CreateView, UpdateView, DeleteView
 from cart.forms import OrderForm
 from django.views import View
 
@@ -89,3 +90,21 @@ class OrderCreationView(LoginRequiredMixin, FormView):
 
     def form_invalid(self, form):
         return HttpResponseRedirect(reverse_lazy("product_list"))
+
+
+class CreateNewProduct(CreateView):
+    form_class = NewProductForm
+    template_name = 'drug_store/product/creating.html'
+    success_url = reverse_lazy('product_list')
+
+
+class UpdtaeProduct(UpdateView):
+    model = Product
+    form_class = NewProductForm
+    template_name = 'drug_store/product/redacting.html'
+    success_url = reverse_lazy('product_list')
+
+
+class DeleteProduct(DeleteView):
+    model = Product
+    success_url = reverse_lazy("product_list")

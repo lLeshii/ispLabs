@@ -1,30 +1,30 @@
 {% extends "drug_store/base.html" %}
 
 {% block content %}
-     <table class="table w-50 mx-auto">
+     <table class="table w-50 mx-auto border-danger">
         <thead>
         <tr>
-            <th scope="col" class="text-center">Id</th>
-            <th scope="col" class="text-center">Product</th>
-            <th scope="col" class="text-center">Amount</th>
-            <th scope="col" class="text-center">Cost</th>
-            <th scope="col" class="text-center">Status</th>
-            <th scope="col" class="text-center"></th>
+            <th scope="col" class="text-white">Id</th>
+            <th scope="col" class="text-white">Product</th>
+            <th scope="col" class="text-white">Amount</th>
+            <th scope="col" class="text-white">Cost</th>
+            <th scope="col" class="text-white">Status</th>
+            <th scope="col" class="text-white"></th>
         </tr>
         </thead>
         <tbody class="table_borders">
             {% for order in orders %}
                 <tr>
-                    <td class="text-center"><span> {{ order.pk }} </span></td>
-                    <td class="text-center"><span> {{ order.product.name }} </span></td>
-                    <td class="text-center"><span> {{ order.amount }} </span></td>
-                    <td class="text-center"><span> {{ order.get_cost }} </span></td>
-                    <td class="text-center"><span> {{ order.status }} </span></td>
+                    <td class="text-white"><span> {{ order.pk }} </span></td>
+                    <td class="text-white"><span> {{ order.product.name }} </span></td>
+                    <td class="text-white"><span> {{ order.amount }} </span></td>
+                    <td class="text-white"><span> {{ order.get_cost }} </span></td>
+                    <td class="text-white"><span> {{ order.status }} </span></td>
                     <td>
                         <form method="post" action="{% url "delete_order_from_history" order.pk %}">
                             {% csrf_token %}
                             <div class="d-grid gap-2">
-                                <input class="btn btn-danger mx-auto" type="submit" value="Delete"/>
+                                <input class="btn btn-outline-light mx-auto" type="submit" value="Delete"/>
                             </div>
                         </form>
                     </td>

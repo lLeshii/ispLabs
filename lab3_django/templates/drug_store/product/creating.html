@@ -1,0 +1,14 @@
+{% extends 'drug_store/base.html' %}
+
+{% block title %}Creating{% endblock title %}
+
+{% block content %}
+<h2 class="text m-5">Create new product:</h2>
+<form action="{% url "create_product" %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="d-grid gap-2">
+        <input class="btn btn-primary mx-auto" type="submit" value="Add to cart"/>
+    </div>
+</form>
+{% endblock %}

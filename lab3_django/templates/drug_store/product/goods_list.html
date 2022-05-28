@@ -29,6 +29,15 @@
                                             <i class="text-white" >Price: ${{  product.price }}</i><br>
                                         </div>
                                         <div class="col-sm-6 ">
+                                            {% if user.is_staff %}
+                                            <a class="btn btn-outline-light pt-1" href="{% url "update_product" product.pk%}"> Update </a>
+                                            <form method="post" action="{% url "delete_product" product.pk %}">
+                                            {% csrf_token %}
+                                                <div class="d-grid gap-2">
+                                                    <input class="btn btn-outline-light mx-auto" type="submit" value="Delete"/>
+                                                </div>
+                                            </form>
+                                            {% endif %}
                                              <a class="btn btn-outline-light mt-4 pt-1 pb-2" href="{% url 'product_detail' product.pk%}">Add in cart</a>
                                         </div>
                                     </div>
