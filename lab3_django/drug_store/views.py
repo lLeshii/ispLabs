@@ -4,10 +4,13 @@ from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 
 from cart.models import Order
-from .forms import NewProductForm
+from .forms import NewProductForm, NewCategoryForm
 from .models import Category, Product
 from django.views.generic import ListView, DetailView, FormView, CreateView, UpdateView, DeleteView
 from cart.forms import OrderForm
+import logging
+logger = logging.getLogger("main_logger")
+logger.setLevel(logging.DEBUG)
 from django.views import View
 
 
@@ -34,18 +37,21 @@ class ProductListView(ListView):
     template_name = "drug_store/product/goods_list.html"
     model = Product
     context_object_name = 'products'
+    logger.info("use ProductListView")
 
 
 class CategoryListView(ListView):
     template_name = "drug_store/product/categoriests_list.html"
     model = Category
     context_object_name = 'categories'
+    logger.info("use CategoryListView")
 
 
 class CategoryDetailView(ListView):
     template_name = "drug_store/product/concr_categ.html"
     model = Product
     context_object_name = 'products'
+    logger.info("use CategoryDetailView")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -61,6 +67,7 @@ class ProductDetailView(DetailView):
     template_name = "drug_store/product/detail.html"
     model = Product
     context_object_name = 'product'
+    logger.info("use DetailUserView")
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -72,6 +79,7 @@ class ProductDetailView(DetailView):
 class OrderCreationView(LoginRequiredMixin, FormView):
     form_class = OrderForm
     template_name = "drug_store/product/detail.html"
+    logger.info("use OrderCreationView")
 
     def form_valid(self, form):
         product_id = self.kwargs['pk']
@@ -96,6 +104,7 @@ class CreateNewProduct(CreateView):
     form_class = NewProductForm
     template_name = 'drug_store/product/creating.html'
     success_url = reverse_lazy('product_list')
+    logger.info("use CreateNewProduct")
 
 
 class UpdtaeProduct(UpdateView):
@@ -103,8 +112,31 @@ class UpdtaeProduct(UpdateView):
     form_class = NewProductForm
     template_name = 'drug_store/product/redacting.html'
     success_url = reverse_lazy('product_list')
+    logger.info("use UpdtaeProduct")
 
 
 class DeleteProduct(DeleteView):
     model = Product
     success_url = reverse_lazy("product_list")
+    logger.info("use DeleteProduct")
+
+
+class CreateNewCategory(CreateView):
+    form_class = NewCategoryForm
+    template_name = 'drug_store/product/creating_cat.html'
+    success_url = reverse_lazy('categories')
+    logger.info("use CreateNewCategory")
+
+
+class UpdateCategory(UpdateView):
+    model = Category
+    form_class = NewCategoryForm
+    template_name = 'drug_store/product/redacting.html'
+    success_url = reverse_lazy('categories')
+    logger.info("use UpdateCategory")
+
+
+class DeleteProduct(DeleteView):
+    model = Category
+    success_url = reverse_lazy("categories")
+    logger.info("use DeleteProduct")
