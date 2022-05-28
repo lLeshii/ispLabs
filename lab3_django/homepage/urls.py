@@ -8,4 +8,5 @@ urlpatterns = [
     path('register/', RegisterUserView.as_view(), name='register'),
     path('logout/', LogoutUserView.as_view(), name='logout'),
     path('', include('drug_store.urls')),
+    path("", include('cart.urls')),
 ]

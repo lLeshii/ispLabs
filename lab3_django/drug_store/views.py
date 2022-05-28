@@ -1,7 +1,12 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
-from .models import Category, Product
-from django.views.generic import ListView, DetailView
+from django.urls import reverse_lazy
 
+from cart.models import Order
+from .models import Category, Product
+from django.views.generic import ListView, DetailView, FormView
+from cart.forms import OrderForm
 from django.views import View
 
 
@@ -58,6 +63,29 @@ class ProductDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        #context['form'] = OrderCreationForm
+        context['form'] = OrderForm
 
         return context
+
+
+class OrderCreationView(LoginRequiredMixin, FormView):
+    form_class = OrderForm
+    template_name = "drug_store/product/detail.html"
+
+    def form_valid(self, form):
+        product_id = self.kwargs['pk']
+        order = form.save(commit=False)
+        order.status = "processing"
+        order.user = self.request.user
+        order.product = get_object_or_404(Product, id=product_id)
+        exists_order = Order.objects.filter(user=order.user, product=order.product, status="processing")
+        if exists_order:
+            exists_order[0].amount += order.amount
+            exists_order[0].save()
+        else:
+            order.save()
+
+        return HttpResponseRedirect(reverse_lazy("product_list"))
+
+    def form_invalid(self, form):
+        return HttpResponseRedirect(reverse_lazy("product_list"))

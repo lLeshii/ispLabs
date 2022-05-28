@@ -14,7 +14,7 @@
 <div id="content">
     {% block content %}
 
-        <div class="row">
+        < class="row">
             <div class="col-2">
                   <img class="img-thumbnail m-5 mb-0" src="{% if product.image %}{{ product.image.url }}{% else %}
                 {% static "drug_store/images/no_image.jpg" %}{% endif %}">
@@ -25,16 +25,22 @@
                     <a class="text-white mx-5 mt-2" href="{%url "product_list"%}">{{product.category }}</a>
                 </h3>
                 <p class="price text-white mx-5 mt-1">${{ product.price }}</p>
-    {#            {% if user.is_authenticated %}#}
-    {#                <form action="{% url "cart:cart_add" product.id %}" method="post">#}
-    {#                {{ cart_product_form }}#}
-    {#                {% csrf_token %}#}
-    {#                <input type="submit" value="Add to cart">#}
-    {#            </form>#}
-    {#            {% else%}#}
-    {#                <p class="text-danger">To buy this product you need authenticated</p>#}
-    {#            {% endif%}#}
-            </div>
+                    {% if user.is_authenticated %}
+                        <form method="post" action="{% url "cart_add" product.pk %}">
+                            {% csrf_token %}
+                            {% for f in form %}
+                                <div class="mb-3 mx-auto mt-5" style="width: 14%">
+                                    <label class="form-label"> {{ f.label}}:</label>
+                                    <p>{{ f }}</p>
+                                    <div class="form-error">{{ f.errors }}</div>
+                                </div>
+                            {% endfor %}
+                            <div class="d-grid gap-2">
+                                <input class="btn btn-primary mx-auto" type="submit" value="Add to cart"/>
+                            </div>
+                        </form>
+                    {% endif %}
+            </b>>
             <div class="row-cols-sm-3 m-5">
                 {{ product.description|linebreaks }}
             </div>
