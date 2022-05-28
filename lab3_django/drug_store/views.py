@@ -11,27 +11,7 @@ from cart.forms import OrderForm
 import logging
 logger = logging.getLogger("main_logger")
 logger.setLevel(logging.DEBUG)
-from django.views import View
 
-
-# def product_list(request, category_slug=None):
-#     category = None
-#     categories = Category.objects.all()
-#     products = Product.objects.filter(available=True)
-#     if category_slug:
-#         category = get_object_or_404(Category, slug=category_slug)
-#         products = products.filter(category=category)
-#     return render(request,
-#                   'drug_store/product/list.html',
-#                   {'category': category,
-#                    'categories': categories,
-#                    'products': products})
-#
-#
-# def product_detail(request, id, slug):
-#     product = get_object_or_404(Product, id=id, slug=slug, available=True)
-#     return render(request, 'drug_store/product/detail.html', {'product': product})
-#
 
 class ProductListView(ListView):
     template_name = "drug_store/product/goods_list.html"
@@ -55,8 +35,8 @@ class CategoryDetailView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['category'] = Product.category
         context['pk'] = self.kwargs['pk']
-
         return context
 
     def get_queryset(self):
@@ -131,12 +111,12 @@ class CreateNewCategory(CreateView):
 class UpdateCategory(UpdateView):
     model = Category
     form_class = NewCategoryForm
-    template_name = 'drug_store/product/redacting.html'
+    template_name = 'drug_store/product/redacting_cat.html'
     success_url = reverse_lazy('categories')
     logger.info("use UpdateCategory")
 
 
-class DeleteProduct(DeleteView):
+class DeleteCategory(DeleteView):
     model = Category
     success_url = reverse_lazy("categories")
     logger.info("use DeleteProduct")

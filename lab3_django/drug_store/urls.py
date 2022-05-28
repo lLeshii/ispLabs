@@ -2,7 +2,8 @@ from django.urls import path
 from django.views.decorators.http import require_POST
 
 from . import views
-from drug_store.views import OrderCreationView, CreateNewProduct, UpdtaeProduct, DeleteProduct, CreateNewCategory
+from drug_store.views import OrderCreationView, CreateNewProduct, UpdtaeProduct, DeleteProduct, \
+    CreateNewCategory, UpdateCategory, DeleteCategory
 
 urlpatterns = [
     path("goods/", views.ProductListView.as_view(), name='product_list'),
@@ -13,5 +14,7 @@ urlpatterns = [
     path('goods/create/', CreateNewProduct.as_view(), name='create_product'),
     path('goods/create_ct/', CreateNewCategory.as_view(), name='create_category'),
     path('goods/<int:pk>/update/', UpdtaeProduct.as_view(), name='update_product'),
-    path('goods/<int:pk>/delete/', DeleteProduct.as_view(), name='delete_product')
+    path('goods/<int:pk>/delete/', DeleteProduct.as_view(), name='delete_product'),
+    path('categories/<int:pk>/update/', UpdateCategory.as_view(), name='update_category'),
+    path('categories/<int:pk>/delete/', DeleteCategory.as_view(), name='delete_category'),
 ]

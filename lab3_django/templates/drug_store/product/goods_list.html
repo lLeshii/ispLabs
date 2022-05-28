@@ -1,16 +1,16 @@
 {% extends "drug_store/base.html" %}
 {% load static %}
 {% block title %}
-    {% if category %}{{ category.name }}{% else %}Crypto products{% endif %}
+    {% if category %}{{ category.name }}{% else %}Catalog{% endif %}
 {% endblock %}
 {% block content %}
     <div class="container-fluid text-white">
         <div class="row">
-                <h3 class="text-white p-1">Goods(Baads):</h3>
+                <h2 class="text-white p-2">Goods(Baads):</h2>
         </div>
         <div class="row">
             <div class="col-sm-3">
-                <h4 class="text-white p-3">texttexttexttext:</h4>
+                <h4 class="text-white p-3">All positions</h4>
             </div>
             <div class="col-sm-9">
                 <div class="main_content text white">
@@ -29,16 +29,19 @@
                                             <i class="text-white" >Price: ${{  product.price }}</i><br>
                                         </div>
                                         <div class="col-sm-6 ">
+                                        <div class="row">
                                             {% if user.is_staff %}
-                                            <a class="btn btn-outline-light pt-1" href="{% url "update_product" product.pk%}"> Update </a>
+                                            <a class="btn btn-outline-light" href="{% url "update_product" product.pk%}">Update</a>
                                             <form method="post" action="{% url "delete_product" product.pk %}">
                                             {% csrf_token %}
-                                                <div class="d-grid gap-2">
-                                                    <input class="btn btn-outline-light mx-auto" type="submit" value="Delete"/>
+                                                <div class="d-grid gap-3">
+                                                    <input class="btn btn-outline-light" type="submit" value="Delete"/>
                                                 </div>
                                             </form>
                                             {% endif %}
-                                             <a class="btn btn-outline-light mt-4 pt-1 pb-2" href="{% url 'product_detail' product.pk%}">Add in cart</a>
+                                             <a class="btn btn-outline-light " href="{% url 'product_detail' product.pk%}">Add in cart</a>
+                                        </div>
+
                                         </div>
                                     </div>
                                     <div class="row">

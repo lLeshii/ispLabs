@@ -24,22 +24,25 @@
                     <a class="text-white mx-5 mt-2" href="{%url "product_list"%}">{{product.category }}</a>
                 </h3>
                 <p class="price text-white mx-5 mt-1">${{ product.price }}</p>
-                {% if user.is_authenticated %}
+
+            </b>
+            <div class="col-sm-2">
+                 {% if user.is_authenticated %}
                     <form method="post" action="{% url "cart_add" product.pk %}">
                         {% csrf_token %}
                         {% for f in form %}
-                            <div class="mb-3 mx-auto mt-5" style="width: 14%">
+                            <div class="mt-5" style="width: 14%">
                                 <label class="form-label"> {{ f.label}}:</label>
                                 <p>{{ f }}</p>
                                 <div class="form-error">{{ f.errors }}</div>
                             </div>
                         {% endfor %}
                         <div class="d-grid gap-2">
-                            <input class="btn btn-primary mx-auto" type="submit" value="Add to cart"/>
+                            <input class="btn btn-outline-danger" type="submit" value="Add to cart"/>
                         </div>
                     </form>
                 {% endif %}
-            </b>
+            </div>
             <div class="row-cols-sm-3 m-5">
                 {{ product.description|linebreaks }}
             </div>
