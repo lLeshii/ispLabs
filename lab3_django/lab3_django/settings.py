@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'lab3_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test_db',
-        'USER': 'db_admin',
-        'PASSWORD': 'db_admin',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': 'docker_db',
+        'USER': 'leshii',
+        'PASSWORD': '2173101842',
+        'HOST': 'localhost',
+        'PORT': 54321,
     }
 }
 
