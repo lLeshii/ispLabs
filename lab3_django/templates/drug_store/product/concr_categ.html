@@ -4,10 +4,11 @@
     {% if category %}{{ category.name }}{% else %}Baads{% endif %}
 {% endblock %}
 {% block content %}
+
     <div class="container-fluid text-white">
         <div class="row">
             <div class="col-sm-3">
-                <h2 class="text-white p-4">Products:</h2>
+                <h2 class="text-white p-4">{{ products.1.category.name}}</h2>
             </div>
             <div class="col-sm-9">
                 <div class="main_content text white">

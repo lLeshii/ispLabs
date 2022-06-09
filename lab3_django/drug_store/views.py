@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.urls import reverse_lazy
 
+import drug_store.models
 from cart.models import Order
 from .forms import NewProductForm, NewCategoryForm
 from .models import Category, Product
@@ -55,7 +56,6 @@ class ProductDetailView(DetailView):
 
         return context
 
-
 class OrderCreationView(LoginRequiredMixin, FormView):
     form_class = OrderForm
     template_name = "drug_store/product/detail.html"
@@ -68,11 +68,19 @@ class OrderCreationView(LoginRequiredMixin, FormView):
         order.user = self.request.user
         order.product = get_object_or_404(Product, id=product_id)
         exists_order = Order.objects.filter(user=order.user, product=order.product, status="processing")
-        if exists_order:
+        if order.amount > order.product.stock:
+            order.clean()
+        elif exists_order:
             exists_order[0].amount += order.amount
             exists_order[0].save()
+            param = order.product.stock - exists_order[0].amount
+            if not order.user.is_superuser:
+                Product.objects.filter(id=product_id).update(stock= param)
         else:
             order.save()
+            param = order.product.stock - order.amount
+            if not order.user.is_superuser:
+                Product.objects.filter(id=product_id).update(stock=param)
 
         return HttpResponseRedirect(reverse_lazy("product_list"))
 

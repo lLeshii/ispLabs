@@ -9,6 +9,9 @@ from django.views.generic import ListView, DeleteView
 from cart.models import Order
 # Create your views here.
 import logging
+
+from drug_store.models import Product
+
 logger = logging.getLogger("main_logger")
 logger.setLevel(logging.DEBUG)
 
@@ -62,5 +65,4 @@ class CheckoutView(LoginRequiredMixin, View):
     def post(self, request):
         cur_user = self.request.user
         Order.objects.filter(user=cur_user, status="processing").update(status="delivering")
-
         return HttpResponseRedirect(reverse_lazy("cart"))

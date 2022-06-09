@@ -1,7 +1,7 @@
 {% extends "drug_store/base.html" %}
 {% load static %}
 {% block title %}
-    {% if category %}{{ category.name }}{% else %}Crypto products{% endif %}
+    Catalog
 {% endblock %}
 {% block content %}
     <div class="container-fluid text-white">
@@ -23,7 +23,7 @@
             </div>
             <div class="col-sm-9">
                 <div class='main_content text-white'>
-                    <h1>{% if category %}{{ category.name }}{% else %}Goods(Baads){% endif %}</h1>
+                    <h1>{% if category %}{{ category.name }}{% else %}Baads{% endif %}</h1>
                 <div class="row">
                     {% for product in products %}
                         <div class="col-sm-4 ">

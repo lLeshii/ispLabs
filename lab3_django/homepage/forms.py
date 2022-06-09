@@ -15,6 +15,6 @@ class RegisterUserForm(UserCreationForm):
 
 
 class LoginUserForm(AuthenticationForm):
-    email = forms.EmailField(label="UserEmail", widget=forms.EmailInput(attrs={'class': 'form-input'}))
+    email = forms.EmailField(label="User Email", widget=forms.EmailInput(attrs={'class': 'form-input'}))
     password = forms.CharField(label="Password", widget=forms.PasswordInput(attrs={'class': 'form-input'}))
 

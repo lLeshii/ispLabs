@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="header">
-    <a class="logo" href="/">Cryptoshop</a>
+    <a class="logo" href="/">Drug</a>
 </div>
 <div id="content">
     {% block content %}
@@ -21,9 +21,13 @@
             <b class="col-sm-4">
                 <h1 class="mt-5 mx-5">{{ product.name }}</h1>
                 <h3>
-                    <a class="text-white mx-5 mt-2" href="{%url "product_list"%}">{{product.category }}</a>
+                    <a class="text-white mx-5 mt-2" href="{%url "concrete_category" product.category.pk%}">{{product.category }}</a>
                 </h3>
                 <p class="price text-white mx-5 mt-1">${{ product.price }}</p>
+                <p class="price text-white mx-5 mt-1">Amount: {{ product.stock }}</p>
+                {% if not user.is_authenticated %}
+                        <h2 class="text-danger mx-5 mt-2" href="{%url "register"%}">{{"Authorize for purchase" }}</h2>
+                {% endif %}
 
             </b>
             <div class="col-sm-2">

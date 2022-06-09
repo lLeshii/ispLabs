@@ -2208,3 +2208,1254 @@ INFO 2022-05-28 11:24:18,901 basehttp 164157 140271819945728 "GET /goods/ HTTP/1
 INFO 2022-05-28 11:24:59,372 basehttp 164157 140271819945728 "GET / HTTP/1.1" 200 2781
 INFO 2022-05-28 11:24:59,407 basehttp 164157 140271819945728 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 304 0
 INFO 2022-05-28 11:25:25,620 basehttp 164157 140271819945728 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 11:47:57,447 basehttp 164157 140271803160320 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 11:47:57,478 basehttp 164157 140271803160320 "GET /static/drug_store/css/base.css HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:57,552 basehttp 164157 140271803160320 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,612 basehttp 164157 140271803160320 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 11:47:59,675 basehttp 164157 140271819945728 "GET /media/products/2022/05/28/60639df64ec2b581659a-1000x750_1.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,678 basehttp 164157 140271803160320 "GET /media/products/2022/05/28/en-fentanil.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,682 basehttp 164157 140271897257728 "GET /media/products/2022/05/28/41681895_303.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,682 basehttp 164157 140271777982208 "GET /media/products/2022/05/28/indika.jpeg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,683 basehttp 164157 140271803160320 "GET /media/products/2022/05/28/ruderalika.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,684 basehttp 164157 140271819945728 "GET /media/products/2022/05/28/mac.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,684 basehttp 164157 140271786374912 "GET /media/products/2022/05/28/mdmc.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,686 basehttp 164157 140271811553024 "GET /media/products/2022/05/28/morphine.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 11:47:59,688 basehttp 164157 140271811553024 "GET /media/products/2022/05/28/sativa.png HTTP/1.1" 304 0
+INFO 2022-05-28 11:49:33,566 basehttp 164157 140271811553024 "GET /goods/8/ HTTP/1.1" 200 3468
+INFO 2022-05-28 11:49:39,550 basehttp 164157 140271811553024 "GET /goods/11/ HTTP/1.1" 200 3558
+INFO 2022-05-28 11:49:46,041 basehttp 164157 140271811553024 "GET /register/ HTTP/1.1" 200 4080
+INFO 2022-05-28 11:49:48,474 basehttp 164157 140271811553024 "GET /login/?next=/register/ HTTP/1.1" 200 3883
+INFO 2022-05-28 11:50:14,068 basehttp 164157 140271811553024 "POST /login/?next=/register/ HTTP/1.1" 302 0
+INFO 2022-05-28 11:50:14,087 basehttp 164157 140271811553024 "GET /register/ HTTP/1.1" 200 4533
+INFO 2022-05-28 11:50:16,998 basehttp 164157 140271811553024 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-05-28 11:50:18,450 basehttp 164157 140271811553024 "GET / HTTP/1.1" 200 3243
+INFO 2022-05-28 11:50:20,016 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:50:21,560 basehttp 164157 140271811553024 "GET /goods/8/ HTTP/1.1" 200 4757
+INFO 2022-05-28 11:50:25,746 basehttp 164157 140271811553024 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 11:50:44,965 basehttp 164157 140271811553024 "POST /goods/create/ HTTP/1.1" 302 0
+INFO 2022-05-28 11:50:44,987 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 24972
+INFO 2022-05-28 11:50:45,058 basehttp 164157 140271811553024 "GET /static/drug_store/images/no_image.jpg HTTP/1.1" 200 8140
+INFO 2022-05-28 11:50:56,106 basehttp 164157 140271811553024 "GET /goods/16/ HTTP/1.1" 200 4549
+INFO 2022-05-28 11:50:59,319 basehttp 164157 140271811553024 "POST /goods/16/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 11:50:59,340 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 24972
+INFO 2022-05-28 11:51:02,291 basehttp 164157 140271811553024 "GET /cart/ HTTP/1.1" 200 5902
+INFO 2022-05-28 11:54:08,879 basehttp 164157 140271811553024 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-05-28 11:54:08,897 basehttp 164157 140271811553024 "GET /cart/ HTTP/1.1" 200 3132
+INFO 2022-05-28 11:54:11,163 basehttp 164157 140271811553024 "GET /orders/ HTTP/1.1" 200 5384
+INFO 2022-05-28 11:54:17,767 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 24972
+INFO 2022-05-28 11:54:20,777 basehttp 164157 140271811553024 "POST /goods/16/delete/ HTTP/1.1" 302 0
+INFO 2022-05-28 11:54:20,800 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:56:57,319 basehttp 164157 140271811553024 "GET /goods/8/update/ HTTP/1.1" 200 5188
+INFO 2022-05-28 11:57:01,508 basehttp 164157 140271811553024 "GET /goods/8/ HTTP/1.1" 200 4757
+INFO 2022-05-28 11:57:04,680 basehttp 164157 140271811553024 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 11:57:04,700 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:57:06,717 basehttp 164157 140271811553024 "GET /orders/ HTTP/1.1" 200 5388
+INFO 2022-05-28 11:57:09,983 basehttp 164157 140271811553024 "GET /cart/ HTTP/1.1" 200 5089
+INFO 2022-05-28 11:57:12,029 basehttp 164157 140271811553024 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-05-28 11:57:12,047 basehttp 164157 140271811553024 "GET /cart/ HTTP/1.1" 200 3132
+INFO 2022-05-28 11:57:14,219 basehttp 164157 140271811553024 "GET /orders/ HTTP/1.1" 200 5388
+INFO 2022-05-28 11:57:30,591 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:57:37,491 basehttp 164157 140271811553024 "GET /orders/ HTTP/1.1" 200 5388
+INFO 2022-05-28 11:57:39,511 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:57:42,622 basehttp 164157 140271811553024 "GET /goods/8/update/ HTTP/1.1" 200 5188
+INFO 2022-05-28 11:57:49,484 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:58:01,961 basehttp 164157 140271811553024 "GET /goods/8/ HTTP/1.1" 200 4757
+INFO 2022-05-28 11:58:04,649 basehttp 164157 140271811553024 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 11:58:04,672 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:58:07,013 basehttp 164157 140271811553024 "GET /cart/ HTTP/1.1" 200 5089
+INFO 2022-05-28 11:58:08,634 basehttp 164157 140271811553024 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-05-28 11:58:08,658 basehttp 164157 140271811553024 "GET /cart/ HTTP/1.1" 200 3132
+INFO 2022-05-28 11:58:10,440 basehttp 164157 140271811553024 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 11:58:12,821 basehttp 164157 140271811553024 "GET /goods/8/update/ HTTP/1.1" 200 5188
+INFO 2022-05-28 12:03:43,308 autoreload 164157 140271974696768 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/forms.py changed, reloading.
+INFO 2022-05-28 12:03:43,743 autoreload 172871 139788330714944 Watching for file changes with StatReloader
+INFO 2022-05-28 12:03:45,075 basehttp 172871 139788253275904 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 12:09:45,099 autoreload 172871 139788330714944 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-05-28 12:09:45,429 autoreload 173175 139647457519424 Watching for file changes with StatReloader
+INFO 2022-05-28 12:10:52,940 autoreload 173175 139647457519424 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-05-28 12:10:54,798 autoreload 173380 140257972467520 Watching for file changes with StatReloader
+INFO 2022-05-28 12:11:50,931 autoreload 173544 139906331785024 Watching for file changes with StatReloader
+INFO 2022-05-28 12:11:52,859 basehttp 173544 139906254083840 "GET / HTTP/1.1" 200 3243
+INFO 2022-05-28 12:11:52,986 basehttp 173544 139906254083840 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 304 0
+INFO 2022-05-28 12:11:55,007 basehttp 173544 139906254083840 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 12:14:33,909 autoreload 173544 139906331785024 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/models.py changed, reloading.
+INFO 2022-05-28 12:14:34,239 autoreload 173903 140091182835520 Watching for file changes with StatReloader
+INFO 2022-05-28 12:14:48,313 autoreload 173918 140154952316736 Watching for file changes with StatReloader
+INFO 2022-05-28 12:18:12,296 autoreload 174833 140711651669824 Watching for file changes with StatReloader
+INFO 2022-05-28 12:18:14,439 basehttp 174833 140711573706496 "GET / HTTP/1.1" 200 3243
+INFO 2022-05-28 12:18:16,170 basehttp 174833 140711573706496 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 12:18:29,542 basehttp 174833 140711573706496 "POST /goods/create/ HTTP/1.1" 200 4926
+INFO 2022-05-28 12:30:22,323 basehttp 174833 140711565313792 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 12:30:22,415 basehttp 174833 140711547631360 "GET /media/products/2022/05/28/41681895_303.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,416 basehttp 174833 140711539238656 "GET /media/products/2022/05/28/mdmc.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,417 basehttp 174833 140711573706496 "GET /media/products/2022/05/28/60639df64ec2b581659a-1000x750_1.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,418 basehttp 174833 140711556024064 "GET /media/products/2022/05/28/indika.jpeg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,419 basehttp 174833 140711565313792 "GET /media/products/2022/05/28/en-fentanil.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,419 basehttp 174833 140711530845952 "GET /media/products/2022/05/28/morphine.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,425 basehttp 174833 140711565313792 "GET /media/products/2022/05/28/ruderalika.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,425 basehttp 174833 140711556024064 "GET /media/products/2022/05/28/sativa.png HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:22,425 basehttp 174833 140711530845952 "GET /media/products/2022/05/28/mac.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:24,034 basehttp 174833 140711556024064 "GET / HTTP/1.1" 200 3243
+INFO 2022-05-28 12:30:24,093 basehttp 174833 140711556024064 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 304 0
+INFO 2022-05-28 12:30:24,749 basehttp 174833 140711556024064 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-05-28 12:30:26,811 basehttp 174833 140711556024064 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 12:30:27,803 basehttp 174833 140711556024064 "GET /goods/create_ct/ HTTP/1.1" 200 3885
+INFO 2022-05-28 12:30:30,001 basehttp 174833 140711556024064 "GET /cart/ HTTP/1.1" 200 3132
+INFO 2022-05-28 12:30:30,992 basehttp 174833 140711556024064 "GET /orders/ HTTP/1.1" 200 6287
+INFO 2022-05-28 12:30:32,636 basehttp 174833 140711556024064 "GET /cart/ HTTP/1.1" 200 3132
+INFO 2022-05-28 12:30:34,823 basehttp 174833 140711556024064 "GET /orders/ HTTP/1.1" 200 6287
+INFO 2022-05-28 12:30:37,264 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 12:30:39,137 basehttp 174833 140711556024064 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 12:30:39,858 basehttp 174833 140711556024064 "GET /goods/create_ct/ HTTP/1.1" 200 3885
+INFO 2022-05-28 12:30:42,679 basehttp 174833 140711556024064 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-05-28 12:30:42,694 basehttp 174833 140711556024064 "GET /login/ HTTP/1.1" 200 3883
+INFO 2022-05-28 12:30:44,623 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 12:30:59,521 basehttp 174833 140711556024064 "GET /cart/ HTTP/1.1" 302 0
+INFO 2022-05-28 12:30:59,548 basehttp 174833 140711556024064 "GET /login/?next=/cart/ HTTP/1.1" 200 3883
+INFO 2022-05-28 12:31:01,705 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 12:33:46,401 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 12:33:47,382 basehttp 174833 140711556024064 "GET /categories/ HTTP/1.1" 200 7228
+INFO 2022-05-28 12:33:48,362 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 12:33:52,007 basehttp 174833 140711556024064 "GET /cart/ HTTP/1.1" 302 0
+INFO 2022-05-28 12:33:52,029 basehttp 174833 140711556024064 "GET /login/?next=/cart/ HTTP/1.1" 200 3883
+INFO 2022-05-28 12:33:53,903 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 12:33:54,573 basehttp 174833 140711556024064 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 12:33:55,267 basehttp 174833 140711556024064 "GET /categories/ HTTP/1.1" 200 7228
+INFO 2022-05-28 12:33:56,344 basehttp 174833 140711556024064 "GET /goods/ HTTP/1.1" 200 15927
+WARNING 2022-05-28 13:06:28,524 log 177339 140303472428864 Not Found: /goods/4/update/
+WARNING 2022-05-28 13:12:24,749 log 177611 139959629068096 Not Found: /goods/4/update/
+WARNING 2022-05-28 13:16:22,359 log 177749 140213353797440 Not Found: /goods/1/
+INFO 2022-05-28 13:20:34,515 autoreload 177897 139947311331136 Watching for file changes with StatReloader
+INFO 2022-05-28 13:20:35,940 basehttp 177897 139947233367808 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 13:20:35,981 basehttp 177897 139947233367808 "GET /static/drug_store/css/base.css HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:36,079 basehttp 177897 139947233367808 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,148 basehttp 177897 139947233367808 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 13:20:38,216 basehttp 177897 139947233367808 "GET /media/products/2022/05/28/en-fentanil.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,220 basehttp 177897 139947224975104 "GET /media/products/2022/05/28/60639df64ec2b581659a-1000x750_1.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,222 basehttp 177897 139946996258560 "GET /media/products/2022/05/28/mdmc.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,224 basehttp 177897 139947233367808 "GET /media/products/2022/05/28/mac.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,224 basehttp 177897 139947004651264 "GET /media/products/2022/05/28/41681895_303.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,225 basehttp 177897 139947013043968 "GET /media/products/2022/05/28/indika.jpeg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,227 basehttp 177897 139946987865856 "GET /media/products/2022/05/28/morphine.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,227 basehttp 177897 139946996258560 "GET /media/products/2022/05/28/ruderalika.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:38,229 basehttp 177897 139947004651264 "GET /media/products/2022/05/28/sativa.png HTTP/1.1" 304 0
+INFO 2022-05-28 13:20:40,640 basehttp 177897 139947004651264 "GET /goods/8/ HTTP/1.1" 200 3468
+WARNING 2022-05-28 13:23:46,631 log 178220 140499077125952 Not Found: /goods/1/update/
+WARNING 2022-05-28 13:24:17,173 log 178241 140236731754304 Not Found: /goods/1/update/
+INFO 2022-05-28 13:28:21,324 autoreload 178467 140445206857536 Watching for file changes with StatReloader
+INFO 2022-05-28 13:36:40,847 autoreload 178885 140516602062656 Watching for file changes with StatReloader
+INFO 2022-05-28 13:36:43,093 basehttp 178885 140516524099328 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 13:36:44,980 basehttp 178885 140516524099328 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 13:36:49,774 basehttp 178885 140516524099328 "GET /categories/ HTTP/1.1" 200 7228
+INFO 2022-05-28 13:36:52,327 basehttp 178885 140516524099328 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 13:36:55,632 basehttp 178885 140516524099328 "GET /categories/ HTTP/1.1" 200 7228
+INFO 2022-05-28 13:36:58,450 basehttp 178885 140516524099328 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 13:39:44,370 basehttp 178885 140516524099328 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 13:49:14,715 autoreload 179453 140346705332032 Watching for file changes with StatReloader
+INFO 2022-05-28 13:49:16,302 basehttp 179453 140346627368704 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 13:49:16,441 basehttp 179453 140346627368704 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 304 0
+INFO 2022-05-28 13:49:18,346 basehttp 179453 140346627368704 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 13:49:18,376 basehttp 179453 140346627368704 "GET /media/products/2022/05/28/60639df64ec2b581659a-1000x750_1.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:49:18,437 basehttp 179453 140346627368704 "GET /media/products/2022/05/28/ruderalika.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:17,287 basehttp 179453 140346627368704 "GET / HTTP/1.1" 200 2781
+INFO 2022-05-28 13:53:18,963 basehttp 179453 140346627368704 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 13:53:18,988 basehttp 179453 140346627368704 "GET /media/products/2022/05/28/en-fentanil.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:19,047 basehttp 179453 140346609948416 "GET /media/products/2022/05/28/mdmc.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:19,051 basehttp 179453 140346627368704 "GET /media/products/2022/05/28/indika.jpeg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:19,052 basehttp 179453 140346618976000 "GET /media/products/2022/05/28/41681895_303.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:19,056 basehttp 179453 140346601555712 "GET /media/products/2022/05/28/morphine.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:19,059 basehttp 179453 140346593163008 "GET /media/products/2022/05/28/mac.jpg HTTP/1.1" 304 0
+INFO 2022-05-28 13:53:19,059 basehttp 179453 140346243675904 "GET /media/products/2022/05/28/sativa.png HTTP/1.1" 304 0
+INFO 2022-05-28 14:00:21,564 basehttp 179453 140346601555712 "GET /cart/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:00:21,600 basehttp 179453 140346601555712 "GET /login/?next=/cart/ HTTP/1.1" 200 3883
+INFO 2022-05-28 14:00:31,059 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 14:00:37,248 basehttp 179453 140346601555712 "GET /goods/6/ HTTP/1.1" 200 3425
+INFO 2022-05-28 14:00:40,158 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 14:00:43,842 basehttp 179453 140346601555712 "GET /goods/9/ HTTP/1.1" 200 3419
+INFO 2022-05-28 14:00:45,733 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15927
+INFO 2022-05-28 14:00:55,345 basehttp 179453 140346601555712 "GET /register/ HTTP/1.1" 200 4080
+INFO 2022-05-28 14:01:54,554 basehttp 179453 140346601555712 "POST /register/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:01:54,559 basehttp 179453 140346601555712 "GET /login HTTP/1.1" 301 0
+INFO 2022-05-28 14:01:54,576 basehttp 179453 140346601555712 "GET /login/ HTTP/1.1" 200 3883
+INFO 2022-05-28 14:02:42,786 basehttp 179453 140346601555712 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:02:42,805 basehttp 179453 140346601555712 "GET / HTTP/1.1" 200 2819
+INFO 2022-05-28 14:03:04,227 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:03:07,249 basehttp 179453 140346601555712 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:03:07,567 basehttp 179453 140346601555712 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:03:23,457 basehttp 179453 140346601555712 "GET / HTTP/1.1" 200 2819
+INFO 2022-05-28 14:03:25,445 basehttp 179453 140346601555712 "GET /categories/ HTTP/1.1" 200 7255
+INFO 2022-05-28 14:03:27,943 basehttp 179453 140346601555712 "GET /categories/6/ HTTP/1.1" 200 3058
+INFO 2022-05-28 14:03:32,628 basehttp 179453 140346601555712 "GET /categories/ HTTP/1.1" 200 7255
+INFO 2022-05-28 14:03:36,769 basehttp 179453 140346601555712 "GET /categories/5/ HTTP/1.1" 200 5619
+INFO 2022-05-28 14:03:45,315 basehttp 179453 140346601555712 "GET /goods/14/ HTTP/1.1" 200 4281
+INFO 2022-05-28 14:03:50,462 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:03:57,215 basehttp 179453 140346601555712 "GET /goods/8/ HTTP/1.1" 200 4333
+INFO 2022-05-28 14:03:58,870 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:04:05,260 basehttp 179453 140346601555712 "GET /goods/9/ HTTP/1.1" 200 4284
+INFO 2022-05-28 14:04:09,334 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:04:11,076 basehttp 179453 140346601555712 "GET /goods/11/ HTTP/1.1" 200 4423
+INFO 2022-05-28 14:04:12,247 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:04:16,429 basehttp 179453 140346601555712 "GET /goods/8/ HTTP/1.1" 200 4333
+INFO 2022-05-28 14:04:21,488 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:04:24,995 basehttp 179453 140346601555712 "GET /goods/13/ HTTP/1.1" 200 4226
+INFO 2022-05-28 14:05:04,555 basehttp 179453 140346601555712 "POST /goods/13/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:05:04,583 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:05:23,767 basehttp 179453 140346601555712 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:05:29,193 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:05:30,802 basehttp 179453 140346601555712 "GET /goods/8/ HTTP/1.1" 200 4333
+INFO 2022-05-28 14:08:56,642 basehttp 179453 140346601555712 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:08:56,669 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:08:58,004 basehttp 179453 140346601555712 "GET /cart/ HTTP/1.1" 200 4666
+INFO 2022-05-28 14:09:09,551 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:09:10,899 basehttp 179453 140346601555712 "GET /goods/8/ HTTP/1.1" 200 4333
+INFO 2022-05-28 14:09:18,302 basehttp 179453 140346601555712 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:09:18,334 basehttp 179453 140346601555712 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:09:56,791 autoreload 179453 140346705332032 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-05-28 14:09:57,132 autoreload 181087 140097132214080 Watching for file changes with StatReloader
+INFO 2022-05-28 14:10:03,577 basehttp 181087 140097054512896 "GET /goods/8/ HTTP/1.1" 200 4333
+INFO 2022-05-28 14:10:08,865 basehttp 181087 140097054512896 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:10:08,892 basehttp 181087 140097054512896 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:10:18,955 autoreload 181087 140097132214080 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-05-28 14:10:19,300 autoreload 181174 139988300437312 Watching for file changes with StatReloader
+INFO 2022-05-28 14:10:24,424 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 4666
+INFO 2022-05-28 14:10:26,310 basehttp 181174 139988150777600 "POST /cart/11 HTTP/1.1" 302 0
+INFO 2022-05-28 14:10:26,352 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:10:28,152 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:10:31,063 basehttp 181174 139988150777600 "GET /goods/13/ HTTP/1.1" 200 4226
+INFO 2022-05-28 14:10:32,795 basehttp 181174 139988150777600 "GET /orders/ HTTP/1.1" 200 3166
+INFO 2022-05-28 14:10:35,060 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:10:37,196 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:10:38,498 basehttp 181174 139988150777600 "GET /goods/8/ HTTP/1.1" 200 4333
+INFO 2022-05-28 14:10:41,694 basehttp 181174 139988150777600 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:10:41,718 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:10:43,713 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 4663
+INFO 2022-05-28 14:11:15,468 basehttp 181174 139988150777600 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-05-28 14:11:15,487 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:11:17,699 basehttp 181174 139988150777600 "GET /orders/ HTTP/1.1" 200 4063
+INFO 2022-05-28 14:11:58,646 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:12:00,129 basehttp 181174 139988150777600 "GET /goods/9/ HTTP/1.1" 200 4284
+INFO 2022-05-28 14:12:03,544 basehttp 181174 139988150777600 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:12:03,568 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15959
+INFO 2022-05-28 14:12:06,575 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 4665
+INFO 2022-05-28 14:12:24,747 basehttp 181174 139988150777600 "GET /orders/ HTTP/1.1" 200 4962
+INFO 2022-05-28 14:12:28,833 basehttp 181174 139988150777600 "POST /orders/13 HTTP/1.1" 302 0
+INFO 2022-05-28 14:12:28,856 basehttp 181174 139988150777600 "GET /orders/ HTTP/1.1" 200 4063
+INFO 2022-05-28 14:12:29,885 basehttp 181174 139988150777600 "POST /orders/12 HTTP/1.1" 302 0
+INFO 2022-05-28 14:12:29,906 basehttp 181174 139988150777600 "GET /orders/ HTTP/1.1" 200 3166
+INFO 2022-05-28 14:12:31,383 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 14:12:33,348 basehttp 181174 139988150777600 "GET /categories/ HTTP/1.1" 200 7255
+INFO 2022-05-28 14:12:34,311 basehttp 181174 139988150777600 "GET / HTTP/1.1" 200 2819
+INFO 2022-05-28 14:12:44,019 basehttp 181174 139988150777600 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:12:44,036 basehttp 181174 139988150777600 "GET /login/ HTTP/1.1" 200 3883
+INFO 2022-05-28 14:12:45,951 basehttp 181174 139988150777600 "GET /login/?next=/login/ HTTP/1.1" 200 3883
+INFO 2022-05-28 14:12:47,008 basehttp 181174 139988150777600 "GET /register/ HTTP/1.1" 200 4080
+INFO 2022-05-28 14:12:47,722 basehttp 181174 139988150777600 "GET /login/?next=/register/ HTTP/1.1" 200 3883
+INFO 2022-05-28 14:13:17,464 basehttp 181174 139988150777600 "POST /login/?next=/register/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:13:17,488 basehttp 181174 139988150777600 "GET /register/ HTTP/1.1" 200 4533
+INFO 2022-05-28 14:13:19,775 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 14:14:08,670 basehttp 181174 139988150777600 "GET /goods/6/update/ HTTP/1.1" 200 5138
+INFO 2022-05-28 14:14:15,131 basehttp 181174 139988150777600 "POST /goods/6/update/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:14:15,168 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 22837
+INFO 2022-05-28 14:14:19,646 basehttp 181174 139988150777600 "POST /goods/6/delete/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:14:19,671 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 20706
+INFO 2022-05-28 14:14:24,163 basehttp 181174 139988150777600 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-05-28 14:14:59,309 basehttp 181174 139988150777600 "POST /goods/create/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:14:59,348 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 22841
+INFO 2022-05-28 14:15:04,705 basehttp 181174 139988150777600 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:15:04,727 basehttp 181174 139988150777600 "GET /login/ HTTP/1.1" 200 3883
+INFO 2022-05-28 14:15:20,477 basehttp 181174 139988150777600 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:15:20,494 basehttp 181174 139988150777600 "GET / HTTP/1.1" 200 2819
+INFO 2022-05-28 14:15:22,118 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15961
+INFO 2022-05-28 14:15:26,374 basehttp 181174 139988150777600 "GET /goods/17/ HTTP/1.1" 200 4124
+INFO 2022-05-28 14:15:29,340 basehttp 181174 139988150777600 "POST /goods/17/add/ HTTP/1.1" 302 0
+INFO 2022-05-28 14:15:29,362 basehttp 181174 139988150777600 "GET /goods/ HTTP/1.1" 200 15961
+INFO 2022-05-28 14:15:31,476 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 4661
+INFO 2022-05-28 14:15:33,498 basehttp 181174 139988150777600 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-05-28 14:15:33,560 basehttp 181174 139988150777600 "GET /cart/ HTTP/1.1" 200 2708
+INFO 2022-05-28 16:21:05,932 autoreload 184145 140056533419840 Watching for file changes with StatReloader
+INFO 2022-06-08 23:13:31,394 autoreload 415228 140146720188224 Watching for file changes with StatReloader
+INFO 2022-06-08 23:14:03,873 autoreload 415242 140353401206592 Watching for file changes with StatReloader
+INFO 2022-06-08 23:14:07,989 basehttp 415242 140353323243264 "GET / HTTP/1.1" 200 2819
+INFO 2022-06-08 23:14:08,018 basehttp 415242 140353323243264 "GET /static/drug_store/css/base.css HTTP/1.1" 200 1349
+INFO 2022-06-08 23:14:08,088 basehttp 415242 140353323243264 "GET /static/drug_store/images/kindpng_2307117.png HTTP/1.1" 200 23453
+WARNING 2022-06-08 23:14:08,373 log 415242 140353323243264 Not Found: /favicon.ico
+WARNING 2022-06-08 23:14:08,373 basehttp 415242 140353323243264 "GET /favicon.ico HTTP/1.1" 404 6903
+INFO 2022-06-08 23:14:11,560 basehttp 415242 140353323243264 "GET /goods/ HTTP/1.1" 200 15961
+INFO 2022-06-08 23:14:11,619 basehttp 415242 140353323243264 "GET /media/products/2022/05/28/en-fentanil.jpg HTTP/1.1" 200 10201
+INFO 2022-06-08 23:14:11,623 basehttp 415242 140353080387328 "GET /media/products/2022/05/28/mdmc.jpg HTTP/1.1" 200 1903
+INFO 2022-06-08 23:14:11,623 basehttp 415242 140353323243264 "GET /static/drug_store/images/no_image.jpg HTTP/1.1" 200 8140
+INFO 2022-06-08 23:14:11,624 basehttp 415242 140353305409280 "GET /media/products/2022/05/28/indika.jpeg HTTP/1.1" 200 8974
+INFO 2022-06-08 23:14:11,624 basehttp 415242 140353314850560 "GET /media/products/2022/05/28/60639df64ec2b581659a-1000x750_1.jpg HTTP/1.1" 200 3844
+INFO 2022-06-08 23:14:11,626 basehttp 415242 140353088780032 "GET /media/products/2022/05/28/41681895_303.jpg HTTP/1.1" 200 9927
+INFO 2022-06-08 23:14:11,627 basehttp 415242 140353071994624 "GET /media/products/2022/05/28/morphine.jpg HTTP/1.1" 200 11081
+INFO 2022-06-08 23:14:11,631 basehttp 415242 140353314850560 "GET /media/products/2022/05/28/sativa.png HTTP/1.1" 200 26090
+INFO 2022-06-08 23:14:11,631 basehttp 415242 140353088780032 "GET /media/products/2022/05/28/ruderalika.jpg HTTP/1.1" 200 42274
+INFO 2022-06-08 23:14:25,314 basehttp 415242 140353088780032 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-08 23:14:25,318 basehttp 415242 140353088780032 "GET /login HTTP/1.1" 301 0
+INFO 2022-06-08 23:14:25,333 basehttp 415242 140353088780032 "GET /login/ HTTP/1.1" 200 3883
+INFO 2022-06-08 23:15:02,653 basehttp 415242 140353088780032 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-08 23:15:02,673 basehttp 415242 140353088780032 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:15:05,547 basehttp 415242 140353088780032 "GET /goods/ HTTP/1.1" 200 22841
+ERROR 2022-06-08 23:15:07,809 log 415242 140353088780032 Internal Server Error: /goods/8/update/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 909, in _resolve_lookup
+    current = current()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/utils.py", line 66, in as_p
+    return self.render(self.template_name_p)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/utils.py", line 55, in render
+    context or self.get_context(),
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/forms.py", line 325, in get_context
+    if bf.is_hidden:
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/boundfield.py", line 214, in is_hidden
+    return self.field.widget.is_hidden
+AttributeError: 'ImageField' object has no attribute 'is_hidden'
+ERROR 2022-06-08 23:15:07,810 basehttp 415242 140353088780032 "GET /goods/8/update/ HTTP/1.1" 500 183552
+INFO 2022-06-08 23:18:56,338 autoreload 415242 140353401206592 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:18:56,622 autoreload 417324 140088094590784 Watching for file changes with StatReloader
+INFO 2022-06-08 23:19:53,912 autoreload 417324 140088094590784 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:19:54,199 autoreload 417521 140077341558592 Watching for file changes with StatReloader
+INFO 2022-06-08 23:21:42,292 autoreload 417521 140077341558592 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:21:42,591 autoreload 417714 140704058775360 Watching for file changes with StatReloader
+INFO 2022-06-08 23:24:20,221 basehttp 417714 140703980812032 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:24:20,595 autoreload 417714 140704058775360 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:24:20,938 autoreload 417994 139743550228288 Watching for file changes with StatReloader
+INFO 2022-06-08 23:24:44,463 autoreload 418073 139925539682112 Watching for file changes with StatReloader
+INFO 2022-06-08 23:24:47,103 basehttp 418073 139925461718784 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:24:48,758 basehttp 418073 139925461718784 "GET /goods/ HTTP/1.1" 200 22841
+ERROR 2022-06-08 23:24:50,470 log 418073 139925461718784 Internal Server Error: /goods/8/update/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 62, in render
+    return self.template.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 958, in render_annotated
+    return self.render(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 712, in resolve
+    obj = self.var.resolve(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 909, in _resolve_lookup
+    current = current()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/utils.py", line 66, in as_p
+    return self.render(self.template_name_p)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/utils.py", line 55, in render
+    context or self.get_context(),
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/forms.py", line 325, in get_context
+    if bf.is_hidden:
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/forms/boundfield.py", line 214, in is_hidden
+    return self.field.widget.is_hidden
+AttributeError: 'FileField' object has no attribute 'is_hidden'
+ERROR 2022-06-08 23:24:50,472 basehttp 418073 139925461718784 "GET /goods/8/update/ HTTP/1.1" 500 183546
+INFO 2022-06-08 23:25:24,471 autoreload 418073 139925539682112 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:25:27,513 autoreload 418244 140683844245312 Watching for file changes with StatReloader
+INFO 2022-06-08 23:25:29,240 basehttp 418244 140683766281984 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:25:30,774 basehttp 418244 140683766281984 "GET /goods/ HTTP/1.1" 200 22841
+INFO 2022-06-08 23:25:32,342 basehttp 418244 140683766281984 "GET /goods/8/update/ HTTP/1.1" 200 4967
+INFO 2022-06-08 23:25:59,618 basehttp 418244 140683766281984 "POST /goods/8/update/ HTTP/1.1" 302 0
+INFO 2022-06-08 23:25:59,637 basehttp 418244 140683766281984 "GET /goods/ HTTP/1.1" 200 22841
+INFO 2022-06-08 23:26:04,151 basehttp 418244 140683766281984 "GET /goods/8/ HTTP/1.1" 200 4757
+INFO 2022-06-08 23:26:08,151 basehttp 418244 140683766281984 "GET /goods/8/update/ HTTP/1.1" 200 4967
+INFO 2022-06-08 23:31:22,954 autoreload 418244 140683844245312 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:31:23,267 autoreload 418975 139656219318080 Watching for file changes with StatReloader
+INFO 2022-06-08 23:32:31,476 autoreload 418975 139656219318080 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/forms.py changed, reloading.
+INFO 2022-06-08 23:32:31,780 autoreload 419124 140183512016704 Watching for file changes with StatReloader
+INFO 2022-06-08 23:35:19,396 basehttp 419124 140183366772480 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:35:21,005 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22841
+INFO 2022-06-08 23:35:22,397 basehttp 419124 140183366772480 "GET /goods/8/update/ HTTP/1.1" 200 5218
+INFO 2022-06-08 23:35:29,968 basehttp 419124 140183366772480 "POST /goods/8/update/ HTTP/1.1" 302 0
+INFO 2022-06-08 23:35:29,986 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:35:30,000 basehttp 419124 140183366772480 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 200 106382
+INFO 2022-06-08 23:36:06,727 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:36:06,745 basehttp 419124 140183366772480 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:36:09,738 basehttp 419124 140183366772480 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:36:11,000 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:36:13,833 basehttp 419124 140183366772480 "GET /goods/create/ HTTP/1.1" 200 4792
+INFO 2022-06-08 23:36:16,115 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:36:17,272 basehttp 419124 140183366772480 "GET /categories/6/update/ HTTP/1.1" 200 4028
+INFO 2022-06-08 23:36:19,839 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:37:28,880 basehttp 419124 140183366772480 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:37:29,612 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:37:31,384 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:37:31,402 basehttp 419124 140183366772480 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:37:32,861 basehttp 419124 140183366772480 "GET /goods/8/update/ HTTP/1.1" 200 5336
+INFO 2022-06-08 23:38:27,331 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:38:28,671 basehttp 419124 140183366772480 "GET /categories/6/update/ HTTP/1.1" 200 4130
+INFO 2022-06-08 23:40:30,120 basehttp 419124 140183366772480 "GET /categories/6/update/ HTTP/1.1" 200 4125
+INFO 2022-06-08 23:42:02,313 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:42:03,350 basehttp 419124 140183366772480 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:42:04,371 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:42:04,390 basehttp 419124 140183366772480 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:42:05,773 basehttp 419124 140183366772480 "GET /goods/8/update/ HTTP/1.1" 200 5339
+INFO 2022-06-08 23:42:45,964 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:42:46,945 basehttp 419124 140183366772480 "GET /categories/6/update/ HTTP/1.1" 200 4089
+INFO 2022-06-08 23:42:57,759 basehttp 419124 140183366772480 "GET /categories/ HTTP/1.1" 200 10939
+INFO 2022-06-08 23:42:58,153 basehttp 419124 140183366772480 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:42:59,412 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:42:59,427 basehttp 419124 140183366772480 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:43:00,804 basehttp 419124 140183366772480 "GET /goods/8/update/ HTTP/1.1" 200 5339
+INFO 2022-06-08 23:43:03,241 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:43:05,461 basehttp 419124 140183366772480 "GET /goods/8/ HTTP/1.1" 200 4770
+INFO 2022-06-08 23:43:06,957 basehttp 419124 140183366772480 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:44:19,214 basehttp 419124 140183366772480 "GET /goods/8/ HTTP/1.1" 200 4777
+INFO 2022-06-08 23:44:19,235 basehttp 419124 140183366772480 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:44:20,891 basehttp 419124 140183366772480 "GET /categories/4/ HTTP/1.1" 200 7362
+INFO 2022-06-08 23:51:54,881 autoreload 420642 140662008092480 Watching for file changes with StatReloader
+INFO 2022-06-08 23:51:56,071 basehttp 420642 140661856663296 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:51:59,279 basehttp 420642 140661856663296 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:51:59,295 basehttp 420642 140661856663296 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:52:00,611 basehttp 420642 140661856663296 "GET /goods/8/ HTTP/1.1" 200 4777
+INFO 2022-06-08 23:52:01,727 basehttp 420642 140661856663296 "GET /categories/4/ HTTP/1.1" 200 7354
+INFO 2022-06-08 23:55:23,855 basehttp 420642 140661856663296 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:55:23,875 basehttp 420642 140661856663296 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-08 23:55:28,707 basehttp 420642 140661856663296 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:55:29,312 basehttp 420642 140661856663296 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:55:31,124 basehttp 420642 140661856663296 "GET / HTTP/1.1" 200 3243
+INFO 2022-06-08 23:55:32,105 basehttp 420642 140661856663296 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:55:34,162 basehttp 420642 140661856663296 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-08 23:55:36,457 basehttp 420642 140661856663296 "GET /goods/8/ HTTP/1.1" 200 4777
+INFO 2022-06-08 23:55:37,606 basehttp 420642 140661856663296 "GET /categories/4/ HTTP/1.1" 200 7354
+INFO 2022-06-08 23:58:34,691 autoreload 420642 140662008092480 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-08 23:58:35,030 autoreload 421180 139787018594112 Watching for file changes with StatReloader
+INFO 2022-06-08 23:58:35,258 basehttp 421180 139786941155072 "GET /goods/8/ HTTP/1.1" 200 4777
+INFO 2022-06-08 23:58:35,278 basehttp 421180 139786941155072 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+ERROR 2022-06-08 23:58:36,525 log 421180 139786941155072 Internal Server Error: /categories/4/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Empty variable tag on line 11
+ERROR 2022-06-08 23:58:36,526 basehttp 421180 139786941155072 "GET /categories/4/ HTTP/1.1" 500 171551
+INFO 2022-06-08 23:58:50,709 basehttp 421180 139786941155072 "GET /categories/4/ HTTP/1.1" 200 7359
+INFO 2022-06-08 23:58:52,301 basehttp 421180 139786941155072 "GET /goods/8/ HTTP/1.1" 200 4777
+INFO 2022-06-08 23:58:53,294 basehttp 421180 139786941155072 "GET /categories/4/ HTTP/1.1" 200 7359
+INFO 2022-06-08 23:59:30,170 autoreload 421180 139787018594112 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-08 23:59:30,445 autoreload 421252 140167618426688 Watching for file changes with StatReloader
+INFO 2022-06-09 00:01:22,647 autoreload 421252 140167618426688 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 00:01:22,930 autoreload 421553 140409576118080 Watching for file changes with StatReloader
+INFO 2022-06-09 00:05:14,092 basehttp 421553 140409498154752 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-09 00:05:14,173 basehttp 421553 140409498154752 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 00:05:15,812 basehttp 421553 140409498154752 "GET /goods/8/ HTTP/1.1" 200 4777
+INFO 2022-06-09 00:05:17,014 basehttp 421553 140409498154752 "GET /categories/4/ HTTP/1.1" 200 7361
+INFO 2022-06-09 00:05:24,353 basehttp 421553 140409498154752 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-09 00:05:27,359 basehttp 421553 140409498154752 "GET /goods/14/ HTTP/1.1" 200 4712
+INFO 2022-06-09 00:05:28,447 basehttp 421553 140409498154752 "GET /categories/5/ HTTP/1.1" 200 7319
+INFO 2022-06-09 00:05:31,417 basehttp 421553 140409498154752 "GET /goods/17/ HTTP/1.1" 200 4555
+INFO 2022-06-09 00:05:52,501 basehttp 421553 140409498154752 "GET /goods/ HTTP/1.1" 200 22854
+INFO 2022-06-09 00:05:54,576 basehttp 421553 140409498154752 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:05:54,590 basehttp 421553 140409498154752 "GET /login/ HTTP/1.1" 200 3883
+INFO 2022-06-09 00:07:12,328 basehttp 421553 140409498154752 "GET /login/ HTTP/1.1" 200 3661
+INFO 2022-06-09 00:07:44,177 basehttp 421553 140409498154752 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:07:44,189 basehttp 421553 140409498154752 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 00:11:34,027 autoreload 421553 140409576118080 /home/leshii/Документы/isp/ispLabs/lab3_django/homepage/forms.py changed, reloading.
+INFO 2022-06-09 00:11:34,338 autoreload 422593 139689088202560 Watching for file changes with StatReloader
+INFO 2022-06-09 00:11:37,683 basehttp 422593 139689010501376 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:11:37,764 basehttp 422593 139689010501376 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 00:11:40,981 basehttp 422593 139689010501376 "GET /orders/ HTTP/1.1" 200 6322
+INFO 2022-06-09 00:11:42,713 basehttp 422593 139689010501376 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:11:42,729 basehttp 422593 139689010501376 "GET /login/ HTTP/1.1" 200 3661
+INFO 2022-06-09 00:12:12,387 autoreload 422593 139689088202560 /home/leshii/Документы/isp/ispLabs/lab3_django/homepage/forms.py changed, reloading.
+INFO 2022-06-09 00:12:12,686 autoreload 422649 140583506143040 Watching for file changes with StatReloader
+INFO 2022-06-09 00:16:28,535 autoreload 422649 140583506143040 /home/leshii/Документы/isp/ispLabs/lab3_django/homepage/forms.py changed, reloading.
+INFO 2022-06-09 00:16:28,818 autoreload 423089 139640420034368 Watching for file changes with StatReloader
+INFO 2022-06-09 00:16:30,383 basehttp 423089 139640342071040 "GET / HTTP/1.1" 200 2559
+ERROR 2022-06-09 00:16:32,167 log 423089 139640342071040 Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/decorators/debug.py", line 92, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 67, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 144, in get
+    return self.render_to_response(self.get_context_data())
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/views.py", line 102, in get_context_data
+    context = super().get_context_data(**kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 74, in get_context_data
+    kwargs["form"] = self.get_form()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 39, in get_form
+    return form_class(**self.get_form_kwargs())
+TypeError: __init__() got an unexpected keyword argument 'request'
+ERROR 2022-06-09 00:16:32,168 basehttp 423089 139640342071040 "GET /login/?next=/ HTTP/1.1" 500 126445
+INFO 2022-06-09 00:21:49,877 autoreload 423089 139640420034368 /home/leshii/Документы/isp/ispLabs/lab3_django/homepage/forms.py changed, reloading.
+INFO 2022-06-09 00:21:50,149 autoreload 423457 140463708768064 Watching for file changes with StatReloader
+INFO 2022-06-09 00:21:51,486 basehttp 423457 140463630804736 "GET /login/?next=/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:21:53,856 basehttp 423457 140463630804736 "GET /register/ HTTP/1.1" 200 3858
+INFO 2022-06-09 00:22:25,445 basehttp 423457 140463630804736 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:22:25,524 basehttp 423457 140463630804736 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 00:22:26,253 basehttp 423457 140463630804736 "GET / HTTP/1.1" 200 2559
+INFO 2022-06-09 00:22:27,195 basehttp 423457 140463630804736 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:22:27,863 basehttp 423457 140463630804736 "GET /categories/ HTTP/1.1" 200 7006
+INFO 2022-06-09 00:22:29,703 basehttp 423457 140463630804736 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:23:37,027 basehttp 423457 140463630804736 "GET /admin/drug_store/product/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:23:37,048 basehttp 423457 140463630804736 "GET /admin/login/?next=/admin/drug_store/product/ HTTP/1.1" 200 2253
+INFO 2022-06-09 00:23:37,070 basehttp 423457 140463630804736 "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+INFO 2022-06-09 00:23:37,070 basehttp 423457 140463541577472 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2616
+INFO 2022-06-09 00:23:37,071 basehttp 423457 140463549970176 "GET /static/admin/css/login.css HTTP/1.1" 200 954
+INFO 2022-06-09 00:23:37,071 basehttp 423457 140463533184768 "GET /static/admin/css/responsive.css HTTP/1.1" 200 18575
+INFO 2022-06-09 00:23:37,129 basehttp 423457 140463533184768 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3401
+INFO 2022-06-09 00:23:37,131 basehttp 423457 140463533184768 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2022-06-09 00:23:37,186 basehttp 423457 140463533184768 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2022-06-09 00:23:37,189 basehttp 423457 140463630804736 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2022-06-09 00:23:47,190 basehttp 423457 140463630804736 "POST /admin/login/?next=/admin/drug_store/product/ HTTP/1.1" 200 2415
+INFO 2022-06-09 00:23:47,316 basehttp 423457 140463630804736 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2022-06-09 00:23:55,119 basehttp 423457 140463630804736 "POST /admin/login/?next=/admin/drug_store/product/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:23:55,218 basehttp 423457 140463630804736 "GET /admin/drug_store/product/ HTTP/1.1" 200 17112
+INFO 2022-06-09 00:23:55,320 basehttp 423457 140463533184768 "GET /static/admin/css/forms.css HTTP/1.1" 200 8878
+INFO 2022-06-09 00:23:55,320 basehttp 423457 140463630804736 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6932
+INFO 2022-06-09 00:23:55,321 basehttp 423457 140463524792064 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2022-06-09 00:23:55,321 basehttp 423457 140463516399360 "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+INFO 2022-06-09 00:23:55,322 basehttp 423457 140463541577472 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2022-06-09 00:23:55,332 basehttp 423457 140463516399360 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2022-06-09 00:23:55,332 basehttp 423457 140463549970176 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 00:23:55,332 basehttp 423457 140463630804736 "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+INFO 2022-06-09 00:23:55,333 basehttp 423457 140463524792064 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+INFO 2022-06-09 00:23:55,333 basehttp 423457 140463533184768 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+INFO 2022-06-09 00:23:55,334 basehttp 423457 140463541577472 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2022-06-09 00:23:55,367 basehttp 423457 140463541577472 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11097
+INFO 2022-06-09 00:23:55,415 basehttp 423457 140463541577472 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2022-06-09 00:23:55,415 basehttp 423457 140463533184768 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2022-06-09 00:23:55,423 basehttp 423457 140463533184768 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2022-06-09 00:24:06,994 basehttp 423457 140463533184768 "GET /admin/drug_store/ HTTP/1.1" 200 3249
+INFO 2022-06-09 00:24:07,011 basehttp 423457 140463533184768 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+INFO 2022-06-09 00:24:07,107 basehttp 423457 140463533184768 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2022-06-09 00:24:09,894 basehttp 423457 140463533184768 "GET /admin/ HTTP/1.1" 200 7430
+INFO 2022-06-09 00:24:11,276 basehttp 423457 140463533184768 "GET /admin/auth/user/ HTTP/1.1" 200 9238
+INFO 2022-06-09 00:24:11,311 basehttp 423457 140463533184768 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 00:24:11,353 basehttp 423457 140463533184768 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2022-06-09 00:24:11,353 basehttp 423457 140463541577472 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2022-06-09 00:24:11,362 basehttp 423457 140463541577472 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2022-06-09 00:24:17,088 basehttp 423457 140463541577472 "GET /admin/auth/user/1/change/ HTTP/1.1" 200 17478
+INFO 2022-06-09 00:24:17,110 basehttp 423457 140463524792064 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4360
+INFO 2022-06-09 00:24:17,110 basehttp 423457 140463549970176 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 12350
+INFO 2022-06-09 00:24:17,110 basehttp 423457 140463533184768 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2022-06-09 00:24:17,111 basehttp 423457 140463630804736 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+INFO 2022-06-09 00:24:17,120 basehttp 423457 140463541577472 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 00:24:17,167 basehttp 423457 140463541577472 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 492
+INFO 2022-06-09 00:24:17,167 basehttp 423457 140463524792064 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2022-06-09 00:24:17,244 basehttp 423457 140463524792064 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2022-06-09 00:24:17,244 basehttp 423457 140463541577472 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2022-06-09 00:24:17,244 basehttp 423457 140463630804736 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2022-06-09 00:24:17,245 basehttp 423457 140463533184768 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2022-06-09 00:24:17,245 basehttp 423457 140463549970176 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2022-06-09 00:25:08,287 basehttp 423457 140463549970176 "GET /goods/8/update/ HTTP/1.1" 200 5117
+INFO 2022-06-09 00:25:11,172 basehttp 423457 140463549970176 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:25:11,187 basehttp 423457 140463549970176 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:25:13,683 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:25:16,910 basehttp 423457 140463549970176 "GET /login/?next=/goods/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:25:42,575 basehttp 423457 140463549970176 "POST /login/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:25:42,593 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22632
+INFO 2022-06-09 00:31:11,052 basehttp 423457 140463549970176 "GET /categories/4/ HTTP/1.1" 200 7396
+INFO 2022-06-09 00:31:11,167 basehttp 423457 140463549970176 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+ERROR 2022-06-09 00:31:16,578 log 423457 140463549970176 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'el'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader.py", line 42, in select_template
+    return engine.get_template(template_name)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/defaulttags.py", line 954, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 49: 'el', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+ERROR 2022-06-09 00:31:16,580 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 500 213906
+INFO 2022-06-09 00:31:30,936 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 3167
+INFO 2022-06-09 00:32:58,833 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 00:33:01,268 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 00:33:04,786 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 6322
+INFO 2022-06-09 00:33:08,647 basehttp 423457 140463549970176 "POST /orders/7 HTTP/1.1" 302 0
+INFO 2022-06-09 00:33:08,666 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 5423
+INFO 2022-06-09 00:33:09,375 basehttp 423457 140463549970176 "POST /orders/9 HTTP/1.1" 302 0
+INFO 2022-06-09 00:33:09,402 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 4524
+INFO 2022-06-09 00:33:10,012 basehttp 423457 140463549970176 "POST /orders/10 HTTP/1.1" 302 0
+INFO 2022-06-09 00:33:10,033 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 3625
+INFO 2022-06-09 00:33:13,194 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 3625
+INFO 2022-06-09 00:34:55,569 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 00:34:57,455 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 00:34:58,168 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 00:35:00,427 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:35:02,379 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 00:35:07,492 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:35:08,888 basehttp 423457 140463549970176 "GET /goods/8/ HTTP/1.1" 200 4812
+INFO 2022-06-09 00:35:11,838 basehttp 423457 140463549970176 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:35:11,859 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:35:13,401 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 4660
+INFO 2022-06-09 00:35:17,694 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 5179
+INFO 2022-06-09 00:35:50,632 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 4660
+INFO 2022-06-09 00:35:55,583 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 5179
+INFO 2022-06-09 00:36:09,274 basehttp 423457 140463549970176 "POST /cart/15 HTTP/1.1" 302 0
+INFO 2022-06-09 00:36:09,289 basehttp 423457 140463549970176 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 00:36:10,666 basehttp 423457 140463549970176 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 00:36:13,317 basehttp 423457 140463549970176 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 00:36:51,949 basehttp 423457 140463549970176 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 00:36:53,930 basehttp 423457 140463549970176 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 00:36:56,485 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:36:56,512 basehttp 423457 140463549970176 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 00:37:51,596 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:38:32,104 basehttp 423457 140463549970176 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 00:38:33,479 basehttp 423457 140463549970176 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:44:57,760 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 22882
+INFO 2022-06-09 00:44:57,788 basehttp 423457 140463533184768 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 00:45:07,182 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:45:17,280 basehttp 423457 140463533184768 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 00:45:17,830 basehttp 423457 140463533184768 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 00:45:19,274 basehttp 423457 140463533184768 "GET /goods/create/ HTTP/1.1" 200 4827
+INFO 2022-06-09 00:45:20,311 basehttp 423457 140463533184768 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 00:45:23,840 basehttp 423457 140463533184768 "GET /goods/create_ct/ HTTP/1.1" 200 3920
+INFO 2022-06-09 00:45:27,542 basehttp 423457 140463533184768 "GET /goods/create/ HTTP/1.1" 200 4827
+INFO 2022-06-09 00:45:40,814 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:45:42,801 basehttp 423457 140463533184768 "GET /goods/9/ HTTP/1.1" 200 4750
+INFO 2022-06-09 00:45:46,349 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:45:49,243 basehttp 423457 140463533184768 "GET /goods/8/update/ HTTP/1.1" 200 5374
+INFO 2022-06-09 00:49:14,764 basehttp 423457 140463533184768 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:49:14,777 basehttp 423457 140463533184768 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:49:17,742 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:49:19,789 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3438
+INFO 2022-06-09 00:50:41,542 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3458
+INFO 2022-06-09 00:51:50,092 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3455
+INFO 2022-06-09 00:51:52,964 basehttp 423457 140463533184768 "GET /register/ HTTP/1.1" 200 3858
+INFO 2022-06-09 00:51:56,709 basehttp 423457 140463533184768 "GET /login/?next=/register/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:52:00,192 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:52:00,248 basehttp 423457 140463533184768 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 00:52:11,841 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3437
+INFO 2022-06-09 00:52:15,092 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3437
+INFO 2022-06-09 00:52:16,235 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3437
+INFO 2022-06-09 00:52:55,526 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3404
+INFO 2022-06-09 00:53:33,433 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3402
+INFO 2022-06-09 00:53:35,292 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3402
+INFO 2022-06-09 00:54:06,055 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3402
+INFO 2022-06-09 00:54:21,379 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 3404
+INFO 2022-06-09 00:54:38,551 basehttp 423457 140463533184768 "GET /login/?next=/goods/8/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:54:40,547 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 15720
+INFO 2022-06-09 00:54:43,806 basehttp 423457 140463533184768 "GET /login/?next=/goods/ HTTP/1.1" 200 3662
+INFO 2022-06-09 00:55:01,970 basehttp 423457 140463533184768 "POST /login/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 00:55:01,987 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 00:55:04,677 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 4950
+INFO 2022-06-09 00:55:24,978 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 4829
+INFO 2022-06-09 01:04:27,670 basehttp 423457 140463533184768 "GET /goods/8/ HTTP/1.1" 200 4829
+INFO 2022-06-09 01:04:27,694 basehttp 423457 140463533184768 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 01:04:39,217 basehttp 423457 140463533184768 "GET /goods/create/ HTTP/1.1" 200 4827
+INFO 2022-06-09 01:04:55,610 basehttp 423457 140463533184768 "POST /goods/create/ HTTP/1.1" 200 4962
+INFO 2022-06-09 01:05:03,957 basehttp 423457 140463533184768 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:05:53,006 autoreload 423457 140463708768064 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 01:05:53,298 autoreload 427437 140342750558016 Watching for file changes with StatReloader
+INFO 2022-06-09 01:07:47,709 autoreload 427437 140342750558016 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 01:07:48,016 autoreload 428142 140642608412480 Watching for file changes with StatReloader
+INFO 2022-06-09 01:09:48,499 basehttp 428142 140642462201600 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 01:09:50,669 basehttp 428142 140642462201600 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:09:53,508 basehttp 428142 140642462201600 "GET /goods/8/ HTTP/1.1" 200 4829
+INFO 2022-06-09 01:10:25,772 basehttp 428142 140642462201600 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 01:10:25,792 basehttp 428142 140642462201600 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:10:27,477 basehttp 428142 140642462201600 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 01:10:28,803 basehttp 428142 140642462201600 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 01:10:30,751 basehttp 428142 140642462201600 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:12:08,846 autoreload 428142 140642608412480 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 01:12:09,180 autoreload 428912 140432634398528 Watching for file changes with StatReloader
+INFO 2022-06-09 01:13:01,986 autoreload 428912 140432634398528 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 01:13:02,264 autoreload 428968 139713954965312 Watching for file changes with StatReloader
+INFO 2022-06-09 01:18:10,550 autoreload 429515 140720221103936 Watching for file changes with StatReloader
+INFO 2022-06-09 01:18:12,368 basehttp 429515 140720143140608 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 01:18:13,841 basehttp 429515 140720143140608 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:18:13,858 basehttp 429515 140720143140608 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 01:18:14,737 basehttp 429515 140720143140608 "GET /goods/8/ HTTP/1.1" 200 4829
+INFO 2022-06-09 01:19:45,601 basehttp 429515 140720143140608 "GET /goods/8/ HTTP/1.1" 200 4902
+INFO 2022-06-09 01:19:59,152 basehttp 429515 140720143140608 "GET /goods/8/ HTTP/1.1" 200 4899
+INFO 2022-06-09 01:20:08,060 basehttp 429515 140720143140608 "GET /goods/8/ HTTP/1.1" 200 4898
+ERROR 2022-06-09 01:20:16,236 log 429515 140720143140608 Internal Server Error: /goods/8/add/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/decorators/http.py", line 43, in inner
+    return func(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py", line 72, in form_valid
+    order.delete()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/models/base.py", line 1087, in delete
+    raise ValueError(
+ValueError: Order object can't be deleted because its id attribute is set to None.
+ERROR 2022-06-09 01:20:16,238 basehttp 429515 140720143140608 "POST /goods/8/add/ HTTP/1.1" 500 98561
+INFO 2022-06-09 01:23:01,977 autoreload 429515 140720221103936 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 01:23:02,302 autoreload 430082 140697151510336 Watching for file changes with StatReloader
+INFO 2022-06-09 01:23:06,106 basehttp 430082 140697073547008 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 01:23:06,134 basehttp 430082 140697073547008 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:23:08,367 basehttp 430082 140697073547008 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 01:23:09,114 basehttp 430082 140697073547008 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 01:23:10,875 basehttp 430082 140697073547008 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:40:15,447 autoreload 432138 140074959279936 Watching for file changes with StatReloader
+INFO 2022-06-09 01:40:16,697 basehttp 432138 140074881316608 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 01:40:18,621 basehttp 432138 140074881316608 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 01:40:18,638 basehttp 432138 140074881316608 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 01:40:29,104 basehttp 432138 140074881316608 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 01:40:29,122 basehttp 432138 140074881316608 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 01:40:31,570 basehttp 432138 140074881316608 "GET /register/ HTTP/1.1" 200 3858
+INFO 2022-06-09 01:41:00,470 basehttp 432138 140074881316608 "POST /register/ HTTP/1.1" 302 0
+INFO 2022-06-09 01:41:00,473 basehttp 432138 140074881316608 "GET /login HTTP/1.1" 301 0
+INFO 2022-06-09 01:41:00,531 basehttp 432138 140074881316608 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 01:45:45,345 autoreload 432138 140074959279936 /home/leshii/Документы/isp/ispLabs/lab3_django/homepage/views.py changed, reloading.
+INFO 2022-06-09 01:45:45,663 autoreload 432913 140102112978752 Watching for file changes with StatReloader
+INFO 2022-06-09 01:45:53,125 basehttp 432913 140101967410944 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 01:46:05,287 autoreload 432913 140102112978752 /home/leshii/Документы/isp/ispLabs/lab3_django/homepage/views.py changed, reloading.
+INFO 2022-06-09 01:46:05,583 autoreload 432967 140668181083968 Watching for file changes with StatReloader
+INFO 2022-06-09 01:47:32,946 basehttp 432967 140668030678784 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-09 01:47:32,961 basehttp 432967 140668030678784 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 01:47:35,030 basehttp 432967 140668030678784 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 01:47:39,781 basehttp 432967 140668030678784 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 01:47:44,019 basehttp 432967 140668030678784 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 01:47:44,037 basehttp 432967 140668030678784 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 01:47:45,642 basehttp 432967 140668030678784 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 01:47:47,946 basehttp 432967 140668030678784 "GET /cart/ HTTP/1.1" 200 4736
+INFO 2022-06-09 01:47:49,905 basehttp 432967 140668030678784 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 01:47:52,055 basehttp 432967 140668030678784 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 01:47:54,873 basehttp 432967 140668030678784 "GET /orders/ HTTP/1.1" 200 4233
+INFO 2022-06-09 01:47:59,640 basehttp 432967 140668030678784 "GET /cart/ HTTP/1.1" 200 4736
+ERROR 2022-06-09 01:48:01,206 log 432967 140668030678784 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 65, in post
+    Order.product.stock -= Order.amount
+AttributeError: 'ForwardManyToOneDescriptor' object has no attribute 'stock'
+ERROR 2022-06-09 01:48:01,207 basehttp 432967 140668030678784 "POST /cart/checkout HTTP/1.1" 500 84161
+INFO 2022-06-09 01:48:43,739 autoreload 432967 140668181083968 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 01:48:44,007 autoreload 433342 139629443393344 Watching for file changes with StatReloader
+INFO 2022-06-09 01:50:26,776 autoreload 433342 139629443393344 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 01:50:27,048 autoreload 433428 140092315948864 Watching for file changes with StatReloader
+INFO 2022-06-09 01:50:30,402 basehttp 433428 140092169516800 "POST /cart/16 HTTP/1.1" 302 0
+INFO 2022-06-09 01:50:30,422 basehttp 433428 140092169516800 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 01:50:31,744 basehttp 433428 140092169516800 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 01:50:33,073 basehttp 433428 140092169516800 "GET /goods/8/ HTTP/1.1" 200 4474
+ERROR 2022-06-09 01:50:37,725 log 433428 140092169516800 Internal Server Error: /goods/8/add/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/decorators/http.py", line 43, in inner
+    return func(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py", line 79, in form_valid
+    Order.product.stock = Order.product.stock - Order.amount
+AttributeError: 'ForwardManyToOneDescriptor' object has no attribute 'stock'
+ERROR 2022-06-09 01:50:37,726 basehttp 433428 140092169516800 "POST /goods/8/add/ HTTP/1.1" 500 94353
+INFO 2022-06-09 01:54:28,054 autoreload 433428 140092315948864 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 01:54:28,402 autoreload 433754 140350098847552 Watching for file changes with StatReloader
+INFO 2022-06-09 01:59:50,811 autoreload 433754 140350098847552 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 01:59:51,181 autoreload 434108 140655850608448 Watching for file changes with StatReloader
+INFO 2022-06-09 02:02:59,704 autoreload 434108 140655850608448 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 02:03:00,008 autoreload 434468 139625938908992 Watching for file changes with StatReloader
+INFO 2022-06-09 02:03:05,054 basehttp 434468 139625860945664 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:03:05,068 basehttp 434468 139625860945664 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 02:03:09,375 basehttp 434468 139625860945664 "GET /orders/ HTTP/1.1" 200 4104
+INFO 2022-06-09 02:03:12,411 basehttp 434468 139625860945664 "GET /cart/ HTTP/1.1" 200 4736
+INFO 2022-06-09 02:03:38,881 basehttp 434468 139625860945664 "GET /cart/ HTTP/1.1" 200 4611
+INFO 2022-06-09 02:07:42,041 autoreload 434468 139625938908992 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 02:07:42,350 autoreload 434865 140021563557696 Watching for file changes with StatReloader
+INFO 2022-06-09 02:07:46,538 basehttp 434865 140021485594368 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:07:49,063 basehttp 434865 140021485594368 "GET /cart/ HTTP/1.1" 200 4611
+INFO 2022-06-09 02:07:51,580 basehttp 434865 140021485594368 "POST /cart/clear HTTP/1.1" 302 0
+INFO 2022-06-09 02:07:51,603 basehttp 434865 140021485594368 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 02:07:52,859 basehttp 434865 140021485594368 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:07:54,027 basehttp 434865 140021485594368 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 02:07:57,092 basehttp 434865 140021485594368 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:07:57,111 basehttp 434865 140021485594368 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:08:01,192 basehttp 434865 140021485594368 "GET /orders/ HTTP/1.1" 200 4104
+INFO 2022-06-09 02:08:05,144 basehttp 434865 140021485594368 "GET /cart/ HTTP/1.1" 200 4611
+INFO 2022-06-09 02:08:08,361 basehttp 434865 140021485594368 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 02:08:08,377 basehttp 434865 140021485594368 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 02:08:09,841 basehttp 434865 140021485594368 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:08:11,492 basehttp 434865 140021485594368 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 02:08:25,127 basehttp 434865 140021485594368 "GET /admin/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:08:25,160 basehttp 434865 140021485594368 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2366
+INFO 2022-06-09 02:08:37,316 basehttp 434865 140021485594368 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:08:37,341 basehttp 434865 140021485594368 "GET /admin/ HTTP/1.1" 200 7430
+INFO 2022-06-09 02:08:40,955 basehttp 434865 140021485594368 "GET /admin/drug_store/product/ HTTP/1.1" 200 17112
+INFO 2022-06-09 02:08:40,984 basehttp 434865 140021485594368 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 02:08:42,387 basehttp 434865 140021485594368 "GET /admin/drug_store/product/8/change/ HTTP/1.1" 200 11357
+INFO 2022-06-09 02:08:42,766 basehttp 434865 140021485594368 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 02:08:42,832 basehttp 434865 140021485594368 "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+INFO 2022-06-09 02:08:51,058 basehttp 434865 140021485594368 "GET /admin/drug_store/product/8/history/ HTTP/1.1" 200 4673
+INFO 2022-06-09 02:08:54,010 basehttp 434865 140021485594368 "GET /admin/drug_store/product/8/change/ HTTP/1.1" 200 11357
+INFO 2022-06-09 02:09:09,313 basehttp 434865 140021485594368 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 02:09:10,560 basehttp 434865 140021485594368 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 02:09:12,441 basehttp 434865 140021485594368 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:09:34,810 autoreload 435157 140092566501184 Watching for file changes with StatReloader
+INFO 2022-06-09 02:09:35,994 basehttp 435157 140092489062144 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 02:09:39,986 basehttp 435157 140092489062144 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:09:40,002 basehttp 435157 140092489062144 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 02:09:59,624 basehttp 435157 140092489062144 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:09:59,636 basehttp 435157 140092489062144 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 02:10:01,843 basehttp 435157 140092489062144 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:10:03,270 basehttp 435157 140092489062144 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 02:10:06,362 basehttp 435157 140092489062144 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:10:06,379 basehttp 435157 140092489062144 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:10:08,397 basehttp 435157 140092489062144 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 02:10:15,892 basehttp 435157 140092489062144 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 02:10:15,925 basehttp 435157 140092489062144 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 02:10:17,523 basehttp 435157 140092489062144 "GET /orders/ HTTP/1.1" 200 4997
+INFO 2022-06-09 02:10:20,302 basehttp 435157 140092489062144 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 02:10:21,854 basehttp 435157 140092489062144 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 02:10:35,401 basehttp 435157 140092489062144 "GET /admin/drug_store/product/8/history/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:10:35,427 basehttp 435157 140092489062144 "GET /admin/login/?next=/admin/drug_store/product/8/history/ HTTP/1.1" 200 2424
+INFO 2022-06-09 02:10:46,991 basehttp 435157 140092489062144 "POST /admin/login/?next=/admin/drug_store/product/8/history/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:10:47,016 basehttp 435157 140092489062144 "GET /admin/drug_store/product/8/history/ HTTP/1.1" 200 4673
+INFO 2022-06-09 02:10:55,452 basehttp 435157 140092489062144 "GET /admin/drug_store/product/8/change/ HTTP/1.1" 200 11357
+INFO 2022-06-09 02:10:55,485 basehttp 435157 140092489062144 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 02:15:38,619 autoreload 435157 140092566501184 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/models.py changed, reloading.
+INFO 2022-06-09 02:15:38,913 autoreload 435756 140401685239616 Watching for file changes with StatReloader
+INFO 2022-06-09 02:17:28,557 autoreload 435756 140401685239616 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/models.py changed, reloading.
+INFO 2022-06-09 02:17:28,809 autoreload 435984 139681986234176 Watching for file changes with StatReloader
+INFO 2022-06-09 02:18:58,008 autoreload 435984 139681986234176 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/models.py changed, reloading.
+INFO 2022-06-09 02:18:58,276 autoreload 436074 139903600846656 Watching for file changes with StatReloader
+INFO 2022-06-09 02:20:35,372 autoreload 436074 139903600846656 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/models.py changed, reloading.
+INFO 2022-06-09 02:20:35,646 autoreload 436252 140256199345984 Watching for file changes with StatReloader
+INFO 2022-06-09 02:22:11,248 autoreload 436252 140256199345984 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/models.py changed, reloading.
+INFO 2022-06-09 02:22:11,530 autoreload 436398 140639564433216 Watching for file changes with StatReloader
+INFO 2022-06-09 02:28:48,564 autoreload 436398 140639564433216 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 02:28:48,864 autoreload 436991 140096657983296 Watching for file changes with StatReloader
+INFO 2022-06-09 02:38:32,553 autoreload 436991 140096657983296 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 02:38:32,845 autoreload 437614 140181326227264 Watching for file changes with StatReloader
+INFO 2022-06-09 02:40:57,486 autoreload 437614 140181326227264 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 02:40:57,743 autoreload 437786 140541320492864 Watching for file changes with StatReloader
+INFO 2022-06-09 02:41:02,257 autoreload 437793 140282394699584 Watching for file changes with StatReloader
+INFO 2022-06-09 02:41:23,609 autoreload 437793 140282394699584 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 02:41:23,906 autoreload 437850 140474981939008 Watching for file changes with StatReloader
+INFO 2022-06-09 02:41:25,435 basehttp 437850 140474903975680 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 02:41:28,255 basehttp 437850 140474903975680 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:41:28,274 basehttp 437850 140474903975680 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 02:41:32,071 basehttp 437850 140474903975680 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:41:45,405 basehttp 437850 140474903975680 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:41:45,424 basehttp 437850 140474903975680 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:45:24,351 autoreload 437850 140474981939008 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 02:45:24,626 autoreload 438219 140372900120384 Watching for file changes with StatReloader
+INFO 2022-06-09 02:45:53,576 autoreload 438307 140115063150400 Watching for file changes with StatReloader
+INFO 2022-06-09 02:45:55,066 basehttp 438307 140114918029056 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 02:45:56,732 basehttp 438307 140114918029056 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:45:58,012 basehttp 438307 140114918029056 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:46:06,978 basehttp 438307 140114918029056 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:46:06,999 basehttp 438307 140114918029056 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:46:08,462 basehttp 438307 140114918029056 "GET /orders/ HTTP/1.1" 200 4528
+INFO 2022-06-09 02:46:09,845 basehttp 438307 140114918029056 "GET /cart/ HTTP/1.1" 200 5051
+INFO 2022-06-09 02:46:11,787 basehttp 438307 140114918029056 "GET /orders/ HTTP/1.1" 200 4528
+INFO 2022-06-09 02:46:12,378 basehttp 438307 140114918029056 "GET /cart/ HTTP/1.1" 200 5051
+INFO 2022-06-09 02:46:14,864 basehttp 438307 140114918029056 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:46:22,550 basehttp 438307 140114918029056 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:46:31,335 basehttp 438307 140114918029056 "GET /orders/ HTTP/1.1" 200 4528
+INFO 2022-06-09 02:46:32,746 basehttp 438307 140114918029056 "GET /cart/ HTTP/1.1" 200 5051
+INFO 2022-06-09 02:46:34,053 basehttp 438307 140114918029056 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:46:35,356 basehttp 438307 140114918029056 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:46:40,558 basehttp 438307 140114918029056 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:46:40,577 basehttp 438307 140114918029056 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:46:41,670 basehttp 438307 140114918029056 "GET /cart/ HTTP/1.1" 200 5051
+INFO 2022-06-09 02:46:43,175 basehttp 438307 140114918029056 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:52:30,604 autoreload 438307 140115063150400 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 02:52:30,884 autoreload 438896 139944282101568 Watching for file changes with StatReloader
+INFO 2022-06-09 02:56:12,957 autoreload 439879 140683478017856 Watching for file changes with StatReloader
+INFO 2022-06-09 02:56:14,130 basehttp 439879 140683331499776 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 02:56:15,824 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:56:17,858 basehttp 439879 140683331499776 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:56:23,175 basehttp 439879 140683331499776 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:56:23,196 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:56:25,436 basehttp 439879 140683331499776 "GET /cart/ HTTP/1.1" 200 5051
+INFO 2022-06-09 02:56:26,902 basehttp 439879 140683331499776 "GET /orders/ HTTP/1.1" 200 4528
+INFO 2022-06-09 02:56:28,235 basehttp 439879 140683331499776 "GET /cart/ HTTP/1.1" 200 5051
+INFO 2022-06-09 02:56:31,303 basehttp 439879 140683331499776 "POST /cart/20 HTTP/1.1" 302 0
+INFO 2022-06-09 02:56:31,319 basehttp 439879 140683331499776 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 02:56:32,643 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:56:36,806 basehttp 439879 140683331499776 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:56:41,015 basehttp 439879 140683331499776 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 02:56:41,035 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:56:42,084 basehttp 439879 140683331499776 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 02:56:43,549 basehttp 439879 140683331499776 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 02:56:45,397 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:56:49,545 basehttp 439879 140683331499776 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 02:56:50,786 basehttp 439879 140683331499776 "GET /categories/4/ HTTP/1.1" 200 7396
+INFO 2022-06-09 02:56:52,844 basehttp 439879 140683331499776 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 02:56:53,774 basehttp 439879 140683331499776 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 02:57:00,662 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 02:58:10,602 basehttp 439879 140683331499776 "GET /goods/create_ct/ HTTP/1.1" 200 3920
+INFO 2022-06-09 02:58:11,731 basehttp 439879 140683331499776 "GET /goods/create/ HTTP/1.1" 200 4827
+INFO 2022-06-09 02:58:12,339 basehttp 439879 140683331499776 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 02:58:13,259 basehttp 439879 140683331499776 "GET /categories/ HTTP/1.1" 200 10974
+INFO 2022-06-09 02:58:13,902 basehttp 439879 140683331499776 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 02:58:14,676 basehttp 439879 140683331499776 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:09:02,263 autoreload 439879 140683478017856 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 03:09:02,565 autoreload 441403 140194786846528 Watching for file changes with StatReloader
+INFO 2022-06-09 03:09:11,199 basehttp 441403 140194641585920 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:09:11,278 basehttp 441403 140194641585920 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 03:09:14,164 basehttp 441403 140194641585920 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 03:09:14,183 basehttp 441403 140194641585920 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:09:16,636 basehttp 441403 140194641585920 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:09:19,089 basehttp 441403 140194641585920 "GET /cart/ HTTP/1.1" 200 5052
+INFO 2022-06-09 03:10:34,233 autoreload 441403 140194786846528 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 03:10:34,524 autoreload 441569 140466532718400 Watching for file changes with StatReloader
+INFO 2022-06-09 03:13:10,198 autoreload 441569 140466532718400 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 03:13:10,494 autoreload 441701 139632448886592 Watching for file changes with StatReloader
+INFO 2022-06-09 03:13:13,164 basehttp 441701 139632371185408 "POST /cart/clear HTTP/1.1" 302 0
+INFO 2022-06-09 03:13:13,184 basehttp 441701 139632371185408 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:13:15,846 basehttp 441701 139632371185408 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:13:17,862 basehttp 441701 139632371185408 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:13:27,544 basehttp 441701 139632371185408 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 03:13:27,563 basehttp 441701 139632371185408 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:13:29,205 basehttp 441701 139632371185408 "GET /cart/ HTTP/1.1" 200 5052
+INFO 2022-06-09 03:13:31,374 basehttp 441701 139632371185408 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:13:33,832 basehttp 441701 139632371185408 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:14:46,412 autoreload 441701 139632448886592 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 03:14:46,722 autoreload 441867 140254742509376 Watching for file changes with StatReloader
+INFO 2022-06-09 03:14:48,644 basehttp 441867 140254664546048 "GET /cart/ HTTP/1.1" 200 5052
+INFO 2022-06-09 03:14:50,826 basehttp 441867 140254664546048 "POST /cart/22 HTTP/1.1" 302 0
+INFO 2022-06-09 03:14:50,842 basehttp 441867 140254664546048 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:14:53,380 basehttp 441867 140254664546048 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:14:54,762 basehttp 441867 140254664546048 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:15:56,103 autoreload 441867 140254742509376 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 03:15:56,393 autoreload 441990 140247832799040 Watching for file changes with StatReloader
+INFO 2022-06-09 03:18:53,773 basehttp 441990 140247754835712 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 03:18:53,794 basehttp 441990 140247754835712 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:18:55,681 basehttp 441990 140247754835712 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:18:57,339 basehttp 441990 140247754835712 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:18:58,995 basehttp 441990 140247754835712 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:19:00,802 basehttp 441990 140247754835712 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:19:02,103 basehttp 441990 140247754835712 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:19:04,975 basehttp 441990 140247754835712 "GET /categories/4/ HTTP/1.1" 200 7396
+INFO 2022-06-09 03:19:11,060 basehttp 441990 140247754835712 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:21:39,245 autoreload 441990 140247832799040 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 03:21:39,533 autoreload 442387 139824934332224 Watching for file changes with StatReloader
+INFO 2022-06-09 03:21:40,771 basehttp 442387 139824856368896 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:21:44,539 basehttp 442387 139824856368896 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 03:21:44,561 basehttp 442387 139824856368896 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:21:46,753 basehttp 442387 139824856368896 "GET /cart/ HTTP/1.1" 200 5052
+INFO 2022-06-09 03:21:48,762 basehttp 442387 139824856368896 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:21:51,049 basehttp 442387 139824856368896 "GET /goods/8/ HTTP/1.1" 200 4898
+INFO 2022-06-09 03:21:53,533 basehttp 442387 139824856368896 "GET /cart/ HTTP/1.1" 200 5052
+INFO 2022-06-09 03:21:55,596 basehttp 442387 139824856368896 "POST /cart/23 HTTP/1.1" 302 0
+INFO 2022-06-09 03:21:55,611 basehttp 442387 139824856368896 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:21:56,873 basehttp 442387 139824856368896 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:21:59,219 basehttp 442387 139824856368896 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:22:00,183 basehttp 442387 139824856368896 "GET /orders/ HTTP/1.1" 200 3163
+INFO 2022-06-09 03:22:01,010 basehttp 442387 139824856368896 "GET /cart/ HTTP/1.1" 200 3166
+INFO 2022-06-09 03:22:02,478 basehttp 442387 139824856368896 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 03:26:49,115 autoreload 442387 139824934332224 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 03:26:49,399 autoreload 442708 140508523059008 Watching for file changes with StatReloader
+INFO 2022-06-09 03:30:26,933 autoreload 442708 140508523059008 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 03:30:27,220 autoreload 442896 139624122079040 Watching for file changes with StatReloader
+INFO 2022-06-09 03:32:15,201 autoreload 442896 139624122079040 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 03:32:15,453 autoreload 443204 139782435911488 Watching for file changes with StatReloader
+INFO 2022-06-09 03:34:09,140 autoreload 443204 139782435911488 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 03:34:09,409 autoreload 443275 140081824069440 Watching for file changes with StatReloader
+INFO 2022-06-09 03:35:15,367 autoreload 443329 140391080924992 Watching for file changes with StatReloader
+INFO 2022-06-09 03:41:50,679 autoreload 443329 140391080924992 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 03:41:50,950 autoreload 460156 140606422431552 Watching for file changes with StatReloader
+INFO 2022-06-09 03:43:35,519 autoreload 460250 140228992034624 Watching for file changes with StatReloader
+INFO 2022-06-09 03:46:03,854 autoreload 460250 140228992034624 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 03:46:04,115 autoreload 460330 140417784252224 Watching for file changes with StatReloader
+INFO 2022-06-09 03:47:14,750 autoreload 460447 140489417987904 Watching for file changes with StatReloader
+INFO 2022-06-09 03:48:27,387 autoreload 460520 140460305286976 Watching for file changes with StatReloader
+INFO 2022-06-09 04:10:39,306 autoreload 461718 139812064171840 Watching for file changes with StatReloader
+INFO 2022-06-09 04:15:13,105 autoreload 461718 139812064171840 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 04:15:13,419 autoreload 462019 140301234136896 Watching for file changes with StatReloader
+INFO 2022-06-09 04:15:22,055 basehttp 462019 140301156173568 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 04:15:24,155 basehttp 462019 140301156173568 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 04:15:24,212 basehttp 462019 140301156173568 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 04:15:27,746 basehttp 462019 140301156173568 "GET /goods/8/ HTTP/1.1" 200 4898
+ERROR 2022-06-09 04:15:30,510 log 462019 140301156173568 Internal Server Error: /goods/8/add/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column cart_order.id_pr does not exist
+LINE 1: ...cart_order"."user_id", "cart_order"."product_id", "cart_orde...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/decorators/http.py", line 43, in inner
+    return func(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/edit.py", line 153, in post
+    return self.form_valid(form)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py", line 74, in form_valid
+    elif exists_order:
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/models/query.py", line 324, in __bool__
+    self._fetch_all()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column cart_order.id_pr does not exist
+LINE 1: ...cart_order"."user_id", "cart_order"."product_id", "cart_orde...
+                                                             ^
+
+ERROR 2022-06-09 04:15:30,511 basehttp 462019 140301156173568 "POST /goods/8/add/ HTTP/1.1" 500 149566
+INFO 2022-06-09 04:16:01,743 autoreload 462019 140301234136896 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/models.py changed, reloading.
+INFO 2022-06-09 04:16:02,045 autoreload 462245 139817411024704 Watching for file changes with StatReloader
+INFO 2022-06-09 04:16:04,355 basehttp 462245 139817333061376 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 04:16:04,378 basehttp 462245 139817333061376 "GET /goods/ HTTP/1.1" 200 22889
+INFO 2022-06-09 04:16:06,261 basehttp 462245 139817333061376 "GET /cart/ HTTP/1.1" 200 5052
+INFO 2022-06-09 04:19:33,507 autoreload 462245 139817411024704 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 04:19:33,794 autoreload 462478 139965176735552 Watching for file changes with StatReloader
+INFO 2022-06-09 04:22:55,014 autoreload 462588 140290300020544 Watching for file changes with StatReloader
+INFO 2022-06-09 04:23:08,111 basehttp 462588 140290222319360 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 04:23:11,755 basehttp 462588 140290222319360 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 04:23:11,770 basehttp 462588 140290222319360 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 04:23:33,446 basehttp 462588 140290222319360 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-09 04:23:33,464 basehttp 462588 140290222319360 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 04:23:34,962 basehttp 462588 140290222319360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:23:37,379 basehttp 462588 140290222319360 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 04:23:45,757 basehttp 462588 140290222319360 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 04:23:45,775 basehttp 462588 140290222319360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:23:47,809 basehttp 462588 140290222319360 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 04:23:50,102 basehttp 462588 140290222319360 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 04:23:53,076 basehttp 462588 140290222319360 "GET /orders/ HTTP/1.1" 200 5890
+INFO 2022-06-09 04:23:54,195 basehttp 462588 140290222319360 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 04:23:57,098 basehttp 462588 140290222319360 "POST /cart/clear HTTP/1.1" 302 0
+INFO 2022-06-09 04:23:57,114 basehttp 462588 140290222319360 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 04:23:59,711 basehttp 462588 140290222319360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:24:01,189 basehttp 462588 140290222319360 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 04:25:59,699 autoreload 462588 140290300020544 /home/leshii/Документы/isp/ispLabs/lab3_django/drug_store/views.py changed, reloading.
+INFO 2022-06-09 04:26:00,002 autoreload 462970 139652420519744 Watching for file changes with StatReloader
+INFO 2022-06-09 04:26:03,032 basehttp 462970 139652270913280 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 04:26:03,053 basehttp 462970 139652270913280 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:26:04,278 basehttp 462970 139652270913280 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 04:26:06,306 basehttp 462970 139652270913280 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 04:26:06,322 basehttp 462970 139652270913280 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 04:26:07,819 basehttp 462970 139652270913280 "GET /orders/ HTTP/1.1" 200 5890
+INFO 2022-06-09 04:26:15,611 basehttp 462970 139652270913280 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:26:17,172 basehttp 462970 139652270913280 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 04:26:20,918 basehttp 462970 139652270913280 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 04:26:27,098 basehttp 462970 139652270913280 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:26:28,038 basehttp 462970 139652270913280 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 04:26:29,590 basehttp 462970 139652270913280 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 04:26:31,222 basehttp 462970 139652270913280 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 04:26:32,625 basehttp 462970 139652270913280 "GET /categories/6/ HTTP/1.1" 200 3085
+INFO 2022-06-09 04:26:34,234 basehttp 462970 139652270913280 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 04:26:35,475 basehttp 462970 139652270913280 "GET /categories/7/ HTTP/1.1" 200 3085
+INFO 2022-06-09 04:26:36,320 basehttp 462970 139652270913280 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 04:26:37,734 basehttp 462970 139652270913280 "GET /categories/5/ HTTP/1.1" 200 6930
+INFO 2022-06-09 04:26:39,847 basehttp 462970 139652270913280 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 04:26:41,052 basehttp 462970 139652270913280 "GET /goods/ HTTP/1.1" 200 16009
