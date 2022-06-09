@@ -13,6 +13,7 @@ import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+import django_heroku
 from django.template.context_processors import media
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-#su-u#$9i7^&5h1yq*8@(&80mr_x8lzg&w2)_d8s$n8=w8_y0i
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'lab3_django.herokuapp.com']
 
 
 # Application definition
@@ -83,12 +84,17 @@ WSGI_APPLICATION = 'lab3_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'docker_db',
-        'USER': 'leshii',
-        'PASSWORD': '2173101842',
-        'HOST': 'localhost',
-        'PORT': 54321,
-    }
+        # 'NAME': 'docker_db',
+        # 'USER': 'leshii',
+        # 'PASSWORD': '2173101842',
+        # 'HOST': 'localhost',
+        # 'PORT': 54321,
+        'NAME': 'd50mj6h17u8673',
+        'USER': 'ocqqagsxixqtma',
+        'PASSWORD': 'e693a4071de379ffe6ce98381e129b268070dc7349935bd21b49a3483369ef75',
+        'HOST': 'ec2-34-242-84-130.eu-west-1.compute.amazonaws.com',
+        'PORT': 5432,
+  }
 }
 
 
@@ -125,9 +131,9 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-STATIC_URL = 'static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+django_heroku.settings(locals())
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
