@@ -3459,3 +3459,1484 @@ INFO 2022-06-09 04:26:36,320 basehttp 462970 139652270913280 "GET /categories/ H
 INFO 2022-06-09 04:26:37,734 basehttp 462970 139652270913280 "GET /categories/5/ HTTP/1.1" 200 6930
 INFO 2022-06-09 04:26:39,847 basehttp 462970 139652270913280 "GET /categories/ HTTP/1.1" 200 7290
 INFO 2022-06-09 04:26:41,052 basehttp 462970 139652270913280 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 05:31:22,694 autoreload 468232 140009540237120 Watching for file changes with StatReloader
+INFO 2022-06-09 05:31:24,131 basehttp 468232 140009462273792 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 05:31:25,827 basehttp 468232 140009462273792 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 05:31:25,844 basehttp 468232 140009462273792 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 07:18:59,609 autoreload 477602 139664710207296 Watching for file changes with StatReloader
+INFO 2022-06-09 07:19:02,034 basehttp 477602 139664628098816 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:19:03,502 basehttp 477602 139664628098816 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:19:03,560 basehttp 477602 139664628098816 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 07:19:09,003 basehttp 477602 139664628098816 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:19:11,470 basehttp 477602 139664628098816 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:19:11,498 basehttp 477602 139664628098816 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:19:12,804 basehttp 477602 139664628098816 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 07:19:14,825 basehttp 477602 139664628098816 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:19:14,843 basehttp 477602 139664628098816 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:19:17,063 basehttp 477602 139664628098816 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 07:19:18,532 basehttp 477602 139664628098816 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:19:18,551 basehttp 477602 139664628098816 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:19:19,726 basehttp 477602 139664628098816 "GET /cart/ HTTP/1.1" 200 6108
+ERROR 2022-06-09 07:19:22,296 log 477602 139664628098816 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Manager is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 70, in post
+    deliver.delay(Order.objects)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type Manager is not JSON serializable
+ERROR 2022-06-09 07:19:22,298 basehttp 477602 139664628098816 "POST /cart/checkout HTTP/1.1" 500 232848
+INFO 2022-06-09 07:20:09,878 basehttp 477602 139664628098816 "GET /orders/ HTTP/1.1" 200 8563
+INFO 2022-06-09 07:20:14,732 basehttp 477602 139664628098816 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:20:16,044 basehttp 477602 139664628098816 "GET /orders/ HTTP/1.1" 200 8563
+INFO 2022-06-09 07:24:08,781 autoreload 477602 139664710207296 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:24:09,160 autoreload 478235 140550384564032 Watching for file changes with StatReloader
+INFO 2022-06-09 07:24:10,685 basehttp 478235 140550302455552 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:24:12,305 basehttp 478235 140550302455552 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:24:19,963 basehttp 478235 140550302455552 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 07:24:24,729 basehttp 478235 140550302455552 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:24:24,750 basehttp 478235 140550302455552 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:24:27,330 basehttp 478235 140550302455552 "GET /orders/ HTTP/1.1" 200 9456
+INFO 2022-06-09 07:24:29,530 basehttp 478235 140550302455552 "GET /cart/ HTTP/1.1" 200 4612
+ERROR 2022-06-09 07:24:31,011 log 478235 140550302455552 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Manager is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 70, in post
+    deliver.delay(Order.objects)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type Manager is not JSON serializable
+ERROR 2022-06-09 07:24:31,013 basehttp 478235 140550302455552 "POST /cart/checkout HTTP/1.1" 500 232848
+INFO 2022-06-09 07:25:29,290 autoreload 478235 140550384564032 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:25:29,666 autoreload 478495 140090219591488 Watching for file changes with StatReloader
+INFO 2022-06-09 07:26:34,912 autoreload 478495 140090219591488 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:26:35,244 autoreload 478654 140359364712256 Watching for file changes with StatReloader
+INFO 2022-06-09 07:26:57,955 autoreload 478654 140359364712256 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:26:58,285 autoreload 478673 140011709134656 Watching for file changes with StatReloader
+INFO 2022-06-09 07:27:25,029 autoreload 478673 140011709134656 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:27:25,393 autoreload 478693 140373921421120 Watching for file changes with StatReloader
+INFO 2022-06-09 07:27:59,259 autoreload 478693 140373921421120 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:27:59,636 autoreload 478738 139828933064512 Watching for file changes with StatReloader
+INFO 2022-06-09 07:28:03,014 basehttp 478738 139828850956032 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:28:06,194 basehttp 478738 139828850956032 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:28:07,712 basehttp 478738 139828850956032 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:28:09,285 basehttp 478738 139828850956032 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 07:28:12,488 basehttp 478738 139828850956032 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:28:12,507 basehttp 478738 139828850956032 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:28:14,589 basehttp 478738 139828850956032 "GET /cart/ HTTP/1.1" 200 4612
+ERROR 2022-06-09 07:28:15,953 log 478738 139828850956032 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 70, in post
+    deliver.delay(Order.objects.values_list('pk', flat= True))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type QuerySet is not JSON serializable
+ERROR 2022-06-09 07:28:15,955 basehttp 478738 139828850956032 "POST /cart/checkout HTTP/1.1" 500 232664
+INFO 2022-06-09 07:33:31,794 autoreload 479414 140121078642496 Watching for file changes with StatReloader
+INFO 2022-06-09 07:33:33,761 basehttp 479414 140120996534016 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:33:35,075 basehttp 479414 140120996534016 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:33:36,429 basehttp 479414 140120996534016 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:33:39,496 basehttp 479414 140120996534016 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:33:39,515 basehttp 479414 140120996534016 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:33:40,553 basehttp 479414 140120996534016 "GET /cart/ HTTP/1.1" 200 4612
+ERROR 2022-06-09 07:33:41,696 log 479414 140120996534016 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 70, in post
+    deliver_group.delay(Order.objects.values_list('pk', flat= True))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type QuerySet is not JSON serializable
+ERROR 2022-06-09 07:33:41,698 basehttp 479414 140120996534016 "POST /cart/checkout HTTP/1.1" 500 232884
+INFO 2022-06-09 07:34:04,834 autoreload 479414 140121078642496 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 07:34:05,210 autoreload 479602 140383088179008 Watching for file changes with StatReloader
+INFO 2022-06-09 07:34:06,408 basehttp 479602 140383006070528 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:34:10,345 basehttp 479602 140383006070528 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:34:12,143 basehttp 479602 140383006070528 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:34:14,327 basehttp 479602 140383006070528 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:34:14,347 basehttp 479602 140383006070528 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:34:15,098 basehttp 479602 140383006070528 "GET /cart/ HTTP/1.1" 200 4611
+ERROR 2022-06-09 07:34:16,265 log 479602 140383006070528 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 70, in post
+    deliver_group.delay(Order.objects.values_list('pk', flat= True))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type QuerySet is not JSON serializable
+ERROR 2022-06-09 07:34:16,267 basehttp 479602 140383006070528 "POST /cart/checkout HTTP/1.1" 500 233026
+INFO 2022-06-09 07:36:57,448 autoreload 479602 140383088179008 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:36:57,860 autoreload 479934 140398090561344 Watching for file changes with StatReloader
+INFO 2022-06-09 07:37:50,320 autoreload 479934 140398090561344 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:37:50,729 autoreload 479954 140207553992512 Watching for file changes with StatReloader
+INFO 2022-06-09 07:38:33,528 basehttp 479954 140207471884032 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:38:40,980 basehttp 479954 140207471884032 "GET /admin/drug_store/product/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:38:41,014 basehttp 479954 140207471884032 "GET /admin/login/?next=/admin/drug_store/product/ HTTP/1.1" 200 2404
+INFO 2022-06-09 07:38:52,847 basehttp 479954 140207471884032 "POST /admin/login/?next=/admin/drug_store/product/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:38:52,949 basehttp 479954 140207471884032 "GET /admin/drug_store/product/ HTTP/1.1" 200 17112
+INFO 2022-06-09 07:38:52,982 basehttp 479954 140207471884032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 07:38:56,424 basehttp 479954 140207471884032 "GET /admin/drug_store/ HTTP/1.1" 200 3249
+INFO 2022-06-09 07:38:59,049 basehttp 479954 140207471884032 "GET /admin/drug_store/category/ HTTP/1.1" 200 8056
+INFO 2022-06-09 07:38:59,073 basehttp 479954 140207471884032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 07:39:00,978 basehttp 479954 140207471884032 "GET /admin/ HTTP/1.1" 200 7430
+INFO 2022-06-09 07:39:02,679 basehttp 479954 140207471884032 "GET /admin/auth/user/ HTTP/1.1" 200 9636
+INFO 2022-06-09 07:39:02,708 basehttp 479954 140207471884032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 07:39:07,222 basehttp 479954 140207471884032 "GET /admin/auth/user/4/change/ HTTP/1.1" 200 17450
+INFO 2022-06-09 07:39:07,253 basehttp 479954 140207471884032 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-09 07:39:25,153 basehttp 479954 140207471884032 "GET /admin/auth/user/ HTTP/1.1" 200 9636
+INFO 2022-06-09 07:39:28,788 basehttp 479954 140207471884032 "GET /admin/ HTTP/1.1" 200 7430
+INFO 2022-06-09 07:39:29,175 basehttp 479954 140207471884032 "GET /admin/drug_store/category/ HTTP/1.1" 200 8056
+INFO 2022-06-09 07:39:29,960 basehttp 479954 140207471884032 "GET /admin/drug_store/ HTTP/1.1" 200 3249
+INFO 2022-06-09 07:39:31,178 basehttp 479954 140207471884032 "GET /admin/drug_store/product/ HTTP/1.1" 200 17112
+INFO 2022-06-09 07:39:32,084 basehttp 479954 140207471884032 "GET /admin/login/?next=/admin/drug_store/product/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:39:32,111 basehttp 479954 140207471884032 "GET /admin/ HTTP/1.1" 200 7430
+INFO 2022-06-09 07:39:38,317 basehttp 479954 140207471884032 "GET / HTTP/1.1" 200 3278
+INFO 2022-06-09 07:39:41,892 basehttp 479954 140207471884032 "GET /logout/?next=/goods/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:39:41,906 basehttp 479954 140207471884032 "GET /login/ HTTP/1.1" 200 3662
+INFO 2022-06-09 07:40:12,181 basehttp 479954 140207471884032 "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:12,193 basehttp 479954 140207471884032 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:40:14,494 basehttp 479954 140207471884032 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:40:16,285 basehttp 479954 140207471884032 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 07:40:19,134 basehttp 479954 140207471884032 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:19,152 basehttp 479954 140207471884032 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:40:20,810 basehttp 479954 140207471884032 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 07:40:22,598 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 13025
+INFO 2022-06-09 07:40:33,749 basehttp 479954 140207471884032 "POST /orders/18 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:33,818 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 12133
+INFO 2022-06-09 07:40:35,066 basehttp 479954 140207471884032 "POST /orders/19 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:35,086 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 11240
+INFO 2022-06-09 07:40:35,460 basehttp 479954 140207471884032 "POST /orders/26 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:35,503 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 10347
+INFO 2022-06-09 07:40:35,991 basehttp 479954 140207471884032 "POST /orders/27 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:36,060 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 9454
+INFO 2022-06-09 07:40:36,775 basehttp 479954 140207471884032 "POST /orders/28 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:36,840 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 8563
+INFO 2022-06-09 07:40:37,750 basehttp 479954 140207471884032 "POST /orders/29 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:37,816 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 7674
+INFO 2022-06-09 07:40:38,525 basehttp 479954 140207471884032 "POST /orders/30 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:38,544 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 6781
+INFO 2022-06-09 07:40:39,042 basehttp 479954 140207471884032 "POST /orders/31 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:39,107 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:40:39,607 basehttp 479954 140207471884032 "POST /orders/32 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:39,638 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:40:40,501 basehttp 479954 140207471884032 "POST /orders/33 HTTP/1.1" 302 0
+INFO 2022-06-09 07:40:40,519 basehttp 479954 140207471884032 "GET /orders/ HTTP/1.1" 200 4103
+INFO 2022-06-09 07:40:41,720 basehttp 479954 140207471884032 "GET /cart/ HTTP/1.1" 200 4610
+ERROR 2022-06-09 07:40:43,675 log 479954 140207471884032 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type QuerySet is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 70, in post
+    deliver_group.delay(Order.objects.values_list('pk', flat= True))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 166, in publish
+    body, content_type, content_encoding = self._prepare(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/messaging.py", line 254, in _prepare
+    body) = dumps(body, serializer=serializer)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/usr/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 43, in _reraise_errors
+    reraise(wrapper, wrapper(exc), sys.exc_info()[2])
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/exceptions.py", line 21, in reraise
+    raise value.with_traceback(tb)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 39, in _reraise_errors
+    yield
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/serialization.py", line 210, in dumps
+    payload = encoder(data)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 68, in dumps
+    return _dumps(s, cls=cls or _default_encoder,
+  File "/usr/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/kombu/utils/json.py", line 58, in default
+    return super().default(o)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+kombu.exceptions.EncodeError: Object of type QuerySet is not JSON serializable
+ERROR 2022-06-09 07:40:43,676 basehttp 479954 140207471884032 "POST /cart/checkout HTTP/1.1" 500 231802
+INFO 2022-06-09 07:41:58,193 autoreload 479954 140207553992512 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 07:41:58,610 autoreload 480555 140659892635456 Watching for file changes with StatReloader
+INFO 2022-06-09 07:43:07,584 autoreload 480896 139876870805312 Watching for file changes with StatReloader
+INFO 2022-06-09 07:43:09,011 basehttp 480896 139876788696832 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:43:10,503 basehttp 480896 139876788696832 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:43:12,043 basehttp 480896 139876788696832 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:43:14,214 basehttp 480896 139876788696832 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:43:14,232 basehttp 480896 139876788696832 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:43:15,836 basehttp 480896 139876788696832 "GET /cart/ HTTP/1.1" 200 4611
+INFO 2022-06-09 07:43:16,942 basehttp 480896 139876788696832 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 07:43:16,957 basehttp 480896 139876788696832 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:43:18,780 basehttp 480896 139876788696832 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:43:32,668 basehttp 480896 139876788696832 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:43:33,593 basehttp 480896 139876788696832 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:44:39,601 autoreload 480896 139876870805312 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:44:40,038 autoreload 481312 140486653744960 Watching for file changes with StatReloader
+INFO 2022-06-09 07:45:27,967 autoreload 481312 140486653744960 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:45:28,320 autoreload 481458 139763552941888 Watching for file changes with StatReloader
+INFO 2022-06-09 07:45:31,888 basehttp 481458 139763403192064 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:45:33,028 basehttp 481458 139763403192064 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:45:33,668 basehttp 481458 139763403192064 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 07:45:34,995 basehttp 481458 139763403192064 "GET /cart/ HTTP/1.1" 200 2742
+ERROR 2022-06-09 07:45:35,820 log 481458 139763403192064 Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 28, in get_queryset
+    Q(status="delivering") | Q(status="processing") | Q(status="processing").select_related('user').select_related('product'))
+AttributeError: 'Q' object has no attribute 'select_related'
+ERROR 2022-06-09 07:45:35,822 basehttp 481458 139763403192064 "GET /orders/ HTTP/1.1" 500 89414
+INFO 2022-06-09 07:45:55,172 autoreload 481458 139763552941888 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:45:55,639 autoreload 481532 139703658743616 Watching for file changes with StatReloader
+INFO 2022-06-09 07:45:56,611 basehttp 481532 139703577421568 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:46:05,281 basehttp 481532 139703577421568 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:46:05,794 basehttp 481532 139703577421568 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:46:05,962 basehttp 481532 139703577421568 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:46:06,142 basehttp 481532 139703577421568 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 07:46:07,453 basehttp 481532 139703577421568 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:47:18,236 autoreload 481532 139703658743616 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:47:18,607 autoreload 481709 140488810321728 Watching for file changes with StatReloader
+INFO 2022-06-09 07:47:19,163 basehttp 481709 140488728999680 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:47:20,460 basehttp 481709 140488728999680 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:47:21,282 basehttp 481709 140488728999680 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 07:47:22,084 basehttp 481709 140488728999680 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:47:23,330 basehttp 481709 140488728999680 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:47:25,605 basehttp 481709 140488728999680 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:47:25,624 basehttp 481709 140488728999680 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:47:26,787 basehttp 481709 140488728999680 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 07:47:28,271 basehttp 481709 140488728999680 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 07:47:28,286 basehttp 481709 140488728999680 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:47:29,652 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:35,584 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:36,253 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:36,711 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:37,063 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:37,320 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:37,523 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:37,703 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:37,882 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:38,084 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:38,232 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:38,393 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:38,598 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:38,779 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:39,081 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:39,262 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:39,444 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:39,614 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:39,804 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:39,948 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:40,104 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:40,247 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:47:40,715 basehttp 481709 140488728999680 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:19,158 autoreload 481709 140488810321728 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:49:19,604 autoreload 481922 140478457808704 Watching for file changes with StatReloader
+INFO 2022-06-09 07:49:19,782 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:20,568 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:20,750 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:20,929 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:21,157 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:21,433 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:21,726 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:21,920 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:22,165 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:22,413 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:22,651 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:22,854 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:23,139 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:23,393 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:23,683 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:24,209 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 5888
+INFO 2022-06-09 07:49:25,477 basehttp 481922 140478309328640 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:49:27,257 basehttp 481922 140478309328640 "GET /goods/11/ HTTP/1.1" 200 4552
+INFO 2022-06-09 07:49:29,640 basehttp 481922 140478309328640 "POST /goods/11/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:49:29,659 basehttp 481922 140478309328640 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:49:31,315 basehttp 481922 140478309328640 "GET /cart/ HTTP/1.1" 200 4609
+INFO 2022-06-09 07:49:32,155 basehttp 481922 140478309328640 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 07:49:32,168 basehttp 481922 140478309328640 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:49:33,113 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:36,719 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:37,101 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:37,654 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:37,904 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:38,294 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:38,487 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:49:38,674 basehttp 481922 140478309328640 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:50:04,835 autoreload 481922 140478457808704 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:50:05,196 autoreload 482058 139863784277824 Watching for file changes with StatReloader
+INFO 2022-06-09 07:50:06,616 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 07:50:07,585 basehttp 482058 139863702169344 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:50:09,118 basehttp 482058 139863702169344 "GET /goods/11/ HTTP/1.1" 200 4552
+INFO 2022-06-09 07:50:11,447 basehttp 482058 139863702169344 "POST /goods/11/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:50:11,467 basehttp 482058 139863702169344 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:50:13,299 basehttp 482058 139863702169344 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 07:50:14,310 basehttp 482058 139863702169344 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 07:50:14,324 basehttp 482058 139863702169344 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:50:15,641 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:26,481 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:27,211 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:27,487 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:27,690 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:27,880 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:28,081 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:28,260 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:28,616 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:51:30,705 basehttp 482058 139863702169344 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:51:31,772 basehttp 482058 139863702169344 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:51:39,753 basehttp 482058 139863702169344 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:51:40,408 basehttp 482058 139863702169344 "GET /orders/ HTTP/1.1" 200 7669
+INFO 2022-06-09 07:53:29,678 autoreload 482058 139863784277824 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:53:30,094 autoreload 482328 140582937737024 Watching for file changes with StatReloader
+INFO 2022-06-09 07:53:31,172 basehttp 482328 140582856414976 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:53:33,247 basehttp 482328 140582856414976 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:53:34,864 basehttp 482328 140582856414976 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:53:36,200 basehttp 482328 140582856414976 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:53:38,144 basehttp 482328 140582856414976 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:53:38,163 basehttp 482328 140582856414976 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:53:39,094 basehttp 482328 140582856414976 "GET /orders/ HTTP/1.1" 200 8562
+INFO 2022-06-09 07:53:43,020 basehttp 482328 140582856414976 "GET /cart/ HTTP/1.1" 200 4612
+ERROR 2022-06-09 07:53:44,078 log 482328 140582856414976 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 69, in post
+    deliver.delay(Order.objects[3])
+TypeError: 'Manager' object is not subscriptable
+ERROR 2022-06-09 07:53:44,079 basehttp 482328 140582856414976 "POST /cart/checkout HTTP/1.1" 500 85211
+INFO 2022-06-09 07:54:23,509 autoreload 482328 140582937737024 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:54:23,919 autoreload 482492 140665093039936 Watching for file changes with StatReloader
+ERROR 2022-06-09 07:54:32,828 log 482492 140664943671040 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 69, in post
+    deliver.delay(Order.objects[3].pk)
+TypeError: 'Manager' object is not subscriptable
+ERROR 2022-06-09 07:54:32,829 basehttp 482492 140664943671040 "POST /cart/checkout HTTP/1.1" 500 85217
+INFO 2022-06-09 07:54:44,549 autoreload 482492 140665093039936 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 07:54:44,923 autoreload 482550 140433938138944 Watching for file changes with StatReloader
+INFO 2022-06-09 07:54:45,733 basehttp 482550 140433856816896 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:54:46,976 basehttp 482550 140433856816896 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:54:48,466 basehttp 482550 140433856816896 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 07:54:50,119 basehttp 482550 140433856816896 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:54:50,138 basehttp 482550 140433856816896 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:54:51,193 basehttp 482550 140433856816896 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 07:54:52,031 basehttp 482550 140433856816896 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 07:54:52,044 basehttp 482550 140433856816896 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:54:53,271 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:57,469 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:58,064 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:58,264 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:58,417 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:58,637 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:58,940 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:59,128 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:59,366 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:59,542 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:59,724 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:54:59,873 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:00,058 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:00,375 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:00,692 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:00,846 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:01,105 basehttp 482550 140433856816896 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:45,405 autoreload 482550 140433938138944 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 07:55:45,807 autoreload 482687 139898974066496 Watching for file changes with StatReloader
+INFO 2022-06-09 07:55:47,995 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:48,687 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:48,859 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:49,190 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:49,509 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:49,655 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:49,863 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:50,007 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 9453
+INFO 2022-06-09 07:55:51,195 basehttp 482687 139898824845056 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:55:52,810 basehttp 482687 139898824845056 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 07:55:55,300 basehttp 482687 139898824845056 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:55:55,319 basehttp 482687 139898824845056 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:55:56,860 basehttp 482687 139898824845056 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:55:59,123 basehttp 482687 139898824845056 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:56:00,044 basehttp 482687 139898824845056 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 07:56:01,962 basehttp 482687 139898824845056 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 07:56:01,991 basehttp 482687 139898824845056 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 07:56:02,861 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:04,587 basehttp 482687 139898824845056 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 07:56:05,602 basehttp 482687 139898824845056 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 07:56:05,616 basehttp 482687 139898824845056 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 07:56:06,812 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:10,036 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:10,770 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:11,022 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:11,187 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:11,435 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:11,642 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:11,827 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:12,004 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:12,249 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:12,401 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:12,611 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:12,777 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:12,957 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:13,128 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:13,457 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:13,592 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:13,884 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 07:56:14,049 basehttp 482687 139898824845056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 08:01:39,279 autoreload 482687 139898974066496 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:01:39,671 autoreload 483889 140466588124992 Watching for file changes with StatReloader
+INFO 2022-06-09 08:01:41,470 basehttp 483889 140466435651328 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:01:43,927 basehttp 483889 140466435651328 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 08:01:46,588 basehttp 483889 140466435651328 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:01:46,607 basehttp 483889 140466435651328 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:01:47,635 basehttp 483889 140466435651328 "GET /cart/ HTTP/1.1" 200 4608
+INFO 2022-06-09 08:01:50,102 basehttp 483889 140466435651328 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:01:50,116 basehttp 483889 140466435651328 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:01:51,426 basehttp 483889 140466435651328 "GET /orders/ HTTP/1.1" 200 11235
+INFO 2022-06-09 08:04:28,232 autoreload 483889 140466588124992 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:04:28,659 autoreload 484568 140459981748032 Watching for file changes with StatReloader
+INFO 2022-06-09 08:04:29,741 basehttp 484568 140459900425984 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:04:31,077 basehttp 484568 140459900425984 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 08:04:33,262 basehttp 484568 140459900425984 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:04:33,281 basehttp 484568 140459900425984 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:04:34,186 basehttp 484568 140459900425984 "GET /cart/ HTTP/1.1" 200 4612
+ERROR 2022-06-09 08:04:35,271 log 484568 140459900425984 Internal Server Error: /cart/checkout
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/contrib/auth/mixins.py", line 73, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 119, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py", line 69, in post
+    deliver_group.delay(self, Order.objects.values_list('id', flat= True))
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/celery/app/task.py", line 540, in apply_async
+    check_arguments(*(args or ()), **(kwargs or {}))
+TypeError: deliver_group() takes 1 positional argument but 2 were given
+ERROR 2022-06-09 08:04:35,272 basehttp 484568 140459900425984 "POST /cart/checkout HTTP/1.1" 500 94926
+INFO 2022-06-09 08:04:50,337 autoreload 484568 140459981748032 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:04:50,743 autoreload 484719 140642677880640 Watching for file changes with StatReloader
+INFO 2022-06-09 08:04:52,874 basehttp 484719 140642528524032 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:04:52,891 basehttp 484719 140642528524032 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:04:54,213 basehttp 484719 140642528524032 "GET /orders/ HTTP/1.1" 200 12128
+INFO 2022-06-09 08:07:44,195 autoreload 484719 140642677880640 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:07:44,642 autoreload 485483 139837430191936 Watching for file changes with StatReloader
+INFO 2022-06-09 08:07:55,064 basehttp 485483 139837348083456 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:07:55,152 basehttp 485483 139837348083456 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 08:07:56,732 basehttp 485483 139837348083456 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 08:07:59,101 basehttp 485483 139837348083456 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:07:59,118 basehttp 485483 139837348083456 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:08:01,722 basehttp 485483 139837348083456 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:08:04,249 basehttp 485483 139837348083456 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:08:04,265 basehttp 485483 139837348083456 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:08:09,177 basehttp 485483 139837348083456 "GET /orders/ HTTP/1.1" 200 13019
+INFO 2022-06-09 08:08:12,605 basehttp 485483 139837348083456 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:08:14,098 basehttp 485483 139837348083456 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:08:14,146 basehttp 485483 139837348083456 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:08:15,432 basehttp 485483 139837348083456 "GET /orders/ HTTP/1.1" 200 13019
+INFO 2022-06-09 08:08:17,954 basehttp 485483 139837348083456 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:08:49,220 autoreload 485483 139837430191936 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:08:49,651 autoreload 486318 139646871344960 Watching for file changes with StatReloader
+INFO 2022-06-09 08:08:51,535 basehttp 486318 139646789236480 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:08:53,100 basehttp 486318 139646789236480 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:08:53,114 basehttp 486318 139646789236480 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:09:54,310 autoreload 486318 139646871344960 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:09:54,715 autoreload 486694 140527348418368 Watching for file changes with StatReloader
+INFO 2022-06-09 08:10:09,007 autoreload 486694 140527348418368 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:10:09,450 autoreload 486819 140046661486400 Watching for file changes with StatReloader
+INFO 2022-06-09 08:10:09,601 basehttp 486819 140046580426496 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:10:10,357 basehttp 486819 140046580426496 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:10:11,470 basehttp 486819 140046580426496 "GET /goods/8/ HTTP/1.1" 200 4474
+INFO 2022-06-09 08:10:13,681 basehttp 486819 140046580426496 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:13,701 basehttp 486819 140046580426496 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:10:14,954 basehttp 486819 140046580426496 "GET /orders/ HTTP/1.1" 200 13912
+INFO 2022-06-09 08:10:15,733 basehttp 486819 140046580426496 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:10:17,005 basehttp 486819 140046580426496 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:17,020 basehttp 486819 140046580426496 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:10:42,334 autoreload 486819 140046661486400 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:10:42,767 autoreload 487001 139783508023104 Watching for file changes with StatReloader
+INFO 2022-06-09 08:10:43,636 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 13912
+INFO 2022-06-09 08:10:45,798 basehttp 487001 139783426701056 "POST /orders/34 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:45,819 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 13021
+INFO 2022-06-09 08:10:46,482 basehttp 487001 139783426701056 "POST /orders/35 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:46,539 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 12129
+INFO 2022-06-09 08:10:47,398 basehttp 487001 139783426701056 "POST /orders/36 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:47,424 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 11236
+INFO 2022-06-09 08:10:47,809 basehttp 487001 139783426701056 "POST /orders/37 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:47,833 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 10346
+INFO 2022-06-09 08:10:48,028 basehttp 487001 139783426701056 "POST /orders/38 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:48,049 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 9455
+INFO 2022-06-09 08:10:48,451 basehttp 487001 139783426701056 "POST /orders/39 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:48,470 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 8562
+INFO 2022-06-09 08:10:48,811 basehttp 487001 139783426701056 "POST /orders/40 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:48,860 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 7671
+INFO 2022-06-09 08:10:49,095 basehttp 487001 139783426701056 "POST /orders/41 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:49,116 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 6778
+INFO 2022-06-09 08:10:50,049 basehttp 487001 139783426701056 "POST /orders/42 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:50,108 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 5889
+INFO 2022-06-09 08:10:50,628 basehttp 487001 139783426701056 "POST /orders/43 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:50,650 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 08:10:51,027 basehttp 487001 139783426701056 "POST /orders/44 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:51,064 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 4105
+INFO 2022-06-09 08:10:51,507 basehttp 487001 139783426701056 "POST /orders/45 HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:51,542 basehttp 487001 139783426701056 "GET /orders/ HTTP/1.1" 200 2739
+INFO 2022-06-09 08:10:52,735 basehttp 487001 139783426701056 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:10:54,346 basehttp 487001 139783426701056 "GET /goods/11/ HTTP/1.1" 200 4552
+INFO 2022-06-09 08:10:56,916 basehttp 487001 139783426701056 "POST /goods/11/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:56,935 basehttp 487001 139783426701056 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:10:58,588 basehttp 487001 139783426701056 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:10:59,745 basehttp 487001 139783426701056 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:10:59,768 basehttp 487001 139783426701056 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:11:56,542 autoreload 487001 139783508023104 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 08:11:56,986 autoreload 487447 140103399208768 Watching for file changes with StatReloader
+INFO 2022-06-09 08:11:57,607 basehttp 487447 140103242479360 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:11:58,555 basehttp 487447 140103242479360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:11:59,620 basehttp 487447 140103242479360 "GET /goods/8/ HTTP/1.1" 200 4473
+INFO 2022-06-09 08:12:01,878 basehttp 487447 140103242479360 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:12:01,897 basehttp 487447 140103242479360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:12:04,409 basehttp 487447 140103242479360 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:12:05,333 basehttp 487447 140103242479360 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:12:05,347 basehttp 487447 140103242479360 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:12:06,610 basehttp 487447 140103242479360 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 08:13:37,211 autoreload 487447 140103399208768 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 08:13:37,624 autoreload 487993 139840157718336 Watching for file changes with StatReloader
+INFO 2022-06-09 08:15:41,120 autoreload 487993 139840157718336 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/__init__.py changed, reloading.
+INFO 2022-06-09 08:15:41,567 autoreload 488574 140053388339008 Watching for file changes with StatReloader
+INFO 2022-06-09 08:25:43,388 autoreload 493041 140066543044416 Watching for file changes with StatReloader
+INFO 2022-06-09 08:25:45,868 basehttp 493041 140066393757440 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:25:47,530 basehttp 493041 140066393757440 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:25:50,360 basehttp 493041 140066393757440 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 08:25:52,660 basehttp 493041 140066393757440 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:25:52,680 basehttp 493041 140066393757440 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:25:53,819 basehttp 493041 140066393757440 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:25:54,699 basehttp 493041 140066393757440 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:25:54,715 basehttp 493041 140066393757440 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:25:55,859 basehttp 493041 140066393757440 "GET /orders/ HTTP/1.1" 200 5887
+INFO 2022-06-09 08:26:49,846 autoreload 493041 140066543044416 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:26:50,268 autoreload 493604 140054171445056 Watching for file changes with StatReloader
+INFO 2022-06-09 08:26:53,471 basehttp 493604 140054089336576 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:26:54,584 basehttp 493604 140054089336576 "GET /goods/8/ HTTP/1.1" 200 4473
+INFO 2022-06-09 08:26:56,717 basehttp 493604 140054089336576 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:26:56,736 basehttp 493604 140054089336576 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:26:57,719 basehttp 493604 140054089336576 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:26:58,824 basehttp 493604 140054089336576 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:26:58,847 basehttp 493604 140054089336576 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:26:59,986 basehttp 493604 140054089336576 "GET /orders/ HTTP/1.1" 200 6780
+INFO 2022-06-09 08:29:59,392 autoreload 494801 140206551684928 Watching for file changes with StatReloader
+INFO 2022-06-09 08:30:00,909 basehttp 494801 140206469576448 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:30:02,566 basehttp 494801 140206469576448 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:30:03,850 basehttp 494801 140206469576448 "GET /goods/8/ HTTP/1.1" 200 4473
+INFO 2022-06-09 08:30:05,875 basehttp 494801 140206469576448 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:30:05,897 basehttp 494801 140206469576448 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:30:06,904 basehttp 494801 140206469576448 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:30:07,867 basehttp 494801 140206469576448 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:30:07,881 basehttp 494801 140206469576448 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:30:08,929 basehttp 494801 140206469576448 "GET /orders/ HTTP/1.1" 200 7673
+INFO 2022-06-09 08:32:38,364 autoreload 495901 140697955985216 Watching for file changes with StatReloader
+INFO 2022-06-09 08:32:41,599 basehttp 495901 140697873876736 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:32:42,801 basehttp 495901 140697873876736 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:32:44,057 basehttp 495901 140697873876736 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 08:32:47,376 basehttp 495901 140697873876736 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:32:47,394 basehttp 495901 140697873876736 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:32:48,263 basehttp 495901 140697873876736 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:32:49,108 basehttp 495901 140697873876736 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:32:49,121 basehttp 495901 140697873876736 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:34:10,014 autoreload 496690 139819768313664 Watching for file changes with StatReloader
+INFO 2022-06-09 08:34:11,403 basehttp 496690 139819686205184 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:34:14,501 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 8552
+INFO 2022-06-09 08:36:03,160 basehttp 496690 139819686205184 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:36:04,623 basehttp 496690 139819686205184 "GET /goods/8/ HTTP/1.1" 200 4473
+INFO 2022-06-09 08:36:09,639 basehttp 496690 139819686205184 "POST /goods/8/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:36:09,661 basehttp 496690 139819686205184 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:36:10,695 basehttp 496690 139819686205184 "GET /cart/ HTTP/1.1" 200 4611
+INFO 2022-06-09 08:36:12,572 basehttp 496690 139819686205184 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:36:12,586 basehttp 496690 139819686205184 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:36:13,612 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:24,414 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:28,383 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:29,697 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:30,351 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:30,571 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:30,782 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:31,023 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:31,383 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:31,730 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:59,120 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:59,663 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:36:59,920 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:00,298 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:00,639 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:01,057 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:01,388 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:01,733 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:02,124 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:02,517 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:02,669 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:02,957 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:03,157 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:03,422 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:04,513 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:04,869 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:05,075 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:05,238 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:05,408 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:05,556 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:05,820 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 9444
+INFO 2022-06-09 08:37:15,935 basehttp 496690 139819686205184 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:37:17,921 basehttp 496690 139819686205184 "GET /goods/7/ HTTP/1.1" 200 4475
+INFO 2022-06-09 08:37:20,708 basehttp 496690 139819686205184 "POST /goods/7/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:37:20,728 basehttp 496690 139819686205184 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:37:21,742 basehttp 496690 139819686205184 "GET /cart/ HTTP/1.1" 200 4613
+INFO 2022-06-09 08:37:23,240 basehttp 496690 139819686205184 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:37:23,289 basehttp 496690 139819686205184 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:37:24,594 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 10338
+INFO 2022-06-09 08:37:30,962 basehttp 496690 139819686205184 "GET /orders/ HTTP/1.1" 200 10338
+INFO 2022-06-09 08:38:55,283 autoreload 498805 140044428986176 Watching for file changes with StatReloader
+INFO 2022-06-09 08:39:10,619 autoreload 498805 140044428986176 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:39:10,986 autoreload 498905 140505911420736 Watching for file changes with StatReloader
+INFO 2022-06-09 08:39:12,138 basehttp 498905 140505761445632 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:39:14,484 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 10334
+INFO 2022-06-09 08:39:28,618 basehttp 498905 140505761445632 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:39:30,632 basehttp 498905 140505761445632 "GET /goods/17/ HTTP/1.1" 200 4251
+INFO 2022-06-09 08:39:34,204 basehttp 498905 140505761445632 "POST /goods/17/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:39:34,269 basehttp 498905 140505761445632 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:39:36,798 basehttp 498905 140505761445632 "GET /cart/ HTTP/1.1" 200 4608
+INFO 2022-06-09 08:39:38,638 basehttp 498905 140505761445632 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:39:38,654 basehttp 498905 140505761445632 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:39:40,143 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:44,298 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:44,999 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:45,387 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:45,716 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:45,969 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:46,267 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:46,613 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:46,982 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:47,381 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:47,768 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:39:48,162 basehttp 498905 140505761445632 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:40:24,803 autoreload 498905 140505911420736 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:40:25,168 autoreload 499587 139907570661184 Watching for file changes with StatReloader
+INFO 2022-06-09 08:40:26,965 basehttp 499587 139907418814208 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:40:50,815 autoreload 499587 139907570661184 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:40:51,192 autoreload 499782 140450139629376 Watching for file changes with StatReloader
+INFO 2022-06-09 08:40:51,985 basehttp 499782 140449991075584 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:40:59,095 autoreload 499846 139939345332032 Watching for file changes with StatReloader
+INFO 2022-06-09 08:41:00,081 basehttp 499846 139939264009984 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:41:02,320 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 11223
+INFO 2022-06-09 08:41:04,269 basehttp 499846 139939264009984 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:41:09,376 basehttp 499846 139939264009984 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:41:12,786 basehttp 499846 139939264009984 "GET /goods/12/ HTTP/1.1" 200 4372
+INFO 2022-06-09 08:41:15,425 basehttp 499846 139939264009984 "POST /goods/12/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:15,447 basehttp 499846 139939264009984 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:41:16,620 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 12117
+INFO 2022-06-09 08:41:17,359 basehttp 499846 139939264009984 "GET /cart/ HTTP/1.1" 200 4613
+INFO 2022-06-09 08:41:19,244 basehttp 499846 139939264009984 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:19,258 basehttp 499846 139939264009984 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:41:20,335 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 12117
+INFO 2022-06-09 08:41:24,920 basehttp 499846 139939264009984 "POST /orders/46 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:24,939 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 11228
+INFO 2022-06-09 08:41:25,340 basehttp 499846 139939264009984 "POST /orders/47 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:25,359 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 10337
+INFO 2022-06-09 08:41:25,691 basehttp 499846 139939264009984 "POST /orders/51 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:25,732 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 9448
+INFO 2022-06-09 08:41:26,121 basehttp 499846 139939264009984 "POST /orders/53 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:26,194 basehttp 499846 139939264009984 "GET /orders/ HTTP/1.1" 200 8556
+WARNING 2022-06-09 08:41:26,253 log 499846 139939255617280 Not Found: /orders/53
+WARNING 2022-06-09 08:41:26,253 basehttp 499846 139939255617280 "POST /orders/53 HTTP/1.1" 404 6039
+INFO 2022-06-09 08:41:34,292 basehttp 499846 139939255617280 "GET /orders/ HTTP/1.1" 200 8556
+INFO 2022-06-09 08:41:35,874 basehttp 499846 139939255617280 "POST /orders/49 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:35,901 basehttp 499846 139939255617280 "GET /orders/ HTTP/1.1" 200 7665
+INFO 2022-06-09 08:41:36,590 basehttp 499846 139939255617280 "POST /orders/50 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:36,612 basehttp 499846 139939255617280 "GET /orders/ HTTP/1.1" 200 6774
+INFO 2022-06-09 08:41:37,567 basehttp 499846 139939255617280 "POST /orders/48 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:37,598 basehttp 499846 139939255617280 "GET /orders/ HTTP/1.1" 200 5885
+INFO 2022-06-09 08:41:38,507 basehttp 499846 139939255617280 "POST /orders/52 HTTP/1.1" 302 0
+INFO 2022-06-09 08:41:38,525 basehttp 499846 139939255617280 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 08:41:41,269 basehttp 499846 139939255617280 "GET /orders/ HTTP/1.1" 200 4995
+INFO 2022-06-09 08:44:16,184 autoreload 501457 140698075907904 Watching for file changes with StatReloader
+INFO 2022-06-09 08:44:17,865 basehttp 501457 140697993799424 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 08:44:19,127 basehttp 501457 140697993799424 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:44:22,257 basehttp 501457 140697993799424 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:44:24,762 basehttp 501457 140697993799424 "GET /orders/ HTTP/1.1" 200 4991
+INFO 2022-06-09 08:44:26,536 basehttp 501457 140697993799424 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:44:29,412 basehttp 501457 140697993799424 "GET /goods/10/ HTTP/1.1" 200 4773
+INFO 2022-06-09 08:44:32,171 basehttp 501457 140697993799424 "POST /goods/10/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:44:32,189 basehttp 501457 140697993799424 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:44:33,293 basehttp 501457 140697993799424 "GET /cart/ HTTP/1.1" 200 4609
+INFO 2022-06-09 08:44:34,504 basehttp 501457 140697993799424 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:44:34,522 basehttp 501457 140697993799424 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:44:47,147 basehttp 501457 140697993799424 "GET /orders/ HTTP/1.1" 200 5879
+INFO 2022-06-09 08:45:13,737 autoreload 501457 140698075907904 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:45:14,129 autoreload 502020 140218744272704 Watching for file changes with StatReloader
+INFO 2022-06-09 08:45:15,238 basehttp 502020 140218595792640 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:45:16,952 basehttp 502020 140218595792640 "GET /goods/8/ HTTP/1.1" 200 4473
+INFO 2022-06-09 08:45:20,791 basehttp 502020 140218595792640 "GET /goods/9/ HTTP/1.1" 200 4413
+INFO 2022-06-09 08:45:23,416 basehttp 502020 140218595792640 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:45:23,436 basehttp 502020 140218595792640 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:45:24,396 basehttp 502020 140218595792640 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:45:25,461 basehttp 502020 140218595792640 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:45:25,474 basehttp 502020 140218595792640 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:45:26,407 basehttp 502020 140218595792640 "GET /orders/ HTTP/1.1" 200 6770
+INFO 2022-06-09 08:45:48,888 autoreload 502020 140218744272704 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:45:49,281 autoreload 502312 140325211875136 Watching for file changes with StatReloader
+INFO 2022-06-09 08:45:50,096 basehttp 502312 140325130553088 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:45:52,488 basehttp 502312 140325130553088 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 08:45:55,095 basehttp 502312 140325130553088 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:45:55,151 basehttp 502312 140325130553088 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:45:56,189 basehttp 502312 140325130553088 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:45:57,127 basehttp 502312 140325130553088 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:45:57,142 basehttp 502312 140325130553088 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:45:58,294 basehttp 502312 140325130553088 "GET /orders/ HTTP/1.1" 200 7659
+INFO 2022-06-09 08:46:01,212 basehttp 502312 140325130553088 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:46:32,140 autoreload 502312 140325211875136 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:46:32,535 autoreload 502713 140367370102592 Watching for file changes with StatReloader
+INFO 2022-06-09 08:46:33,364 basehttp 502713 140367288780544 "GET /goods/9/ HTTP/1.1" 200 4412
+INFO 2022-06-09 08:46:36,335 basehttp 502713 140367288780544 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:46:36,357 basehttp 502713 140367288780544 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:46:37,088 basehttp 502713 140367288780544 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:46:38,239 basehttp 502713 140367288780544 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:46:38,254 basehttp 502713 140367288780544 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:46:39,154 basehttp 502713 140367288780544 "GET /orders/ HTTP/1.1" 200 8550
+INFO 2022-06-09 08:47:13,576 autoreload 502713 140367370102592 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:47:13,976 autoreload 503042 140072434964288 Watching for file changes with StatReloader
+INFO 2022-06-09 08:47:14,316 basehttp 503042 140072353642240 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:47:16,578 basehttp 503042 140072353642240 "GET /goods/13/ HTTP/1.1" 200 4355
+INFO 2022-06-09 08:47:18,765 basehttp 503042 140072353642240 "POST /goods/13/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:47:18,784 basehttp 503042 140072353642240 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:47:19,589 basehttp 503042 140072353642240 "GET /cart/ HTTP/1.1" 200 4607
+INFO 2022-06-09 08:47:20,618 basehttp 503042 140072353642240 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:47:20,636 basehttp 503042 140072353642240 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:47:21,318 basehttp 503042 140072353642240 "GET /orders/ HTTP/1.1" 200 9436
+INFO 2022-06-09 08:47:24,565 basehttp 503042 140072353642240 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:47:42,825 autoreload 503042 140072434964288 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:47:43,188 autoreload 503305 140531937519424 Watching for file changes with StatReloader
+INFO 2022-06-09 08:48:33,206 autoreload 503305 140531937519424 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:48:33,588 autoreload 503721 139905775380288 Watching for file changes with StatReloader
+INFO 2022-06-09 08:48:41,640 basehttp 503721 139905693271808 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:48:43,776 basehttp 503721 139905693271808 "GET /goods/12/ HTTP/1.1" 200 4372
+INFO 2022-06-09 08:48:46,624 basehttp 503721 139905693271808 "POST /goods/12/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:48:46,644 basehttp 503721 139905693271808 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:48:47,539 basehttp 503721 139905693271808 "GET /cart/ HTTP/1.1" 200 4612
+INFO 2022-06-09 08:48:48,475 basehttp 503721 139905693271808 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:48:48,489 basehttp 503721 139905693271808 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:48:49,301 basehttp 503721 139905693271808 "GET /orders/ HTTP/1.1" 200 10327
+INFO 2022-06-09 08:49:20,819 autoreload 503721 139905775380288 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:49:21,199 autoreload 504097 140580660053824 Watching for file changes with StatReloader
+INFO 2022-06-09 08:49:22,596 basehttp 504097 140580577945344 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:49:24,082 basehttp 504097 140580577945344 "GET /goods/9/ HTTP/1.1" 200 4412
+INFO 2022-06-09 08:49:26,399 basehttp 504097 140580577945344 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:49:26,418 basehttp 504097 140580577945344 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:49:27,203 basehttp 504097 140580577945344 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:49:28,299 basehttp 504097 140580577945344 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:49:28,314 basehttp 504097 140580577945344 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:49:29,148 basehttp 504097 140580577945344 "GET /orders/ HTTP/1.1" 200 11216
+INFO 2022-06-09 08:50:02,178 autoreload 504097 140580660053824 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:50:02,541 autoreload 504412 140589351593792 Watching for file changes with StatReloader
+INFO 2022-06-09 08:50:55,647 autoreload 504412 140589351593792 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:50:56,045 autoreload 504837 140396254984000 Watching for file changes with StatReloader
+INFO 2022-06-09 08:50:58,702 basehttp 504837 140396105561856 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:51:01,121 basehttp 504837 140396105561856 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 08:51:03,323 basehttp 504837 140396105561856 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:51:03,343 basehttp 504837 140396105561856 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:51:04,421 basehttp 504837 140396105561856 "GET /cart/ HTTP/1.1" 200 4608
+INFO 2022-06-09 08:51:05,756 basehttp 504837 140396105561856 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:51:05,775 basehttp 504837 140396105561856 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:51:07,151 basehttp 504837 140396105561856 "GET /orders/ HTTP/1.1" 200 12103
+INFO 2022-06-09 08:52:39,327 autoreload 504837 140396254984000 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 08:52:39,781 autoreload 505711 139804143146816 Watching for file changes with StatReloader
+INFO 2022-06-09 08:52:44,419 basehttp 505711 139804061038336 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:52:46,282 basehttp 505711 139804061038336 "GET /goods/9/ HTTP/1.1" 200 4412
+INFO 2022-06-09 08:52:48,127 basehttp 505711 139804061038336 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:52:48,148 basehttp 505711 139804061038336 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:52:49,554 basehttp 505711 139804061038336 "GET /cart/ HTTP/1.1" 200 4610
+INFO 2022-06-09 08:52:54,104 basehttp 505711 139804052645632 "GET /orders/ HTTP/1.1" 200 12994
+INFO 2022-06-09 08:53:00,765 basehttp 505711 139804052645632 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:53:01,933 basehttp 505711 139804052645632 "GET /orders/ HTTP/1.1" 200 12992
+INFO 2022-06-09 08:53:05,355 basehttp 505711 139804052645632 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:53:07,747 basehttp 505711 139804052645632 "GET /goods/10/ HTTP/1.1" 200 4773
+INFO 2022-06-09 08:53:09,615 basehttp 505711 139804052645632 "POST /goods/10/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:53:09,634 basehttp 505711 139804052645632 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:53:10,406 basehttp 505711 139804052645632 "GET /cart/ HTTP/1.1" 200 4609
+INFO 2022-06-09 08:53:13,428 basehttp 505711 139804061038336 "GET /orders/ HTTP/1.1" 200 13882
+INFO 2022-06-09 08:53:23,112 basehttp 505711 139804061038336 "GET /orders/ HTTP/1.1" 200 13880
+INFO 2022-06-09 08:53:25,811 basehttp 505711 139804061038336 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:54:32,375 autoreload 505711 139804143146816 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 08:54:32,831 autoreload 506536 140251845564224 Watching for file changes with StatReloader
+INFO 2022-06-09 08:54:34,355 basehttp 506536 140251763455744 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:54:36,545 basehttp 506536 140251763455744 "GET /goods/17/ HTTP/1.1" 200 4251
+INFO 2022-06-09 08:54:43,079 basehttp 506536 140251763455744 "POST /goods/17/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:43,098 basehttp 506536 140251763455744 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:54:44,887 basehttp 506536 140251763455744 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:54:46,386 basehttp 506536 140251763455744 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:54:47,764 basehttp 506536 140251763455744 "GET /goods/7/ HTTP/1.1" 200 4475
+INFO 2022-06-09 08:54:49,504 basehttp 506536 140251763455744 "POST /goods/7/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:49,538 basehttp 506536 140251763455744 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:54:50,737 basehttp 506536 140251763455744 "GET /cart/ HTTP/1.1" 200 4611
+INFO 2022-06-09 08:54:52,183 basehttp 506536 140251763455744 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:52,197 basehttp 506536 140251763455744 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 08:54:53,503 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 14770
+INFO 2022-06-09 08:54:56,698 basehttp 506536 140251763455744 "POST /orders/54 HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:56,724 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 13883
+INFO 2022-06-09 08:54:58,323 basehttp 506536 140251763455744 "POST /orders/55 HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:58,342 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 12991
+INFO 2022-06-09 08:54:58,904 basehttp 506536 140251763455744 "POST /orders/56 HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:58,923 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 12103
+INFO 2022-06-09 08:54:59,314 basehttp 506536 140251763455744 "POST /orders/57 HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:59,346 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 11212
+INFO 2022-06-09 08:54:59,757 basehttp 506536 140251763455744 "POST /orders/58 HTTP/1.1" 302 0
+INFO 2022-06-09 08:54:59,778 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 10323
+INFO 2022-06-09 08:55:00,157 basehttp 506536 140251763455744 "POST /orders/59 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:00,189 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 9432
+INFO 2022-06-09 08:55:00,548 basehttp 506536 140251763455744 "POST /orders/60 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:00,583 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 8546
+INFO 2022-06-09 08:55:00,980 basehttp 506536 140251763455744 "POST /orders/61 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:01,000 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 7655
+INFO 2022-06-09 08:55:01,440 basehttp 506536 140251763455744 "POST /orders/62 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:01,469 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 6766
+INFO 2022-06-09 08:55:02,644 basehttp 506536 140251763455744 "POST /orders/63 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:02,669 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 5879
+INFO 2022-06-09 08:55:03,219 basehttp 506536 140251763455744 "POST /orders/64 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:03,276 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 4990
+INFO 2022-06-09 08:55:03,751 basehttp 506536 140251763455744 "POST /orders/65 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:03,769 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 4102
+INFO 2022-06-09 08:55:04,533 basehttp 506536 140251763455744 "POST /orders/66 HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:04,588 basehttp 506536 140251763455744 "GET /orders/ HTTP/1.1" 200 2739
+INFO 2022-06-09 08:55:05,921 basehttp 506536 140251763455744 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:55:08,536 basehttp 506536 140251763455744 "GET /goods/12/ HTTP/1.1" 200 4371
+INFO 2022-06-09 08:55:10,932 basehttp 506536 140251763455744 "POST /goods/12/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 08:55:10,950 basehttp 506536 140251763455744 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 08:55:12,136 basehttp 506536 140251763455744 "GET /cart/ HTTP/1.1" 200 4613
+INFO 2022-06-09 09:00:14,813 autoreload 506536 140251845564224 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:00:15,197 autoreload 509422 140430688106304 Watching for file changes with StatReloader
+INFO 2022-06-09 09:00:17,705 basehttp 509422 140430532409088 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:00:17,724 basehttp 509422 140430532409088 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:00:19,145 basehttp 509422 140430532409088 "GET /orders/ HTTP/1.1" 200 4104
+INFO 2022-06-09 09:00:38,903 autoreload 509422 140430688106304 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:00:39,312 autoreload 509622 140360652035904 Watching for file changes with StatReloader
+INFO 2022-06-09 09:00:39,482 basehttp 509622 140360570713856 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:00:39,566 basehttp 509622 140360570713856 "GET /media/products/2022/06/08/599dd0f6d8a3d15e10784467.png HTTP/1.1" 304 0
+INFO 2022-06-09 09:00:41,132 basehttp 509622 140360570713856 "GET /goods/13/ HTTP/1.1" 200 4355
+INFO 2022-06-09 09:00:43,798 basehttp 509622 140360570713856 "POST /goods/13/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:00:43,829 basehttp 509622 140360570713856 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:00:45,344 basehttp 509622 140360570713856 "GET /cart/ HTTP/1.1" 200 4609
+INFO 2022-06-09 09:00:46,946 basehttp 509622 140360570713856 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:00:46,960 basehttp 509622 140360570713856 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:00:48,170 basehttp 509622 140360570713856 "GET /orders/ HTTP/1.1" 200 4992
+INFO 2022-06-09 09:06:53,109 autoreload 509622 140360652035904 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:07:26,247 autoreload 512346 140561533458240 Watching for file changes with StatReloader
+INFO 2022-06-09 09:07:29,022 basehttp 512346 140561451349760 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:07:31,679 basehttp 512346 140561451349760 "GET /goods/12/ HTTP/1.1" 200 4371
+INFO 2022-06-09 09:07:33,749 basehttp 512346 140561451349760 "POST /goods/12/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:07:33,778 basehttp 512346 140561451349760 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:07:35,749 basehttp 512346 140561451349760 "GET /goods/10/ HTTP/1.1" 200 4773
+INFO 2022-06-09 09:07:37,901 basehttp 512346 140561451349760 "POST /goods/10/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:07:37,922 basehttp 512346 140561451349760 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:07:39,145 basehttp 512346 140561451349760 "GET /goods/11/ HTTP/1.1" 200 4552
+INFO 2022-06-09 09:07:40,693 basehttp 512346 140561451349760 "POST /goods/11/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:07:40,719 basehttp 512346 140561451349760 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:07:42,380 basehttp 512346 140561451349760 "GET /goods/13/ HTTP/1.1" 200 4355
+INFO 2022-06-09 09:07:44,491 basehttp 512346 140561451349760 "POST /goods/13/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:07:44,509 basehttp 512346 140561451349760 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:07:45,223 basehttp 512346 140561451349760 "GET /cart/ HTTP/1.1" 200 6857
+INFO 2022-06-09 09:07:48,817 basehttp 512346 140561442957056 "GET /orders/ HTTP/1.1" 200 8556
+INFO 2022-06-09 09:08:05,271 autoreload 512346 140561533458240 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 09:08:05,660 autoreload 512692 140355730347840 Watching for file changes with StatReloader
+INFO 2022-06-09 09:08:07,625 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 8548
+INFO 2022-06-09 09:08:09,676 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:11,635 basehttp 512692 140355648239360 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 09:08:13,609 basehttp 512692 140355648239360 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:13,627 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:14,859 basehttp 512692 140355648239360 "GET /goods/11/ HTTP/1.1" 200 4552
+INFO 2022-06-09 09:08:16,314 basehttp 512692 140355648239360 "POST /goods/11/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:16,333 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:17,593 basehttp 512692 140355648239360 "GET /goods/7/ HTTP/1.1" 200 4475
+INFO 2022-06-09 09:08:19,217 basehttp 512692 140355648239360 "POST /goods/7/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:19,236 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:21,160 basehttp 512692 140355648239360 "GET /goods/10/ HTTP/1.1" 200 4773
+INFO 2022-06-09 09:08:22,512 basehttp 512692 140355648239360 "POST /goods/10/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:22,533 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:24,204 basehttp 512692 140355648239360 "GET /goods/17/ HTTP/1.1" 200 4251
+INFO 2022-06-09 09:08:27,203 basehttp 512692 140355648239360 "GET /goods/12/ HTTP/1.1" 200 4371
+INFO 2022-06-09 09:08:29,222 basehttp 512692 140355648239360 "POST /goods/12/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:29,287 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:30,926 basehttp 512692 140355648239360 "GET /goods/9/ HTTP/1.1" 200 4412
+INFO 2022-06-09 09:08:32,732 basehttp 512692 140355648239360 "POST /goods/9/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:32,751 basehttp 512692 140355648239360 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:08:33,539 basehttp 512692 140355648239360 "GET /cart/ HTTP/1.1" 200 8355
+INFO 2022-06-09 09:08:35,243 basehttp 512692 140355648239360 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:35,261 basehttp 512692 140355648239360 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:08:36,309 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 13882
+INFO 2022-06-09 09:08:39,231 basehttp 512692 140355648239360 "POST /orders/69 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:39,251 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 12990
+INFO 2022-06-09 09:08:40,016 basehttp 512692 140355648239360 "POST /orders/70 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:40,037 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 12102
+INFO 2022-06-09 09:08:40,403 basehttp 512692 140355648239360 "POST /orders/71 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:40,438 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 11214
+INFO 2022-06-09 09:08:40,806 basehttp 512692 140355648239360 "POST /orders/72 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:40,840 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 10326
+INFO 2022-06-09 09:08:41,206 basehttp 512692 140355648239360 "POST /orders/73 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:41,287 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 9439
+INFO 2022-06-09 09:08:41,734 basehttp 512692 140355648239360 "POST /orders/74 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:41,755 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 8551
+INFO 2022-06-09 09:08:42,052 basehttp 512692 140355648239360 "POST /orders/75 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:42,071 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 7661
+INFO 2022-06-09 09:08:42,486 basehttp 512692 140355648239360 "POST /orders/76 HTTP/1.1" 302 0
+WARNING 2022-06-09 09:08:42,628 log 512692 140355648239360 Not Found: /orders/76
+WARNING 2022-06-09 09:08:42,629 basehttp 512692 140355648239360 "POST /orders/76 HTTP/1.1" 404 6039
+WARNING 2022-06-09 09:08:42,818 log 512692 140355648239360 Not Found: /orders/76
+WARNING 2022-06-09 09:08:42,819 basehttp 512692 140355648239360 "POST /orders/76 HTTP/1.1" 404 6039
+WARNING 2022-06-09 09:08:43,043 log 512692 140355648239360 Not Found: /orders/76
+WARNING 2022-06-09 09:08:43,043 basehttp 512692 140355648239360 "POST /orders/76 HTTP/1.1" 404 6039
+WARNING 2022-06-09 09:08:46,729 log 512692 140355648239360 Not Found: /orders/76
+WARNING 2022-06-09 09:08:46,729 basehttp 512692 140355648239360 "POST /orders/76 HTTP/1.1" 404 6039
+WARNING 2022-06-09 09:08:49,728 log 512692 140355648239360 Not Found: /orders/76
+WARNING 2022-06-09 09:08:49,729 basehttp 512692 140355648239360 "POST /orders/76 HTTP/1.1" 404 6039
+INFO 2022-06-09 09:08:52,111 basehttp 512692 140355648239360 "POST /orders/77 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:52,133 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 5881
+INFO 2022-06-09 09:08:52,669 basehttp 512692 140355648239360 "POST /orders/67 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:52,701 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 4989
+INFO 2022-06-09 09:08:53,565 basehttp 512692 140355648239360 "POST /orders/78 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:53,609 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 4100
+INFO 2022-06-09 09:08:54,164 basehttp 512692 140355648239360 "POST /orders/68 HTTP/1.1" 302 0
+INFO 2022-06-09 09:08:54,208 basehttp 512692 140355648239360 "GET /orders/ HTTP/1.1" 200 2739
+INFO 2022-06-09 09:09:40,810 autoreload 512692 140355730347840 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:09:41,203 autoreload 513442 140306143061824 Watching for file changes with StatReloader
+INFO 2022-06-09 09:09:42,219 basehttp 513442 140306061739776 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:09:44,939 basehttp 513442 140306061739776 "GET /goods/7/ HTTP/1.1" 200 4475
+INFO 2022-06-09 09:09:47,177 basehttp 513442 140306061739776 "POST /goods/7/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:09:47,195 basehttp 513442 140306061739776 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:09:48,378 basehttp 513442 140306061739776 "GET /cart/ HTTP/1.1" 200 4613
+INFO 2022-06-09 09:09:49,619 basehttp 513442 140306061739776 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:09:49,634 basehttp 513442 140306061739776 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:09:50,437 basehttp 513442 140306061739776 "GET /orders/ HTTP/1.1" 200 4104
+INFO 2022-06-09 09:10:05,850 autoreload 513442 140306143061824 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:10:06,381 autoreload 513691 140437637306176 Watching for file changes with StatReloader
+INFO 2022-06-09 09:11:43,109 autoreload 513691 140437637306176 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:14:29,613 autoreload 515657 139993922586432 Watching for file changes with StatReloader
+INFO 2022-06-09 09:14:31,037 basehttp 515657 139993840477952 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 09:14:32,385 basehttp 515657 139993840477952 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:14:34,695 basehttp 515657 139993840477952 "GET /goods/12/ HTTP/1.1" 200 4371
+INFO 2022-06-09 09:14:36,893 basehttp 515657 139993840477952 "POST /goods/12/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:14:36,937 basehttp 515657 139993840477952 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:14:37,675 basehttp 515657 139993840477952 "GET /cart/ HTTP/1.1" 200 4613
+INFO 2022-06-09 09:14:38,830 basehttp 515657 139993840477952 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:14:38,849 basehttp 515657 139993840477952 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:14:39,998 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:47,436 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:48,054 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:48,225 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:48,410 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:48,597 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:49,056 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:49,382 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:49,699 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:14:51,032 basehttp 515657 139993840477952 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:15:31,195 autoreload 515657 139993922586432 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:15:31,599 autoreload 516275 139807173490496 Watching for file changes with StatReloader
+INFO 2022-06-09 09:15:32,431 basehttp 516275 139807023953664 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:15:33,132 basehttp 516275 139807023953664 "GET /orders/ HTTP/1.1" 200 4996
+INFO 2022-06-09 09:15:34,097 basehttp 516275 139807023953664 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:15:39,040 basehttp 516275 139807023953664 "GET /goods/10/ HTTP/1.1" 200 4773
+INFO 2022-06-09 09:15:41,600 basehttp 516275 139807023953664 "POST /goods/10/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:15:41,618 basehttp 516275 139807023953664 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:15:42,509 basehttp 516275 139807023953664 "GET /cart/ HTTP/1.1" 200 4609
+INFO 2022-06-09 09:15:43,700 basehttp 516275 139807023953664 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:15:43,719 basehttp 516275 139807023953664 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:15:44,636 basehttp 516275 139807023953664 "GET /orders/ HTTP/1.1" 200 5884
+INFO 2022-06-09 09:24:03,120 autoreload 516275 139807173490496 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 09:24:03,514 autoreload 520380 139915107469120 Watching for file changes with StatReloader
+INFO 2022-06-09 09:24:05,277 basehttp 520380 139915025360640 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:24:07,444 basehttp 520380 139915025360640 "GET /goods/13/ HTTP/1.1" 200 4355
+INFO 2022-06-09 09:24:11,764 basehttp 520380 139915025360640 "POST /goods/13/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:24:11,785 basehttp 520380 139915025360640 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:24:13,376 basehttp 520380 139915025360640 "GET /cart/ HTTP/1.1" 200 4609
+INFO 2022-06-09 09:24:15,605 basehttp 520380 139915016967936 "GET /orders/ HTTP/1.1" 200 6772
+INFO 2022-06-09 09:24:18,308 basehttp 520380 139915016967936 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:24:40,578 autoreload 520380 139915107469120 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/views.py changed, reloading.
+INFO 2022-06-09 09:24:41,030 autoreload 520684 139990558164800 Watching for file changes with StatReloader
+INFO 2022-06-09 09:24:58,230 basehttp 520684 139990476056320 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 09:24:58,549 basehttp 520684 139990476056320 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:25:05,846 basehttp 520684 139990476056320 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:25:06,923 basehttp 520684 139990476056320 "GET /orders/ HTTP/1.1" 200 6772
+INFO 2022-06-09 09:25:09,594 basehttp 520684 139990476056320 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:25:10,426 basehttp 520684 139990476056320 "GET /orders/ HTTP/1.1" 200 6772
+INFO 2022-06-09 09:25:14,208 basehttp 520684 139990476056320 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:25:14,705 basehttp 520684 139990476056320 "GET /orders/ HTTP/1.1" 200 6772
+INFO 2022-06-09 09:25:29,260 autoreload 520684 139990558164800 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:25:29,644 autoreload 521061 139836160255808 Watching for file changes with StatReloader
+INFO 2022-06-09 09:25:30,422 basehttp 521061 139836011816704 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:25:33,343 basehttp 521061 139836011816704 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 09:25:36,462 basehttp 521061 139836011816704 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:25:36,484 basehttp 521061 139836011816704 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:25:37,330 basehttp 521061 139836011816704 "GET /cart/ HTTP/1.1" 200 4608
+INFO 2022-06-09 09:25:38,616 basehttp 521061 139836011816704 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:25:38,631 basehttp 521061 139836011816704 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:25:39,610 basehttp 521061 139836011816704 "GET /orders/ HTTP/1.1" 200 7659
+INFO 2022-06-09 09:25:41,472 basehttp 521061 139836011816704 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:26:13,840 autoreload 521061 139836160255808 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:26:14,204 autoreload 521408 140579836974912 Watching for file changes with StatReloader
+INFO 2022-06-09 09:32:26,056 autoreload 521408 140579836974912 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:32:26,473 autoreload 524489 140360240928576 Watching for file changes with StatReloader
+INFO 2022-06-09 09:32:28,351 basehttp 524489 140360158820096 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:32:30,998 basehttp 524489 140360158820096 "GET /goods/14/ HTTP/1.1" 200 4410
+INFO 2022-06-09 09:32:33,447 basehttp 524489 140360158820096 "POST /goods/14/add/ HTTP/1.1" 302 0
+INFO 2022-06-09 09:32:33,466 basehttp 524489 140360158820096 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:32:35,095 basehttp 524489 140360158820096 "GET /cart/ HTTP/1.1" 200 4608
+INFO 2022-06-09 09:32:36,079 basehttp 524489 140360158820096 "POST /cart/checkout HTTP/1.1" 302 0
+INFO 2022-06-09 09:32:36,093 basehttp 524489 140360158820096 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:32:37,177 basehttp 524489 140360158820096 "GET /orders/ HTTP/1.1" 200 8546
+INFO 2022-06-09 09:33:22,766 autoreload 524489 140360240928576 /home/leshii/Документы/isp/ispLabs/lab3_django/cart/tasks.py changed, reloading.
+INFO 2022-06-09 09:33:23,132 autoreload 524890 139929979430720 Watching for file changes with StatReloader
+INFO 2022-06-09 09:34:06,486 basehttp 524890 139929830008576 "POST /orders/79 HTTP/1.1" 302 0
+INFO 2022-06-09 09:34:06,509 basehttp 524890 139929830008576 "GET /orders/ HTTP/1.1" 200 7654
+INFO 2022-06-09 09:34:06,756 basehttp 524890 139929830008576 "POST /orders/81 HTTP/1.1" 302 0
+INFO 2022-06-09 09:34:06,777 basehttp 524890 139929830008576 "GET /orders/ HTTP/1.1" 200 6766
+INFO 2022-06-09 09:34:07,160 basehttp 524890 139929830008576 "POST /orders/80 HTTP/1.1" 302 0
+INFO 2022-06-09 09:34:07,195 basehttp 524890 139929830008576 "GET /orders/ HTTP/1.1" 200 5874
+INFO 2022-06-09 09:34:07,806 basehttp 524890 139929830008576 "POST /orders/82 HTTP/1.1" 302 0
+INFO 2022-06-09 09:34:07,824 basehttp 524890 139929830008576 "GET /orders/ HTTP/1.1" 200 4986
+INFO 2022-06-09 09:35:39,762 autoreload 524890 139929979430720 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:35:40,210 autoreload 525796 140481066669888 Watching for file changes with StatReloader
+INFO 2022-06-09 09:35:45,880 autoreload 525841 140705654818624 Watching for file changes with StatReloader
+ERROR 2022-06-09 09:35:49,855 log 525841 140705572710144 Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/http/request.py", line 139, in get_host
+    if domain and validate_host(domain, allowed_hosts):
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/http/request.py", line 706, in validate_host
+    return any(
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/http/request.py", line 707, in <genexpr>
+    pattern == "*" or is_same_domain(host, pattern) for pattern in allowed_hosts
+  File "/home/leshii/Документы/isp/ispLabs/lab3_django/venv/lib/python3.8/site-packages/django/utils/http.py", line 242, in is_same_domain
+    pattern = pattern.lower()
+AttributeError: 'int' object has no attribute 'lower'
+ERROR 2022-06-09 09:35:49,856 basehttp 525841 140705572710144 "GET / HTTP/1.1" 500 145
+INFO 2022-06-09 09:36:08,550 autoreload 525841 140705654818624 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:36:08,980 autoreload 526249 140565541185344 Watching for file changes with StatReloader
+ERROR 2022-06-09 09:36:09,680 exception 526249 140565459863296 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-09 09:36:09,681 log 526249 140565459863296 Bad Request: /
+WARNING 2022-06-09 09:36:09,681 basehttp 526249 140565459863296 "GET / HTTP/1.1" 400 143
+INFO 2022-06-09 09:36:40,728 autoreload 526249 140565541185344 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:36:41,114 autoreload 526633 139947219748672 Watching for file changes with StatReloader
+ERROR 2022-06-09 09:36:42,184 exception 526633 139947138426624 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-09 09:36:42,187 log 526633 139947138426624 Bad Request: /
+WARNING 2022-06-09 09:36:42,188 basehttp 526633 139947138426624 "GET / HTTP/1.1" 400 143
+ERROR 2022-06-09 09:36:43,174 exception 526633 139947130033920 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-09 09:36:43,175 log 526633 139947130033920 Bad Request: /
+WARNING 2022-06-09 09:36:43,176 basehttp 526633 139947130033920 "GET / HTTP/1.1" 400 143
+ERROR 2022-06-09 09:36:43,722 exception 526633 139947138426624 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-09 09:36:43,723 log 526633 139947138426624 Bad Request: /
+WARNING 2022-06-09 09:36:43,723 basehttp 526633 139947138426624 "GET / HTTP/1.1" 400 143
+ERROR 2022-06-09 09:36:43,896 exception 526633 139947130033920 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-09 09:36:43,897 log 526633 139947130033920 Bad Request: /
+WARNING 2022-06-09 09:36:43,897 basehttp 526633 139947130033920 "GET / HTTP/1.1" 400 143
+INFO 2022-06-09 09:36:51,239 autoreload 526703 139747888039744 Watching for file changes with StatReloader
+ERROR 2022-06-09 09:36:52,422 exception 526703 139747805931264 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+WARNING 2022-06-09 09:36:52,423 log 526703 139747805931264 Bad Request: /
+WARNING 2022-06-09 09:36:52,423 basehttp 526703 139747805931264 "GET / HTTP/1.1" 400 143
+INFO 2022-06-09 09:37:19,806 autoreload 526703 139747888039744 /home/leshii/Документы/isp/ispLabs/lab3_django/lab3_django/settings.py changed, reloading.
+INFO 2022-06-09 09:37:20,252 autoreload 526991 139891728045888 Watching for file changes with StatReloader
+INFO 2022-06-09 09:37:21,519 basehttp 526991 139891578742528 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 09:37:22,747 basehttp 526991 139891578742528 "GET /goods/ HTTP/1.1" 200 16009
+INFO 2022-06-09 09:37:23,597 basehttp 526991 139891578742528 "GET / HTTP/1.1" 200 2854
+INFO 2022-06-09 09:37:24,290 basehttp 526991 139891578742528 "GET /categories/ HTTP/1.1" 200 7290
+INFO 2022-06-09 09:37:27,737 basehttp 526991 139891578742528 "GET /cart/ HTTP/1.1" 200 2742
+INFO 2022-06-09 09:37:28,747 basehttp 526991 139891578742528 "GET /orders/ HTTP/1.1" 200 4986
+INFO 2022-06-09 09:37:31,467 basehttp 526991 139891578742528 "GET /goods/ HTTP/1.1" 200 16009

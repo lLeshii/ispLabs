@@ -1,4 +1,5 @@
 import logging
+import time
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Q
@@ -9,6 +10,7 @@ from django.views.generic import ListView, DeleteView
 from cart.models import Order
 # Create your views here.
 import logging
+from .tasks import deliver_group
 
 from drug_store.models import Product
 
@@ -22,8 +24,7 @@ class OrderListView(LoginRequiredMixin, ListView):
     logger.info("use OrderListView")
 
     def get_queryset(self):
-        return Order.objects.filter(user=self.request.user).filter(
-            Q(status="delivering") | Q(status="processing")).select_related('user').select_related('product')
+        return Order.objects.filter(user=self.request.user).select_related('user').select_related('product')
 
 
 class CartView(LoginRequiredMixin, ListView):
@@ -65,4 +66,6 @@ class CheckoutView(LoginRequiredMixin, View):
     def post(self, request):
         cur_user = self.request.user
         Order.objects.filter(user=cur_user, status="processing").update(status="delivering")
+        print(Order.objects.filter(user = cur_user, status="delivering").values_list('id', flat= True))
+        deliver_group.delay(Order.objects.filter(user = cur_user, status="delivering").values_list('pk', flat= True))
         return HttpResponseRedirect(reverse_lazy("cart"))
