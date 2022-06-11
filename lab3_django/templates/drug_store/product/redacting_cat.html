@@ -1,0 +1,16 @@
+{% extends 'drug_store/base.html' %}
+
+{% block title %}Editing{% endblock title %}
+
+{% block content %}
+<div class="container-fluid pt-5 w-25 align-items-center">
+    <h2 class="text m-5">Update category:</h2>
+    <form method="post" action="{% url "update_category" category.pk%}" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="d-grid gap-2">
+            <input class="btn btn-primary mx-auto" type="submit" value="Update"/>
+        </div>
+    </form>
+</div>
+{% endblock %}

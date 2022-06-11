@@ -1,0 +1,57 @@
+{% extends "drug_store/base.html" %}
+{% load static %}
+{% block title %}
+    {% if category %}{{ category.name }}{% else %}Catalog{% endif %}
+{% endblock %}
+{% block content %}
+    <div class="container-fluid text-white">
+        <div class="row">
+                <h2 class="text-white p-2">Goods(Baads):</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <h4 class="text-white p-3">All positions</h4>
+            </div>
+            <div class="col-sm-9">
+                <div class="main_content text white">
+                    <div class="row">
+                        {% for product in products %}
+                            <div class="col-sm-4 ">
+                                <div class="item p-3">
+                                    <div class="row">
+                                        <a class="text-white" href="{% url 'product_detail' product.pk%}">
+                                            <img class="img-thumbnail" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "drug_store/images/no_image.jpg" %}{% endif %}">
+                                        </a>
+                                    </div>
+                                    <div class="row ">
+                                        <a class="text-white h3 mt-2" href="{% url 'product_detail' product.pk%}">{{ product.name }}</a><br>
+                                        <div class="col-sm-6">
+                                            <i class="text-white" >Price: ${{  product.price }}</i><br>
+                                        </div>
+                                        <div class="col-sm-6 ">
+                                        <div class="row">
+                                            {% if user.is_staff %}
+                                            <a class="btn btn-outline-light" href="{% url "update_product" product.pk%}">Update</a>
+                                            <form method="post" action="{% url "delete_product" product.pk %}">
+                                            {% csrf_token %}
+                                                <div class="d-grid gap-3">
+                                                    <input class="btn btn-outline-light" type="submit" value="Delete"/>
+                                                </div>
+                                            </form>
+                                            {% endif %}
+                                             <a class="btn btn-outline-light " href="{% url 'product_detail' product.pk%}">Add in cart</a>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

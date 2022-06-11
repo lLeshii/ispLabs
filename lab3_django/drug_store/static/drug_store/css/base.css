@@ -1,0 +1,83 @@
+
+body {
+    font-family: sans-serif;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    padding-left: 1%;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+a{
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.main_content{
+    height: 3000px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.categories_bar{
+    background-color: #4c0017;
+    border-radius: 4px;
+    color: #b40220;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.item{
+    background-color: #b40220;
+    border-radius: 4px;
+    color: #969945;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
+.product-detail {
+    text-align:justify;
+}
+
+.product-detail .price {
+    color:#333;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.product-detail img {
+    width:20%;
+    float:left;
+    padding:10px 10px 10px 10px;
+}
+
+.product-detail h1 {
+    margin-bottom:0;
+}
+
+.product-detail h2 {
+    margin-top:10px;
+}
+
+.button{
+    background-color: #e9e0cf;
+}

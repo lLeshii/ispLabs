@@ -1,0 +1,54 @@
+{% extends "drug_store/base.html" %}
+{% load static %}
+{% block title %}
+    Catalog
+{% endblock %}
+{% block content %}
+    <div class="container-fluid text-white">
+        <div class="row">
+            <div class="col-sm-3 ">
+                <section class="categories sticky-top t" >
+                    <h3 class="text-white">Categories</h3>
+                    <ul class="categories_bar">
+                        {% for c in categories %}
+                            <li>
+                                <a class="nav-link text-white" href="{% url 'concrete_category' c.pk %}">{{ c.name }}</a>
+                            </li>
+                        {% endfor %}
+                        <li>
+                            <a class="nav-link text-white" href="{% url "product_list" %}">Own catalog</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-sm-9">
+                <div class='main_content text-white'>
+                    <h1>{% if category %}{{ category.name }}{% else %}Baads{% endif %}</h1>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-sm-4 ">
+                            <div class="item pb-5">
+                                <div class="row">
+                                    <a class="text-white" href="{{ product.get_absolute_url}}">
+                                        <img class="img-thumbnail" src="{% if product.image %}{{ product.image.url }}{% else %}{% static "drug_store/images/no_image.jpg" %}{% endif %}">
+                                    </a>
+                                </div>
+                                <div class="row ">
+                                    <a class="text-white h3 mt-2" href="{{ product.get_absolute_url }}">{{ product.name }}</a><br>
+                                    <div class="col-sm-6">
+                                        <i class="text-white" >Price: ${{  product.price }}</i><br>
+                                    </div>
+                                    <div class="col-sm-6">
+                                         <a class="btn p-3" href="{{ product.get_absolute_url }}">Add in cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
