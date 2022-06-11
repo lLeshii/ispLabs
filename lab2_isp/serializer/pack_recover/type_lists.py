@@ -1,0 +1,6 @@
+primitives = (int, float, str, bool)
+collects = (dict, list, tuple, set, frozenset)
+bytes_obj = (bytes, bytearray)
+primitives_str = ('int', 'float', 'str', 'bool')
+collects_str = ('dict', 'list', 'tuple', 'set', 'frozenset')
+bytes_obj_str = ('bytes', 'bytearray')
