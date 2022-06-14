@@ -1,0 +1,31 @@
+# Use postgres/example user/password credentials
+version: '3.1'
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code
+    environment:
+      - POSTGRES_NAME=docker_db
+      - POSTGRES_USER=leshii
+      - POSTGRES_PASSWORD=2173101842
+      - POSTGRES_HOST=db
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=2173101842
+      - POSTGRES_USER=leshii
+      - POSTGRES_DB=docker_db
+      - POSTGRES_HOST=db
+      - POSTGRES_HOST_AUTH_METHODS= trust
